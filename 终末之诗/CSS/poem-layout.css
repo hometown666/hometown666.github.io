@@ -1,0 +1,464 @@
+/*------------------------ウホンタ------------------------*/
+body{
+    background-image: url(images/cont.png);
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+nav{
+    background-image: url(images/nav.gif);
+    height: 38px;
+}
+
+nav div.menu{
+    float: right;
+    padding-right: 80px;
+    height: 38px;
+    line-height: 38px;
+}
+
+nav div.menu a:link, nav menu a:visited{
+    font-size: 20px;
+    font-family: "黑体";
+    color: #000;
+    text-decoration: none;
+}
+
+nav div.menu img{
+    padding: 0px 30px;
+    height: 25px;
+    width: 2px;
+    line-height: 38px;
+}
+
+/*Banner style*/
+.top1{
+    background-image: url(images/top1.gif);
+    background-repeat: no-repeat;
+    float: left;
+    height: 230px;
+    width: 300px;
+}
+
+.top2{
+    background-image: url(images/top2.gif);
+    background-repeat: no-repeat;
+    float: left;
+    height: 226px;
+    width: 476px;
+}
+
+.top3{
+    background-image: url(images/top3.gif);
+    background-repeat: no-repeat;
+    float: left;
+    height: 226px;
+    width: 224px;
+}
+/*Banner style*/
+
+.sidebar{
+    width: 350px;
+    float: left;
+}
+
+.content{/*left-content*/
+    width: 650px;
+    float: left;
+}
+
+.clearfloat{/*right-content*/
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+}
+
+/*leftside frame style*/
+/*upside corner style*/
+.upside1-1{
+    width: 155px;
+    height: 30px;
+    background-image: url(images/up1-1.gif);
+    float: left;
+}
+
+.upside1-2{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/up1-2.gif);
+    float: left;
+}
+
+.upside3{
+    width: 20px;
+    height: 30px;
+    background-image: url(images/up3.gif);
+    float: left;
+}
+
+.footside1-1{
+    width: 30px;
+    height: 20px;
+    float: left;
+    background-image: url(images/bt1-1.gif);
+}
+
+.footside3-1{
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-image: url(images/bt1-3.gif);
+}
+/*upside corner style*/
+
+/*upside line style*/
+.upside2-1{
+    width: 175px;
+    height: 30px;
+    background-image: url(images/up2.gif);
+    float: left;
+}
+
+.upside2-2{
+    width: 300px;
+    height: 30px;
+    background-image: url(images/up2.gif);
+    float: left;
+}
+/*upside line style*/
+
+/*left frame-line style*/
+.midside11{
+    width: 30px;
+    height: 350px;
+    float: left;
+}
+
+.midside1_1{
+    height: 210px;
+    background-image: url(images/l1.gif);
+}
+
+.midside1_2{
+    height: 240px;
+    background-image: url(images/l2.gif);
+}
+
+.midside1-3{
+    width: 30px;
+    height: 180px;
+    background-image: url(images/l2.gif);
+    float: left;
+}
+
+/*left frame-line style*/
+
+/*right frame-line style*/
+.midside3-1{
+    width: 20px;
+    height: 450px;
+    float: left;
+    background-image: url(images/r1.gif);
+}
+
+.midside3-2{
+    width: 20px;
+    height: 180px;
+    float: left;
+    background-image: url(images/r1.gif);
+}
+
+.midside12{
+    width: 30px;
+    height: 230px;
+    float: left;
+}
+
+/*right frame-line style*/
+
+/*down frame-line style*/
+.footside2-1{
+    width: 300px;
+    height: 20px;
+    float: left;
+    background-image: url(images/bt1-2.gif);
+}
+/*down frame-line style*/
+
+/*inside content of frame*/
+.midside2-1{
+    width: 300px;
+    height: 450px;
+    float: left;
+    background-image: url(images/cont.gif);
+}
+
+.midside2-2{
+    width: 300px;
+    height: 180px;
+    float: left;
+    background-image: url(images/cont.gif);
+}
+
+.sidefoot{
+    height: 58px;
+    background-image: url(images/cont.gif);
+}
+
+/*.additoin1{
+    width: 350px;
+    height: 38px;
+    float: left;
+    background-image: url(images/cont.gif);
+}*/
+
+/*inside content of frame*/
+/*leftside frame*/
+
+/*rightside frame*/
+/*right frame*/
+.content-up1{
+    width: 570px;
+    height: 30px;
+    float:left;
+    background-image:url(images/up2.gif);
+}
+
+.content-up2{
+    width: 50px;
+    height: 30px;
+    float: left;
+    background-image: url(images/up4.gif);
+}
+
+.content-mid1{
+    width: 30px;
+    height: 650px;
+    background-image: url(images/l2.gif);
+    float: left;}
+
+.content-mid3{
+    width: 50px;
+    float: left;
+}
+
+.content-mid31{
+    width:50px;
+    height:50px;
+    background-image:url(images/r3.gif);
+}
+
+.content-mid32{
+    width:50px;
+    height:600px;
+    background-image:url(images/r2-2.gif);
+}
+
+.content-foot1{
+    width:30px;
+    height:88px;
+    float:left;
+    background-image:url(images/bt2-1.gif);
+}
+
+.content-foot2{
+    width:280px;
+    height:88px;
+    float:left;
+    background-image:url(images/bt2-2.gif);
+}
+
+.content-foot3{
+    width:290px;
+    height:88px;
+    float:left;
+    background-image:url(images/bt2-3.gif);
+}
+
+.content-foot4{
+    width:50px; 
+    height:88px;
+    float:left;
+    background-image:url(images/r2-3.gif);
+}
+/*right frame*/
+
+/*right content*/
+.content-mid2{
+    width:570px;
+    height:650px;
+    float:left;
+    background-image:url(images/cont.gif);
+}
+/*right content*/
+/*rightside frame*/
+
+.content-line4{
+    background-image: url(images/up4.png);
+    background-repeat: no-repeat;
+    height: 35px;
+    line-height: 35px;
+    width: 255px;
+    font-family: "华文新魏";
+    font-size: 25px;
+    color: #c33;
+    padding-left: 40px;
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+/*------------------------ウホンタ------------------------*/
+
+/*------------------------シミンジエ------------------------*/
+    .sidebar-han{ 
+        float: left; 
+        width: 400px; 
+        border: 2px solid #ccc; 
+        height: 550px;
+        background-image: url(images/cont.gif);
+    }
+    .content-han{ 
+        margin-left:5px; 
+        float: left;
+        width: 580px;
+        border:2px solid #ccc; 
+        height: 550px; 
+        background-image: url(images/cont.gif);
+    }   
+
+
+
+    .upside1-1{
+        width: 155px;
+        height: 30px;
+        background-image: url(images/up1-1.gif);
+        float: left;
+    }
+    .upside2_3{
+        width: 825px;
+        height: 30px;
+        background-image: url(images/up2.gif);
+        float: left;
+    }
+    .upside3{
+        width: 20px;
+        height: 30px;
+        background-image: url(images/up3.gif);
+        float: left;
+    }
+
+
+
+    .midside1_6{width: 30px;
+        height: 200px;
+        background-image: url(images/l1.gif);
+        float: left; 
+    }
+    .midside2_6{width: 950px;
+        height: 200px;
+        float: left;
+    }
+    .midside3-6{width: 20px;
+        height: 200px;
+        float: left;
+        background-image: url(images/r1.gif);
+        margin-left: 5px;
+    }
+
+
+        
+    .footside1-1{width: 30px;height: 20px;float: left;background-image: url(images/bt1-1.gif);}
+    .footside2-2{width: 950px;height: 20px;float: left;background-image: url(images/bt1-2.gif);}
+    .footside3-1{width: 20px;height: 20px;float: left;background-image: url(images/bt1-3.gif);}
+
+
+
+
+    .content-line1{
+        background-image: url(images/bg21.jpg);
+        background-repeat: no-repeat;
+        height: 45px;
+        width: 350px;
+        font-family: "黑体";
+        font-size: 20px;
+        line-height: 45px;
+        color: #c33;
+        padding-left: 50px;
+    }
+
+    .foot{background-image: url(images/foot.gif); height: 20px;}
+    .foot1{background-image: url(images/foot1.jpg);height: 10px;}
+/*------------------------フウンジちアン------------------------*/
+
+/*------------------------シミンジエ------------------------*/
+.content-line2 {width: 300px;background-image: url(images/bg21.jpg);background-repeat: no-repeat;
+    height: 45px;font-family: "黑体";font-size: 20px;line-height: 45px;color: #c33;padding-left: 50px;}
+/*.content-line4{width: 255px; background-image: url(images/up4.png);background-repeat: no-repeat;
+    height: 35px;line-height: 35px; font-family: "黑体" ;font-size: 20px;color: #c33;padding-left: 40px;letter-spacing: 2px; margin-left: 5px;}*/
+.sidebar-tang{float:left;width: 360px;border: 2px solid #ccc;background-image: url(images/cont.gif);}
+.contentleft-tang{float: left;width: 300px;border: 2px solid #ccc; margin: auto 5px;background-image: url(images/cont.gif);}
+.contentright-tang{float: left;width: 300px;border: 2px solid #ccc;background-image: url(images/cont.gif);}
+/*------唐诗页图片框上边线----*/
+.upside2-3{width: 825px;height: 30px;background-image: url(images/up2.gif);float: left;}
+/*---------唐诗页左边框线、内容框、右边框线-------*/
+.midside1_4{width: 30px;height: 165px;float: left;background-image: url(images/l1.gif);}
+.midside2-3{width: 950px;height: 165px;float: left;}
+.midside3-3{width: 20px;height: 165px;float: left; background-image: url(images/r1.gif);}
+/*---------唐诗页下边框线-------*/
+.footside2_2{width: 950px;height: 20px;float: left;background-image: url(images/bt1-2.gif);}
+/*------------------------シミンジエ------------------------*/
+
+/*------------------------シヨンイ------------------------*/
+
+.sidebar-yuan{width: 280px;float:left} 
+.content-yuan{width: 440px;float:left} 
+
+
+.upside2-4{width: 105px;height: 30px;background-image: url(images/up2.gif);float: left;}
+.midside1_5{height: 1080px;background-image: url(images/l2.gif);}
+.midside2-4{width:230px;height:1080px;float: left;background-image: url(images/cont.gif);}
+.midside3-4{width:20px;height:1080px;float: left;background-image: url(images/r1.gif);}
+.footside2-3{width: 230px;height: 20px;float: left;background-image: url(images/bt1-2.gif);}
+
+
+.upside2-5{width: 390px;height: 30px;background-image: url(images/up2.gif);float: left;}
+.midside1-5{width: 30px;height: 1080px;background-image: url(images/l2.gif);float: left;}
+.midside2-5{width: 390px;height: 1080px;float: left;background-image: url(images/cont.gif);}
+.midside3-5{width:20px;height: 1080px;float: left;background-image: url(images/r1.gif);}
+.footside2-4{width:390px;height:20px;float:left;background-image:url(images/bt1-2.gif);}
+
+/*------------------------シヨンイ------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

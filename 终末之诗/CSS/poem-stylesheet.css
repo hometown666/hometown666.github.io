@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*------------------------ウホンタウ------------------------*/
+.pic img{
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
+
+.pic1 img{
+    float: left;
+    padding: 0px 0px 0px 4px;
+}
+
+.font16{
+    font-family: "宋体";
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.font16red{
+    font-family: "宋体";
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    color: #c33;
+    font-weight: bold;
+}
+
+.font16 dl{
+    margin: 0px;
+}
+
+.font14{
+    font-family: "宋体";
+    line-height: 22px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.font14 img, .font16 img{
+    float: left;
+    padding-right: 5px;
+}
+
+.font20{
+    font-family: "宋体";
+    line-height: 24px;
+    font-size: 20px;
+    text-align: center;
+    color: #c33;
+    font-weight: bold;
+}
+
+.midside2-2 img{
+    padding-left: 10px;
+}
+
+.font20red{
+    font-family: "宋体";
+    line-height: 24px;
+    font-size: 20px;
+    text-align: center;
+    color: #c33;
+}
+
+.list{
+    margin: 0px;
+    padding: 0px;
+}
+
+.list li{
+    font-family: "宋体";
+
+}
+
+.style1{
+    font-family: "隶书";
+    text-align: center;
+    font-size: 60px;
+    padding: 86px 0px 86px 0px;
+}
+/*------------------------ウホンタウ------------------------*/
+
+/*------------------------じチあん------------------------*/
+.picl img{float: left;padding: 0px 0px 0px 4px;
+}
+/*------------------------じチあん------------------------*/
+
+/*------------------------シミんじえ------------------------*/
+/*
+.font14{font-family: "黑体"; line-height: 22px; font-size: 14px;padding: 5px;}
+.font16{font-family: "黑体"; line-height: 24px;font-size: 16px;padding: 10px;}
+.font16red{font-family: "黑体"; line-height: 24px; font-size: 16px; color: #c33; text-align: center;font-weight: bold;}
+.pig img{float: left;padding: 0px 0px 0px 6px;}
+*/
+/*------------------------シミんじえ------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
