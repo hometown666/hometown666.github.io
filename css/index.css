@@ -1663,7 +1663,7 @@ canvas:not(#ribbon-canvas),
   --sidebar-menu-bg: rgba(255,255,255,0.902);
   --btn-hover-color: #ff7242;
   --btn-color: #fff;
-  --btn-bg: #49b1f5;
+  --btn-bg: rgba(73,177,245,0.6);
   --text-bg-hover: rgba(73,177,245,0.7);
   --light-grey: #eee;
   --dark-grey: #cacaca;
@@ -3857,7 +3857,7 @@ figure.highlight pre .javascript .function {
   color: #49b1f5;
 }
 #aside-content #card-toc .toc-content .toc-link.active {
-  background: #00c4b6;
+  background: rgba(0,196,182,0.6);
   color: #fff;
 }
 #aside-content .sticky_layout:only-child > :first-child {
@@ -5434,6 +5434,10 @@ figure.highlight pre .javascript .function {
   -ms-transition: filter 375ms ease-in 0.2s;
   transition: filter 375ms ease-in 0.2s;
   border-radius: 6px;
+/*kakyo 图片透明度调整*/
+  opacity: 0.65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
 }
 .container p {
   margin: 0 0 16px;
@@ -8477,4 +8481,23 @@ blockquote.pullquote.right {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+.wl-panel {
+  background: none !important;
+}
+.wl-panel:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: var(--waline-border);
+  border-radius: 0.75em;
+  background: var(--waline-bg-color);
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  z-index: -1;
 }
