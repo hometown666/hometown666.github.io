@@ -1660,14 +1660,14 @@ canvas:not(#ribbon-canvas),
   --card-hover-bg: rgba(255,255,255,0.902);
   --card-meta: #858585;
   --sidebar-bg: #f6f8fa;
-  --sidebar-menu-bg: rgba(255,255,255,0.902);
+  --sidebar-menu-bg: #fff;
   --btn-hover-color: #ff7242;
   --btn-color: #fff;
   --btn-bg: rgba(73,177,245,0.6);
   --text-bg-hover: rgba(73,177,245,0.7);
   --light-grey: #eee;
   --dark-grey: #cacaca;
-  --white: rgba(255,255,255,0.902);
+  --white: #fff;
   --text-highlight-color: #1f2d3d;
   --blockquote-color: #6a737d;
   --blockquote-bg: rgba(73,177,245,0.1);
@@ -7631,7 +7631,7 @@ blockquote.pullquote.right {
   --font-color: rgba(255,255,255,0.7);
   --hr-border: rgba(255,255,255,0.4);
   --hr-before-color: rgba(255,255,255,0.7);
-  --search-bg: #121212;
+  --search-bg: rgba(29,71,114,0.4);
   --search-input-color: rgba(255,255,255,0.7);
   --search-a-color: rgba(255,255,255,0.7);
   --preloader-bg: #0d0d0d;
@@ -7641,12 +7641,13 @@ blockquote.pullquote.right {
   --tab-button-color: rgba(255,255,255,0.7);
   --tab-button-hover-bg: #383838;
   --tab-button-active-bg: #121212;
-  --card-bg: #121212;
+  --card-bg: rgba(18,18,18,0.302);
+  --card-hover-bg: rgba(31,31,31,0.902);
   --sidebar-bg: #121212;
   --sidebar-menu-bg: #1f1f1f;
   --btn-hover-color: #787878;
   --btn-color: rgba(255,255,255,0.7);
-  --btn-bg: #1f1f1f;
+  --btn-bg: rgba(31,31,31,0.6);
   --text-bg-hover: #383838;
   --light-grey: rgba(255,255,255,0.7);
   --dark-grey: rgba(255,255,255,0.2);
@@ -8500,4 +8501,27 @@ blockquote.pullquote.right {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   filter: alpha(opacity=30);
   z-index: -1;
+}
+:root {
+  --color-scheme-text: var(--white);
+  --color-scheme-1-bg: #3498db;
+  --color-scheme-2-bg: #2ecc71;
+  --color-scheme-3-bg: #9b59b6;
+  --color-scheme-4-bg: #3470ac;
+  --color-scheme-5-bg: #e84393;
+  --color-scheme-6-bg: #1abc9c;
+  --color-scheme-7-bg: #e67e22;
+  --color-scheme-8-bg: #2980b9;
+  --color-scheme-9-bg: #fd79a8;
+  --color-scheme-10-bg: #95a5a6;
+  --color-scheme-11-bg: #dc3545;
+  --color-scheme-12-bg: #0d6efd;
+  --color-scheme-13-bg: #198754;
+  --color-scheme-14-bg: #6f42c1;
+  --color-scheme-15-bg: #fd7e14;
+  --color-scheme-16-bg: #20c997;
+  --color-scheme-17-bg: #0dcaf0;
+  --color-scheme-18-bg: #8044e1;
+  --color-scheme-19-bg: #d63384;
+  --color-scheme-20-bg: #5d92c6;
 }
