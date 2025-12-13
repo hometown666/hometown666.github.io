@@ -1,6 +1,511 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Learn English Phrases</title>
+    <url>/blog/English%20Phrases/</url>
+    <content><![CDATA[<style type="text/css">
+  .button-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .hide-block {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 1s cubic-bezier(0.3, 0, 0.15, 1), margin-bottom 1s cubic-bezier(0.3, 0, 0.15, 1);
+    margin: 0 8px 32px 0;
+  }
+
+  .hide-block.expanded {
+    grid-template-rows: 1fr;
+  }
+
+  .hide-button {
+    height: 33px;
+  }
+
+  .hide-button > * {
+    font-size: 20px;
+  }
+
+  word {
+    color: black;
+  }
+
+  .hide-content {
+    overflow: hidden;
+    padding-top: 0;
+    transition: padding-top 1s ease-out;
+  }
+
+  .hide-block.expanded .hide-content {
+    padding-top: 12px;
+  }
+
+  .hide-content {
+    overflow: hidden;
+    transition: padding-top 1s cubic-bezier(0.3, 0, 0.15, 1);
+  }
+
+  .hide-block.expanded .hide-content > * {
+    animation: fadeIn 1s ease-in forwards;
+  }
+
+  .hideBlockTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 20px 0;
+    white-space: nowrap;
+  }
+
+  .sb-sth {
+    margin: 0 10px;
+    color: grey;
+    font-size: 20px;
+  }
+
+  .definition-text {
+    font-size: 17px;
+    margin: 0 0 0 40px;
+    white-space: normal;
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .definition-english-text {
+    margin: 0 0 0 20px;
+    display: inline-block;
+  }
+
+  li {
+    font-size: 17px;
+  }
+
+  .chinese-translation-text {
+    font-size: 15px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .instance-source {
+    color: #666666;
+    font-style: italic;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-left: auto;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<div class = "button-container">
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>bump</word> into sb/sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">bump into<span class = "sb-sth"><u>sb&#x2F;sth</u></span></span><span class = "definition-text">vi. vt. 猛碰，撞<span class = "definition-english-text">to hit or knock against sth</span></span></p>
+<ul>
+<li>She stepped backward and <strong>bumped into</strong> someone.<span class = "chinese-translation-text">（她踉跄后退，结果撞到了别人。）<span class = "instance-source">——权力的游戏 有声书</span></span></li>
+<li>If I move slowly, I won’t <strong>bump into</strong> things.<span class = "chinese-translation-text">（如果我走得慢点，就不会撞到东西了。）<span class = "instance-source">——小猪佩奇 第一季</span></span></li>
+</ul>
+</div></div>
+  
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>bump</word> against/on sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">bump <u>against&#x2F;on</u><span class = "sb-sth">sth</span></span><span class = "definition-text">vi. vt. 猛碰，撞<span class = "definition-english-text">to hit or knock against sth</span></span></p>
+<ul>
+<li>I don’t want to <strong>bump</strong> her head <strong>against</strong> the door, you know, pinch her with the seat belt.<span class = "chinese-translation-text">（我不想又把她头撞到门上了，或者说，绑安全带的时候夹到她。）<span class = "instance-source">——摩登家庭 第一季</span></span></li>
+<li>Remember the time you fell off your bike or <strong>bumped</strong> your head <strong>on</strong> a sharp corner?<span class = "chinese-translation-text">（还记得你从自行车上摔下或一头撞到尖角之时吗？）<span class = "instance-source">——TED-Ed</span></span></li>
+</ul>
+</div></div>
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>interact</word> with sb<sup>1</sup>/sth<sup>2</sup></b></button><div class="hide-content"><p><span class = "hideBlockTitle">interact with<span class = "sb-sth">sb</span></span><span class = "definition-text">vi. 相互交流，相互沟通<span class = "definition-english-text">when people interact with each other or interact, they communicate as they work or spend time together</span></span></p>
+<ul>
+<li>Is he the only person you <strong>interact with</strong>?<span class = "chinese-translation-text">（他是唯一和你有交流的人吗？）<span class = "instance-source">——摩登家庭 第一季</span></span></li>
+<li>Number 6: he never <strong>interacts with</strong> youon social media.<span class = "chinese-translation-text">（第六点，他从来不在社交媒体上和你互动。）<span class = "instance-source">——生活百科</span></span></li>
+<li>He doesn’t <strong>interact</strong> much <strong>with</strong> others. He keeps to himself a lot.<span class = "chinese-translation-text">（他不怎么和其他人交流，有什么事都藏在心里。）<span class = "instance-source">——贝茨旅馆 第一季</span></span></li>
+</ul>
+<p><span class = "hideBlockTitle">interact with<span class = "sb-sth">sth</span></span><span class = "definition-text">vi. 相互交流，相互沟通<span class = "definition-english-text">to act on or have an effect on each other</span></span></p>
+<ul>
+<li>Still, it is just a story of how electrons <strong>interact with</strong> light.<span class = "chinese-translation-text">（然而，光与电子的相互作用仅仅是一个故事。） <span class = "instance-source">——VOA 慢速-自然探索</span></span></li>
+<li>It’s all about how one substance <strong>interacts with</strong> another to give us something new.<span class = "chinese-translation-text">（其本质在于两种物质发生化学反应从而生成新物质。）<span class = "instance-source">——化学公开课</span></span></li>
+<li>And this looks at how energy <strong>interacts with</strong> electrons in atoms.<span class = "chinese-translation-text">（这能检测能量与原子中电子间的相互作用。）<span class = "instance-source">——化学公开课</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>interaction</word> with/between sb</b></button><div class="hide-content"><p><span class = "hideBlockTitle">interaction <u>with&#x2F;between</u><span class = "sb-sth">sb</span></span><span class = "definition-text">n. 交流，沟通<span class = "definition-english-text">the activity of talking to other people, and the way that people react to each other</span></span></p>
+<ul>
+<li>He needs social <strong>interaction with</strong> his peers.<span class = "chinese-translation-text">（他需要和同龄人进行社交。） <span class = "instance-source">——无耻家庭 美版 第六季</span></span></li>
+<li>And was that your first <strong>interaction with</strong> Frank since he got back?<span class = "chinese-translation-text">（他回来后这是你第一次见他吗?）<span class = "instance-source">——曼哈顿计划 第二季</span></span></li>
+<li>Their biggest concern: limited <strong>interaction between</strong> teachers and students.<span class = "chinese-translation-text">（他们最大的担忧是，师生之间受限制的互动。）<span class = "instance-source">——科学美国人-60秒科学</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>interaction</word> with/between/of sb/sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">interaction <u>with&#x2F;between</u><span class = "sb-sth"><u>sb&#x2F;sth</u></span></span><span class = "definition-text">n. 相互影响<span class = "definition-english-text">the process by which two or more affect each other or change each other</span></span></p>
+<ul>
+<li>What was your <strong>interaction with</strong> the environment?<span class = "chinese-translation-text">（你与周围的生活环境是如何相互影响的?） <span class = "instance-source">——长生不老</span></span></li>
+<li>Inside, it’s no more than the harmonious <strong>interaction between</strong> human and nature.<span class = "chinese-translation-text">（说穿了，无非是人与天地万物之间的和谐相处。）<span class = "instance-source">——舌尖上的中国</span></span></li>
+<li>The <strong>interaction of</strong> the chemicals in the poison is not predictable.<span class = "chinese-translation-text">（毒药中化合物间的相互作用不可预测。）<span class = "instance-source">——迷离档案 危机边缘 第四季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>in <word>addition</word> (to sb/sth)</b></button><div class="hide-content"><p><span class = "hideBlockTitle">in addition<span class = "sb-sth">(to <u>sb&#x2F;sth</u>)</span></span><span class = "definition-text">IDM. 此外；除…以外<span class = "definition-english-text">used when you want to introduce an additional point or relevant fact</span></span></p>
+<ul>
+<li>Please submit your supporting documents. <strong>In addition</strong>, you will be required to pay an application fee.<span class = "chinese-translation-text">（请提交你的证明文件。此外，你将需要支付申请费。） <span class = "instance-source">——你问我答</span></span></li>
+<li>I can sing, too, you know, <strong>in addition to</strong> the ice skating.<span class = "chinese-translation-text">（除了滑冰，我还会唱歌。）<span class = "instance-source">——女子监狱 第一季</span></span></li>
+<li><strong>In addition to</strong> being a boss, I am also a waitress.<span class = "chinese-translation-text">（我除了是老板之外，还是一名服务员。）<span class = "instance-source">——破产姐妹 第二季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>the <word>addition</word> of sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">the addition of<span class = "sb-sth">sth</span></span><span class = "definition-text">n. 增添，添加<span class = "definition-english-text">the act of adding one thing to another</span></span></p>
+<ul>
+<li><strong>The addition of</strong> a child would disrupt even the happiest of couples.<span class = "chinese-translation-text">（有了孩子，就算最幸福的伴侣也会受到影响。） <span class = "instance-source">——犯罪心理 第十季</span></span></li>
+<li>The British Empire expanded rapidly with <strong>the addition of</strong> Borneo, Burma and New Guinea.<span class = "chinese-translation-text">（随着婆罗洲、缅甸和新几内亚的加入，大英帝国迅速扩张。）<span class = "instance-source">——黑猫系列读物</span></span></li>
+<li>However, <strong>the addition of</strong> water to the land or soil may cause problems in some areas.<span class = "chinese-translation-text">（然而在有的地区，田地里水流的添加会造成问题。）<span class = "instance-source">——VOA慢速-农业报道</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>advance</word> (on sth)</b></button><div class="hide-content"><p><span class = "hideBlockTitle">advance<span class = "sb-sth">(on sth)</span></span><span class = "definition-text">n<sub>1</sub>. 预付款<span class = "definition-english-text">money which is paid to sb before the usual time of payment</span></span></p>
+<ul>
+<li>I need an <strong>advance on</strong> my pay.<span class = "chinese-translation-text">（我需要提前预支些钱。） <span class = "instance-source">——亲密治疗</span></span></li>
+<li>I had to give Howie an <strong>advance on</strong> his allowance.<span class = "chinese-translation-text">（我只好让华仔预支他的零用钱。）<span class = "instance-source">——生活大爆炸 第七季</span></span></li>
+</ul>
+<p><span class = "definition-text">n<sub>2</sub>. （价格、价值的）上涨，上升<span class = "definition-english-text">a rise in the price, value, of sth</span></span></p>
+<ul>
+<li>Any <strong>advance on</strong> 22’000? Anyone?<span class = "chinese-translation-text">（还有比22000更高的出价吗?还有吗?） <span class = "instance-source">——碟中谍5</span></span></li>
+<li>Chumhum has agreed to an <strong>advance on</strong> our fees. It was Cary’s case.<span class = "chinese-translation-text">（Chumhum网已经同意提高代理费。这是Cary的案子。）<span class = "instance-source">——傲骨贤妻 第六季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>a <word>advantage</word> over sb</b></button><div class="hide-content"><p><span class = "hideBlockTitle">a advantage over<span class = "sb-sth">sb</span></span><span class = "definition-text">n. 有利条件，优势<span class = "definition-english-text">something that puts you in a better position than other people</span></span></p>
+<ul>
+<li>What gives you <strong>a</strong> distinct <strong>advantage over</strong> all the other capable people here?<span class = "chinese-translation-text">（相比其他有能力的人，你有什么明显的优势？） <span class = "instance-source">——亿万 第二季</span></span></li>
+<li>You were always the better engineer. But I do have <strong>one advantage over</strong> you.<span class = "chinese-translation-text">（你当工程师一直比我高明，但我确实有一项优势。）<span class = "instance-source">——疑犯追踪 第二季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>take <word>advantage</word> of sth<sup>1</sup>/sb<sup>2</sup></b></button><div class="hide-content"><p><span class = "hideBlockTitle">take advantage of<span class = "sb-sth">sth</span></span><span class = "definition-text">IDM. 利用<span class = "definition-english-text">if you take advantage of sth, you make good use of it while you can</span></span></p>
+<ul>
+<li>Glad to see you’re <strong>taking advantage of</strong> the opportunities offered.<span class = "chinese-translation-text">（很高兴看到你利用了提供给你的机会。）<span class = "instance-source">——英美剧集</span></span></li>
+<li>Just <strong>taking advantage of</strong> the local resources.<span class = "chinese-translation-text">（我只是在利用本地资源。）<span class = "instance-source">——神秘博士 第七季</span></span></li>
+<li>Harry <strong>took advantage of</strong> the temporary silence to eat more breakfast.<span class = "chinese-translation-text">（哈利利用这短暂的沉默，加紧吃他的早餐。）<span class = "instance-source">——哈利波特与混血王子</span></span></li>
+</ul>
+<p><span class = "hideBlockTitle">take advantage of<span class = "sb-sth">sb</span></span><span class = "definition-text">IDM. 占…的便宜；欺骗；捉弄<span class = "definition-english-text">if sb takes advantage of you, they treat you unfairly for their own benefit</span></span></p>
+<ul>
+<li>Frank’s just too soft hearted, and people <strong>take advantage of</strong> him.<span class = "chinese-translation-text">（弗兰克就是心太软了，人们利用他这一点来占他的便宜。） <span class = "instance-source">——《飘》</span></span></li>
+<li>He thinks he can <strong>take advantage of</strong> you because you’re a woman.<span class = "chinese-translation-text">（他觉得你是女人所以就可以占你的便宜。）<span class = "instance-source">——我为喜剧狂 第三季</span></span></li>
+<li>I went down to the free clinic and I <strong>took</strong> full <strong>advantage of</strong> the “free” part for you.<span class = "chinese-translation-text">（我去了免费诊所，并为你大大占了它“免费”的便宜。）<span class = "instance-source">——衰女翻身 第一季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>be/work to one's <word>advantage</word></b></button><div class="hide-content"><p><span class = "hideBlockTitle"><u>be&#x2F;work</u> to<span class = "sb-sth">one’s</span>advantage</span><span class = "definition-text">IDM. 对…有利<span class = "definition-english-text">to give you an advantage; (to be) better for you</span></span></p>
+<ul>
+<li>It’ll definitely <strong>be to our advantage</strong> to have someone who can go in and out freely.<span class = "chinese-translation-text">（有人可以自由进出对我们来说绝对是优势。） <span class = "instance-source">——死亡笔记 英文配音版</span></span></li>
+<li>I used to swim in college — the one place being tall actually <strong>worked to my advantage</strong>.<span class = "chinese-translation-text">（我上大学的时候经常游泳，在大学个子高对我来说很有利。）<span class = "instance-source">——英美剧集</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>to good/best <word>advantage</word></b></button><div class="hide-content"><p><span class = "hideBlockTitle">to <u>good&#x2F;best</u> advantage</span><span class = "definition-text">IDM. 最有利地；最有效地；使优点突出<span class = "definition-english-text">in a way that shows the best features of sth</span></span></p>
+<ul>
+<li>It showed <strong>to advantage</strong> the good shape of his figure.<span class = "chinese-translation-text">（这套衣服凸显了他的好身材。） <span class = "instance-source">——还乡</span></span></li>
+<li>There his faculties stagnate — they cannot develop or appear <strong>to advantage</strong>.<span class = "chinese-translation-text">（在这里他的才能会停滞不前，难以提升或有效施展出来。）<span class = "instance-source">——简 · 爱（原著）</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>use/turn sth to one's <word>advantage</word></b></button><div class="hide-content"><p><span class = "hideBlockTitle"><u>use&#x2F;turn</u><span class = "sb-sth">sth</span>to<span class = "sb-sth">one’s</span>advantage</span><span class = "definition-text">IDM. 最有利地；最有效地；使优点突出<span class = "definition-english-text">to use sth in order to benefit from it, especially when it might be expected to harm or damage you</span></span></p>
+<ul>
+<li>I’m going to <strong>use</strong> the rules of the Death Note <strong>to my advantage</strong>.<span class = "chinese-translation-text">（我打算利用死亡笔记的规则。） <span class = "instance-source">——死亡笔记 英文配音版</span></span></li>
+<li>I saw an opportunity to <strong>turn</strong> things <strong>to my advantage</strong>, and I did.<span class = "chinese-translation-text">（我看到有机会可以把事情转变成对我有利的条件，我就利用了这个机会。）<span class = "instance-source">——闪电侠 第一季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>an <word>alternative</word> to sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">an alternative to<span class = "sb-sth">sth</span></span><span class = "definition-text">n. 可供选择的事物；可供替代的事物<span class = "definition-english-text">sth that can be chosen instead of sth else</span></span></p>
+<ul>
+<li>Is there no <strong>alternative to</strong> retreat then?<span class = "chinese-translation-text">（除了撤退，没有别的路可以选了吗?） <span class = "instance-source">——罗马 第一季</span></span></li>
+<li>The only <strong>alternative to</strong> being taken prisoner was to die fighting.<span class = "chinese-translation-text">（不想当俘虏，唯一的选择就是誓死而战。）<span class = "instance-source">——淘金式巧攻大学英语词汇</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>adapt</word> (onself) to sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">adapt<span class = "sb-sth">(oneself)</span>to<span class = "sb-sth">sth</span></span><span class = "definition-text">vi. vt. 适应<span class = "definition-english-text">to change one’s ideas or behavior in order to deal with a new situation successfully</span></span></p>
+<ul>
+<li>Some animals <strong>adapt to</strong> new surroundings.<span class = "chinese-translation-text">（一些动物会适应新的环境。） <span class = "instance-source">——唐顿庄园 第三季</span></span></li>
+<li>I guess he had a lot on his mind trying to <strong>adapt to</strong> the life on the inside.<span class = "chinese-translation-text">（我猜他在想办法适应牢里的生活。） <span class = "instance-source">——肖申克的救赎</span></span></li>
+<li>Look, it’s an AI, an artificial intelligence. It can think for itself, <strong>adapt itself to</strong> new situations.<span class = "chinese-translation-text">（看，这是一个 A，人工智能。它本身能够自主思考，使自身适应新的情境。。）<span class = "instance-source">——星际之门亚特兰蒂斯 第二季</span></span></li>
+<li>When you go to a foreign country, you must <strong>adapt yourself to</strong> new manners and customs.<span class = "chinese-translation-text">（你去外国时，必须使自己适应新的风俗习惯。） <span class = "instance-source">——刘毅词汇5000</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>an alternative to sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">an alternative to<span class = "sb-sth">sth</span></span><span class = "definition-text">n. 可供选择的事物；可供替代的事物<span class = "definition-english-text">sth that can be chosen instead of sth else</span></span></p>
+<ul>
+<li>Is there no <strong>alternative to</strong> retreat then?<span class = "chinese-translation-text">（除了撤退，没有别的路可以选了吗?） <span class = "instance-source">——罗马 第一季</span></span></li>
+<li>The only <strong>alternative to</strong> being taken prisoner was to die fighting.<span class = "chinese-translation-text">（不想当俘虏，唯一的选择就是誓死而战。）<span class = "instance-source">——淘金式巧攻大学英语词汇</span></span></li>
+</ul>
+</div></div>
+</div>]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+      <tags>
+        <tag>Phrases</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>震惊！OSI参考模型终于有详细解读了！</title>
+    <url>/blog/OSI%E8%AF%A6%E8%A7%A3/</url>
+    <content><![CDATA[<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><h2 id="计算机网络物理层详解"><a href="#计算机网络物理层详解" class="headerlink" title="计算机网络物理层详解"></a>计算机网络物理层详解</h2><blockquote>
+<p>物理层是计算机网络体系结构（如OSI模型和TCP&#x2F;IP模型）中的最底层，是整个网络通信的物理基础。它关注的是如何在连接各种计算机的传输媒体上透明地传输原始的比特流（0和1）。</p>
+</blockquote>
+<h2 id="一、物理层的基本概念与核心作用"><a href="#一、物理层的基本概念与核心作用" class="headerlink" title="一、物理层的基本概念与核心作用"></a>一、物理层的基本概念与核心作用</h2><h3 id="1-1-基本概念"><a href="#1-1-基本概念" class="headerlink" title="1.1 基本概念"></a>1.1 基本概念</h3><blockquote>
+<p>物理层并<strong>不是指具体的传输媒体</strong>（如网线），而是指在传输媒体之上，为数据链路层提供<strong>比特流传输服务</strong>的层级。它规定了为建立、维持和拆除物理链路所需的机械、电气、功能和规程特性。简单来说，物理层确保数据链路层交付下来的比特序列，能够通过各种物理媒介（如双绞线、光纤、无线电波）准确地传送到接收端。</p>
+</blockquote>
+<h3 id="1-2-核心作用"><a href="#1-2-核心作用" class="headerlink" title="1.2 核心作用"></a>1.2 核心作用</h3><p>物理层的核心作用是实现<strong>比特流的透明传输</strong>。其具体任务可归纳为以下几点：</p>
+<ul>
+<li><strong>屏蔽差异</strong>：物理层要尽可能地屏蔽掉不同物理设备、传输媒体和通信手段的差异，使数据链路层感觉不到这些差异，从而只需关注本层的协议和服务。</li>
+<li><strong>提供比特传输能力</strong>：为数据链路层在一条物理的传输媒体上提供传送和接收比特流的能力，并解决物理连接的建立、维持和释放问题。</li>
+<li><strong>定义接口标准</strong>：规定与传输媒体接口的机械、电气、功能和规程四大特性，确保不同厂商的设备能够互联互通。</li>
+</ul>
+<h2 id="二、物理层接口的四大特性"><a href="#二、物理层接口的四大特性" class="headerlink" title="二、物理层接口的四大特性"></a>二、物理层接口的四大特性</h2><p>物理层协议通过定义接口的四个特性来完成其主要任务：</p>
+<table>
+<thead>
+<tr>
+<th align="left">特性</th>
+<th align="left">说明</th>
+<th align="left">通俗比喻</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>机械特性</strong></td>
+<td align="left">定义接口连接器的形状、尺寸、引脚数目和排列顺序、固定和锁定装置等。</td>
+<td align="left">类似于各种电源插头的形状和尺寸都有严格规定，确保插头能插入对应的插座。</td>
+</tr>
+<tr>
+<td align="left"><strong>电气特性</strong></td>
+<td align="left">规定线路上信号的电压范围、阻抗匹配、传输速率和传输距离的限制。</td>
+<td align="left">例如，规定多少伏特的电压代表二进制0，多少伏特代表1。</td>
+</tr>
+<tr>
+<td align="left"><strong>功能特性</strong></td>
+<td align="left">指明接口电缆上每条信号线的功能或用途。</td>
+<td align="left">如哪些是数据线、控制线、定时线或地线。</td>
+</tr>
+<tr>
+<td align="left"><strong>规程特性</strong></td>
+<td align="left">定义比特流传输过程中各种事件发生的先后顺序。</td>
+<td align="left">即物理连接的建立、维持、交换信息和拆除的流程。</td>
+</tr>
+</tbody></table>
+<h2 id="三、数据通信基础"><a href="#三、数据通信基础" class="headerlink" title="三、数据通信基础"></a>三、数据通信基础</h2><h3 id="3-1-数据通信模型"><a href="#3-1-数据通信模型" class="headerlink" title="3.1 数据通信模型"></a>3.1 数据通信模型</h3><p>一个典型的数据通信系统包含三个部分：</p>
+<ul>
+<li><strong>源系统</strong>：包括信源（产生数据的设备）和发送器（如调制解调器，将数字比特流转换为可在信道上传输的信号）。</li>
+<li><strong>传输系统</strong>：即传输媒介构成的信道网络。</li>
+<li><strong>目的系统</strong>：包括接收器（将接收到的信号转换回数字比特流）和信宿（接收数据的最终设备）。</li>
+</ul>
+<h3 id="3-2-通信方式"><a href="#3-2-通信方式" class="headerlink" title="3.2 通信方式"></a>3.2 通信方式</h3><p>根据信息交互方向，通信可分为三种基本方式：</p>
+<ul>
+<li><strong>单工通信</strong>：数据只能单向传输，如广播、电视。</li>
+<li><strong>半双工通信</strong>：数据可以双向传输，但不能同时进行，如对讲机。</li>
+<li><strong>全双工通信</strong>：数据可以双向同时传输，如电话通话。</li>
+</ul>
+<h3 id="3-3-信号与信道"><a href="#3-3-信号与信道" class="headerlink" title="3.3 信号与信道"></a>3.3 信号与信道</h3><ul>
+<li><strong>信号</strong>：是数据的电或电磁的表现形式，分为<strong>模拟信号</strong>（连续变化）和<strong>数字信号</strong>（离散取值）。</li>
+<li><strong>信道</strong>：指传送信号的通道，通常代表一个方向的传输媒介。信道本身不表示具体的物理设备。</li>
+</ul>
+<h3 id="3-4-编码与调制"><a href="#3-4-编码与调制" class="headerlink" title="3.4 编码与调制"></a>3.4 编码与调制</h3><p>由于信源产生的原始信号（基带信号）不一定适合在信道上直接传输，需要进行转换。</p>
+<ul>
+<li><p><strong>编码</strong>：将数字数据转换为数字信号的过程，使其适合在数字信道传输。常见编码方式包括：</p>
+<ul>
+<li><strong>不归零制 (NRZ)</strong>：正电平为1，负电平为0。缺点是无法自同步。</li>
+<li><strong>曼彻斯特编码 (Manchester)</strong>：每位中间有一次电平跳变。跳变既表示时钟，又表示数据。广泛应用于以太网。</li>
+<li><strong>差分曼彻斯特编码</strong>：每位中间的跳变仅提供时钟定时；每位开始时有无跳变表示数据。抗干扰性更强。</li>
+</ul>
+</li>
+<li><p><strong>调制</strong>：将数字数据转换为模拟信号的过程，使其适合在模拟信道（如电话线）传输。基本调制方法有：</p>
+<ul>
+<li><strong>调幅 (ASK)</strong>：通过改变载波的振幅来表示数据。</li>
+<li><strong>调频 (FSK)</strong>：通过改变载波的频率来表示数据。</li>
+<li><strong>调相 (PSK)</strong>：通过改变载波的相位来表示数据。</li>
+<li><strong>正交振幅调制 (QAM)</strong>：结合调幅和调相，可在一个码元上携带更多比特信息。</li>
+</ul>
+</li>
+</ul>
+<h2 id="四、信道容量与极限"><a href="#四、信道容量与极限" class="headerlink" title="四、信道容量与极限"></a>四、信道容量与极限</h2><blockquote>
+<p>信道传输数据的能力不是无限的，主要受限于两个著名定理：</p>
+</blockquote>
+<h3 id="4-1-奈奎斯特准则-Nyquist"><a href="#4-1-奈奎斯特准则-Nyquist" class="headerlink" title="4.1 奈奎斯特准则 (Nyquist)"></a>4.1 奈奎斯特准则 (Nyquist)</h3><p>在<strong>理想低通、无噪声信道</strong>下，为避免码间串扰，<strong>码元传输速率</strong>的上限值为：<br>$$<br>C &#x3D; 2W \log_2 M (\mathrm{Baud})<br>$$其中，<code>W</code> 是信道带宽(Hz)，<code>M</code> 是码元的离散状态数（进制数）。该准则表明，可以通过提高码元状态数（即让一个码元携带更多比特信息）来提升数据传输速率。</p>
+<h3 id="4-2-香农公式-Shannon"><a href="#4-2-香农公式-Shannon" class="headerlink" title="4.2 香农公式 (Shannon)"></a>4.2 香农公式 (Shannon)</h3><p>在<strong>带宽受限、有高斯白噪声</strong>的信道中，<strong>信息的极限传输速率</strong>（信道容量）为：<br>$$<br>C &#x3D; W \log_2 \left(1 + \frac{S}{N}\right) \text{(bit&#x2F;s)}<br>$$其中，<code>W</code> 为信道带宽(Hz)，<code>S/N</code> 为信噪比（信号平均功率&#x2F;噪声平均功率）。香农公式指出，信道的带宽越大或信噪比越高，信道的极限信息传输速率就越高。</p>
+<h2 id="五、传输媒体"><a href="#五、传输媒体" class="headerlink" title="五、传输媒体"></a>五、传输媒体</h2><p>传输媒体是数据传输的物理通路，分为两大类：</p>
+<h3 id="5-1-导向型传输媒体"><a href="#5-1-导向型传输媒体" class="headerlink" title="5.1 导向型传输媒体"></a>5.1 导向型传输媒体</h3><p>电磁波被引导沿固体媒体传播。</p>
+<ul>
+<li><strong>双绞线</strong>：最常见、最经济，分为屏蔽双绞线(STP)和无屏蔽双绞线(UTP)。</li>
+<li><strong>同轴电缆</strong>：抗干扰能力优于双绞线，用于有线电视等。</li>
+<li><strong>光纤</strong>：利用光脉冲传输，具有通信容量大、传输损耗小、抗电磁干扰强、保密性好等优点，是现代骨干网络的核心。分为多模光纤（近距离）和单模光纤（远距离）。</li>
+</ul>
+<h3 id="5-2-非导向型传输媒体"><a href="#5-2-非导向型传输媒体" class="headerlink" title="5.2 非导向型传输媒体"></a>5.2 非导向型传输媒体</h3><p>即自由空间，用于无线传输。</p>
+<ul>
+<li><strong>无线电波</strong>：穿透能力强，适用于移动通信。</li>
+<li><strong>微波</strong>：直线传播，需中继站接力或通过卫星通信。</li>
+<li><strong>红外线</strong>：短距离通信，如遥控器。</li>
+</ul>
+<h2 id="六、信道复用技术"><a href="#六、信道复用技术" class="headerlink" title="六、信道复用技术"></a>六、信道复用技术</h2><p>为使多个用户共享同一物理信道，提高信道利用率，采用复用技术：</p>
+<ul>
+<li><strong>频分复用 (FDM)</strong>：将总带宽划分为多个不重叠的子频带，每个用户独占一个频带。</li>
+<li><strong>时分复用 (TDM)</strong>：将时间划分为等长的时分复用帧，每个用户占用固定的时隙。</li>
+<li><strong>波分复用 (WDM)</strong>：光的频分复用，在一根光纤中同时传输多个不同波长的光载波信号。</li>
+<li><strong>码分复用 (CDM)</strong>：各用户使用经过特殊挑选的、相互正交的不同码型，可以在同一时间、同一频带上进行通信。</li>
+</ul>
+<h2 id="七、物理层设备"><a href="#七、物理层设备" class="headerlink" title="七、物理层设备"></a>七、物理层设备</h2><ul>
+<li><strong>中继器 (Repeater)</strong>：工作在物理层，主要功能是对信号进行<strong>再生和放大</strong>，以扩展网络的传输距离。</li>
+<li><strong>集线器 (Hub)</strong>：本质是一个<strong>多端口中继器</strong>。它对接收到的信号进行放大，然后广播到所有其他端口。所有设备共享同一带宽，属于冲突域的核心。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
+<p>物理层作为网络体系的基石，其核心价值在于为上层协议提供了一个<strong>统一、透明、可靠</strong>的比特流传输服务。通过定义精确的接口标准和信号规范，它成功地屏蔽了底层传输媒体的复杂性，使得数据链路层及以上的高层可以专注于路由、寻址、会话控制等逻辑功能，而无需关心数据是通过光纤、铜线还是无线电波进行传输。理解物理层是理解整个网络通信过程的第一步。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Datacom-Core Tech</category>
+      </categories>
+      <tags>
+        <tag>OSI Module</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Learn English with Video</title>
+    <url>/blog/Learn%20English%20with%20Video/</url>
+    <content><![CDATA[<h1 id="Nov-22-2025"><a href="#Nov-22-2025" class="headerlink" title="Nov 22, 2025"></a>Nov 22, 2025</h1><h2 id="walkie-talkie"><a href="#walkie-talkie" class="headerlink" title="walkie-talkie"></a>walkie-talkie</h2><p><strong>释义</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>n.</strong> 便携式双向无线电通信设备，通常手持，用于短距离无线通信（如对讲机、步话机）。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>n.</strong> （俚语）指爱说闲话或搬弄是非的人。</li>
+</ol>
+</li>
+</ul>
+<h2 id="Come-in"><a href="#Come-in" class="headerlink" title="Come in"></a>Come in</h2><p><strong>含义</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>进来；进入</strong>：表示从外部移动到内部的动作，常用于邀请或允许他人进入某空间。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>到达；抵达</strong>：指事物（如消息、火车、潮水等）到达或传来。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li><strong>（比赛中）获得名次</strong>：在竞赛中取得特定排名，例如获得第一名、第三名等。</li>
+</ol>
+</li>
+<li><ol start="4">
+<li><strong>流行起来；开始被使用</strong>：指时尚、新产品等开始流行或生效。</li>
+</ol>
+</li>
+<li><ol start="5">
+<li><strong>起作用；有份儿</strong>：表示在某事中发挥作用或参与其中。</li>
+</ol>
+</li>
+<li><ol start="6">
+<li><strong>有收入；定期收到钱款</strong>：指金钱方面的收入，如工资、收益等。</li>
+</ol>
+</li>
+<li><ol start="7">
+<li><strong>请求回应或回答</strong>: 相当于”please respond”或”answer me”。</li>
+</ol>
+</li>
+</ul>
+<p><strong>例句</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>表示”进来”</strong>：”I stepped aside so that she might <strong>come in</strong>.”（我往旁边走一步，以便她能进来。）</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>表示”到达”</strong>：”The winter timetable <strong>comes</strong> into effect <strong>in</strong> November.”（冬季时间表将于十一月生效。）</li>
+</ol>
+</li>
+<li><ol start="3">
+<li><strong>表示”获得名次”</strong>：”Jerry <strong>came in</strong> third in the Marathon.”（杰里在马拉松比赛中获得了第三名。）</li>
+</ol>
+</li>
+<li><ol start="4">
+<li><strong>表示”流行起来”</strong>：”This style of jeans <strong>came in</strong> quickly last year.”（这种款式的牛仔裤去年迅速流行起来。）</li>
+</ol>
+</li>
+<li><ol start="5">
+<li><strong>表示”起作用”</strong>：”This is where the argument <strong>comes in</strong>.”（这就是争论的起因。）</li>
+</ol>
+</li>
+<li><ol start="6">
+<li><strong>表示”有收入”</strong>：”He has a small amount of money <strong>coming in</strong> each month.”（他每个月有一小笔收入。）</li>
+</ol>
+</li>
+<li><ol start="7">
+<li><strong>表示”请求回应”</strong>：”Buzz lightyear to Star Command. <strong>Come in</strong>, Star Command.”（巴斯光年向星际指挥部请求回应。）</li>
+</ol>
+</li>
+</ul>
+<h2 id="Do-you-read-me"><a href="#Do-you-read-me" class="headerlink" title="Do you read me?"></a>Do you read me?</h2><p><strong>含义</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>你能听到我说话吗？</strong>：用于无线电通信中，询问对方是否能清楚地听到自己的声音。相当于”Can you hear me?”或”Are you receiving my message?”。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>你理解我的意思吗？</strong>：用于确认对方是否理解自己所传达的信息或指令。</li>
+</ol>
+</li>
+</ul>
+<p><strong>例句</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>用于无线电通信中</strong>：”<strong>Do you read me</strong>? Over.”（你能听到我说话吗？完毕。）</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>用于确认理解</strong>：”I’m going to explain the plan again, <strong>do you read me</strong>?”（我要再解释一遍计划，你明白我的意思吗？）</li>
+</ol>
+</li>
+</ul>
+<h2 id="groundbreaking"><a href="#groundbreaking" class="headerlink" title="groundbreaking"></a>groundbreaking</h2><p><strong>释义</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>adj.</strong> 开创性的，突破性的；指前所未有的、具有创新性的事物。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>n.</strong> 动工，破土（尤指建筑工程开始的仪式）。</li>
+</ol>
+</li>
+</ul>
+<p><strong>例句</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>adj.</strong> Annette Lareau’s <strong>groundbreaking</strong> research on the topic was published in her book <em>Unequal Childhoods</em>（安妮特·拉罗关于这一主题的开创性研究发表于她的著作《不平等的童年》中）。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>n.</strong> The <strong>groundbreaking</strong> for the new building will commence in the morning（新楼的破土仪式将于上午举行）。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li><strong>adj.</strong> With Toy Story, Pixar’s <strong>groundbreaking</strong> masterpiece that revolutionized flimaking as the first fully computer-animated feature film.（通过《玩具总动员》，皮克斯开创性的杰作，作为第一部完全由计算机动画制作的长片，彻底改变了电影制作。）</li>
+</ol>
+</li>
+</ul>
+<h2 id="blast"><a href="#blast" class="headerlink" title="blast"></a>blast</h2>]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+      <tags>
+        <tag>Learn English with Video</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HCIA题库笔记</title>
     <url>/blog/HCIA%E9%A2%98%E5%BA%93%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="华为路由常见报错"><a href="#华为路由常见报错" class="headerlink" title="华为路由常见报错"></a>华为路由常见报错</h1><blockquote>
@@ -1569,379 +2074,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Learn English Phrases</title>
-    <url>/blog/English%20Phrases/</url>
-    <content><![CDATA[<style type="text/css">
-  .button-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-items: flex-start;
-  }
-
-  .hide-block {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 1s cubic-bezier(0.3, 0, 0.15, 1), margin-bottom 1s cubic-bezier(0.3, 0, 0.15, 1);
-    margin: 0 8px 32px 0;
-  }
-
-  .hide-block.expanded {
-    grid-template-rows: 1fr;
-  }
-
-  .hide-button {
-    height: 33px;
-  }
-
-  .hide-button > * {
-    font-size: 20px;
-  }
-
-  word {
-    color: black;
-  }
-
-  .hide-content {
-    overflow: hidden;
-    padding-top: 0;
-    transition: padding-top 1s ease-out;
-  }
-
-  .hide-block.expanded .hide-content {
-    padding-top: 12px;
-  }
-
-  .hide-content {
-    overflow: hidden;
-    transition: padding-top 1s cubic-bezier(0.3, 0, 0.15, 1);
-  }
-
-  .hide-block.expanded .hide-content > * {
-    animation: fadeIn 1s ease-in forwards;
-  }
-
-  .hideBlockTitle {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0 20px 0;
-    white-space: nowrap;
-  }
-
-  .sb-sth {
-    margin: 0 10px;
-    color: grey;
-    font-size: 20px;
-  }
-
-  .definition-text {
-    font-size: 17px;
-    margin: 0 0 0 40px;
-    white-space: normal;
-    display: inline-block;
-    max-width: 100%;
-  }
-
-  .definition-english-text {
-    margin: 0 0 0 20px;
-    display: inline-block;
-  }
-
-  li {
-    font-size: 17px;
-  }
-
-  .chinese-translation-text {
-    font-size: 15px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .instance-source {
-    color: #666666;
-    font-style: italic;
-    white-space: normal;
-    word-wrap: break-word;
-    max-width: 100%;
-    margin-left: auto;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-</style>
-
-<div class = "button-container">
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>bump</word> into sb/sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">bump into<span class = "sb-sth"><u>sb&#x2F;sth</u></span></span><span class = "definition-text">vi. vt. 猛碰，撞<span class = "definition-english-text">to hit or knock against sth</span></span></p>
-<ul>
-<li>She stepped backward and <strong>bumped into</strong> someone.<span class = "chinese-translation-text">（她踉跄后退，结果撞到了别人。）<span class = "instance-source">——权力的游戏 有声书</span></span></li>
-<li>If I move slowly, I won’t <strong>bump into</strong> things.<span class = "chinese-translation-text">（如果我走得慢点，就不会撞到东西了。）<span class = "instance-source">——小猪佩奇 第一季</span></span></li>
-</ul>
-</div></div>
-  
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>bump</word> against/on sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">bump <u>against&#x2F;on</u><span class = "sb-sth">sth</span></span><span class = "definition-text">vi. vt. 猛碰，撞<span class = "definition-english-text">to hit or knock against sth</span></span></p>
-<ul>
-<li>I don’t want to <strong>bump</strong> her head <strong>against</strong> the door, you know, pinch her with the seat belt.<span class = "chinese-translation-text">（我不想又把她头撞到门上了，或者说，绑安全带的时候夹到她。）<span class = "instance-source">——摩登家庭 第一季</span></span></li>
-<li>Remember the time you fell off your bike or <strong>bumped</strong> your head <strong>on</strong> a sharp corner?<span class = "chinese-translation-text">（还记得你从自行车上摔下或一头撞到尖角之时吗？）<span class = "instance-source">——TED-Ed</span></span></li>
-</ul>
-</div></div>
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>interact</word> with sb<sup>1</sup>/sth<sup>2</sup></b></button><div class="hide-content"><p><span class = "hideBlockTitle">interact with<span class = "sb-sth">sb</span></span><span class = "definition-text">vi. 相互交流，相互沟通<span class = "definition-english-text">when people interact with each other or interact, they communicate as they work or spend time together</span></span></p>
-<ul>
-<li>Is he the only person you <strong>interact with</strong>?<span class = "chinese-translation-text">（他是唯一和你有交流的人吗？）<span class = "instance-source">——摩登家庭 第一季</span></span></li>
-<li>Number 6: he never <strong>interacts with</strong> youon social media.<span class = "chinese-translation-text">（第六点，他从来不在社交媒体上和你互动。）<span class = "instance-source">——生活百科</span></span></li>
-<li>He doesn’t <strong>interact</strong> much <strong>with</strong> others. He keeps to himself a lot.<span class = "chinese-translation-text">（他不怎么和其他人交流，有什么事都藏在心里。）<span class = "instance-source">——贝茨旅馆 第一季</span></span></li>
-</ul>
-<p><span class = "hideBlockTitle">interact with<span class = "sb-sth">sth</span></span><span class = "definition-text">vi. 相互交流，相互沟通<span class = "definition-english-text">to act on or have an effect on each other</span></span></p>
-<ul>
-<li>Still, it is just a story of how electrons <strong>interact with</strong> light.<span class = "chinese-translation-text">（然而，光与电子的相互作用仅仅是一个故事。） <span class = "instance-source">——VOA 慢速-自然探索</span></span></li>
-<li>It’s all about how one substance <strong>interacts with</strong> another to give us something new.<span class = "chinese-translation-text">（其本质在于两种物质发生化学反应从而生成新物质。）<span class = "instance-source">——化学公开课</span></span></li>
-<li>And this looks at how energy <strong>interacts with</strong> electrons in atoms.<span class = "chinese-translation-text">（这能检测能量与原子中电子间的相互作用。）<span class = "instance-source">——化学公开课</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>interaction</word> with/between sb</b></button><div class="hide-content"><p><span class = "hideBlockTitle">interaction <u>with&#x2F;between</u><span class = "sb-sth">sb</span></span><span class = "definition-text">n. 交流，沟通<span class = "definition-english-text">the activity of talking to other people, and the way that people react to each other</span></span></p>
-<ul>
-<li>He needs social <strong>interaction with</strong> his peers.<span class = "chinese-translation-text">（他需要和同龄人进行社交。） <span class = "instance-source">——无耻家庭 美版 第六季</span></span></li>
-<li>And was that your first <strong>interaction with</strong> Frank since he got back?<span class = "chinese-translation-text">（他回来后这是你第一次见他吗?）<span class = "instance-source">——曼哈顿计划 第二季</span></span></li>
-<li>Their biggest concern: limited <strong>interaction between</strong> teachers and students.<span class = "chinese-translation-text">（他们最大的担忧是，师生之间受限制的互动。）<span class = "instance-source">——科学美国人-60秒科学</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>interaction</word> with/between/of sb/sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">interaction <u>with&#x2F;between</u><span class = "sb-sth"><u>sb&#x2F;sth</u></span></span><span class = "definition-text">n. 相互影响<span class = "definition-english-text">the process by which two or more affect each other or change each other</span></span></p>
-<ul>
-<li>What was your <strong>interaction with</strong> the environment?<span class = "chinese-translation-text">（你与周围的生活环境是如何相互影响的?） <span class = "instance-source">——长生不老</span></span></li>
-<li>Inside, it’s no more than the harmonious <strong>interaction between</strong> human and nature.<span class = "chinese-translation-text">（说穿了，无非是人与天地万物之间的和谐相处。）<span class = "instance-source">——舌尖上的中国</span></span></li>
-<li>The <strong>interaction of</strong> the chemicals in the poison is not predictable.<span class = "chinese-translation-text">（毒药中化合物间的相互作用不可预测。）<span class = "instance-source">——迷离档案 危机边缘 第四季</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b>in <word>addition</word> (to sb/sth)</b></button><div class="hide-content"><p><span class = "hideBlockTitle">in addition<span class = "sb-sth">(to <u>sb&#x2F;sth</u>)</span></span><span class = "definition-text">IDM. 此外；除…以外<span class = "definition-english-text">used when you want to introduce an additional point or relevant fact</span></span></p>
-<ul>
-<li>Please submit your supporting documents. <strong>In addition</strong>, you will be required to pay an application fee.<span class = "chinese-translation-text">（请提交你的证明文件。此外，你将需要支付申请费。） <span class = "instance-source">——你问我答</span></span></li>
-<li>I can sing, too, you know, <strong>in addition to</strong> the ice skating.<span class = "chinese-translation-text">（除了滑冰，我还会唱歌。）<span class = "instance-source">——女子监狱 第一季</span></span></li>
-<li><strong>In addition to</strong> being a boss, I am also a waitress.<span class = "chinese-translation-text">（我除了是老板之外，还是一名服务员。）<span class = "instance-source">——破产姐妹 第二季</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b>the <word>addition</word> of sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">the addition of<span class = "sb-sth">sth</span></span><span class = "definition-text">n. 增添，添加<span class = "definition-english-text">the act of adding one thing to another</span></span></p>
-<ul>
-<li><strong>The addition of</strong> a child would disrupt even the happiest of couples.<span class = "chinese-translation-text">（有了孩子，就算最幸福的伴侣也会受到影响。） <span class = "instance-source">——犯罪心理 第十季</span></span></li>
-<li>The British Empire expanded rapidly with <strong>the addition of</strong> Borneo, Burma and New Guinea.<span class = "chinese-translation-text">（随着婆罗洲、缅甸和新几内亚的加入，大英帝国迅速扩张。）<span class = "instance-source">——黑猫系列读物</span></span></li>
-<li>However, <strong>the addition of</strong> water to the land or soil may cause problems in some areas.<span class = "chinese-translation-text">（然而在有的地区，田地里水流的添加会造成问题。）<span class = "instance-source">——VOA慢速-农业报道</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>advance</word> (on sth)</b></button><div class="hide-content"><p><span class = "hideBlockTitle">advance<span class = "sb-sth">(on sth)</span></span><span class = "definition-text">n<sub>1</sub>. 预付款<span class = "definition-english-text">money which is paid to sb before the usual time of payment</span></span></p>
-<ul>
-<li>I need an <strong>advance on</strong> my pay.<span class = "chinese-translation-text">（我需要提前预支些钱。） <span class = "instance-source">——亲密治疗</span></span></li>
-<li>I had to give Howie an <strong>advance on</strong> his allowance.<span class = "chinese-translation-text">（我只好让华仔预支他的零用钱。）<span class = "instance-source">——生活大爆炸 第七季</span></span></li>
-</ul>
-<p><span class = "definition-text">n<sub>2</sub>. （价格、价值的）上涨，上升<span class = "definition-english-text">a rise in the price, value, of sth</span></span></p>
-<ul>
-<li>Any <strong>advance on</strong> 22’000? Anyone?<span class = "chinese-translation-text">（还有比22000更高的出价吗?还有吗?） <span class = "instance-source">——碟中谍5</span></span></li>
-<li>Chumhum has agreed to an <strong>advance on</strong> our fees. It was Cary’s case.<span class = "chinese-translation-text">（Chumhum网已经同意提高代理费。这是Cary的案子。）<span class = "instance-source">——傲骨贤妻 第六季</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b>a <word>advantage</word> over sb</b></button><div class="hide-content"><p><span class = "hideBlockTitle">a advantage over<span class = "sb-sth">sb</span></span><span class = "definition-text">n. 有利条件，优势<span class = "definition-english-text">something that puts you in a better position than other people</span></span></p>
-<ul>
-<li>What gives you <strong>a</strong> distinct <strong>advantage over</strong> all the other capable people here?<span class = "chinese-translation-text">（相比其他有能力的人，你有什么明显的优势？） <span class = "instance-source">——亿万 第二季</span></span></li>
-<li>You were always the better engineer. But I do have <strong>one advantage over</strong> you.<span class = "chinese-translation-text">（你当工程师一直比我高明，但我确实有一项优势。）<span class = "instance-source">——疑犯追踪 第二季</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b>take <word>advantage</word> of sth<sup>1</sup>/sb<sup>2</sup></b></button><div class="hide-content"><p><span class = "hideBlockTitle">take advantage of<span class = "sb-sth">sth</span></span><span class = "definition-text">IDM. 利用<span class = "definition-english-text">if you take advantage of sth, you make good use of it while you can</span></span></p>
-<ul>
-<li>Glad to see you’re <strong>taking advantage of</strong> the opportunities offered.<span class = "chinese-translation-text">（很高兴看到你利用了提供给你的机会。）<span class = "instance-source">——英美剧集</span></span></li>
-<li>Just <strong>taking advantage of</strong> the local resources.<span class = "chinese-translation-text">（我只是在利用本地资源。）<span class = "instance-source">——神秘博士 第七季</span></span></li>
-<li>Harry <strong>took advantage of</strong> the temporary silence to eat more breakfast.<span class = "chinese-translation-text">（哈利利用这短暂的沉默，加紧吃他的早餐。）<span class = "instance-source">——哈利波特与混血王子</span></span></li>
-</ul>
-<p><span class = "hideBlockTitle">take advantage of<span class = "sb-sth">sb</span></span><span class = "definition-text">IDM. 占…的便宜；欺骗；捉弄<span class = "definition-english-text">if sb takes advantage of you, they treat you unfairly for their own benefit</span></span></p>
-<ul>
-<li>Frank’s just too soft hearted, and people <strong>take advantage of</strong> him.<span class = "chinese-translation-text">（弗兰克就是心太软了，人们利用他这一点来占他的便宜。） <span class = "instance-source">——《飘》</span></span></li>
-<li>He thinks he can <strong>take advantage of</strong> you because you’re a woman.<span class = "chinese-translation-text">（他觉得你是女人所以就可以占你的便宜。）<span class = "instance-source">——我为喜剧狂 第三季</span></span></li>
-<li>I went down to the free clinic and I <strong>took</strong> full <strong>advantage of</strong> the “free” part for you.<span class = "chinese-translation-text">（我去了免费诊所，并为你大大占了它“免费”的便宜。）<span class = "instance-source">——衰女翻身 第一季</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b>be/work to one's <word>advantage</word></b></button><div class="hide-content"><p><span class = "hideBlockTitle"><u>be&#x2F;work</u> to<span class = "sb-sth">one’s</span>advantage</span><span class = "definition-text">IDM. 对…有利<span class = "definition-english-text">to give you an advantage; (to be) better for you</span></span></p>
-<ul>
-<li>It’ll definitely <strong>be to our advantage</strong> to have someone who can go in and out freely.<span class = "chinese-translation-text">（有人可以自由进出对我们来说绝对是优势。） <span class = "instance-source">——死亡笔记 英文配音版</span></span></li>
-<li>I used to swim in college — the one place being tall actually <strong>worked to my advantage</strong>.<span class = "chinese-translation-text">（我上大学的时候经常游泳，在大学个子高对我来说很有利。）<span class = "instance-source">——英美剧集</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b>to good/best <word>advantage</word></b></button><div class="hide-content"><p><span class = "hideBlockTitle">to <u>good&#x2F;best</u> advantage</span><span class = "definition-text">IDM. 最有利地；最有效地；使优点突出<span class = "definition-english-text">in a way that shows the best features of sth</span></span></p>
-<ul>
-<li>It showed <strong>to advantage</strong> the good shape of his figure.<span class = "chinese-translation-text">（这套衣服凸显了他的好身材。） <span class = "instance-source">——还乡</span></span></li>
-<li>There his faculties stagnate — they cannot develop or appear <strong>to advantage</strong>.<span class = "chinese-translation-text">（在这里他的才能会停滞不前，难以提升或有效施展出来。）<span class = "instance-source">——简 · 爱（原著）</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b>use/turn sth to one's <word>advantage</word></b></button><div class="hide-content"><p><span class = "hideBlockTitle"><u>use&#x2F;turn</u><span class = "sb-sth">sth</span>to<span class = "sb-sth">one’s</span>advantage</span><span class = "definition-text">IDM. 最有利地；最有效地；使优点突出<span class = "definition-english-text">to use sth in order to benefit from it, especially when it might be expected to harm or damage you</span></span></p>
-<ul>
-<li>I’m going to <strong>use</strong> the rules of the Death Note <strong>to my advantage</strong>.<span class = "chinese-translation-text">（我打算利用死亡笔记的规则。） <span class = "instance-source">——死亡笔记 英文配音版</span></span></li>
-<li>I saw an opportunity to <strong>turn</strong> things <strong>to my advantage</strong>, and I did.<span class = "chinese-translation-text">（我看到有机会可以把事情转变成对我有利的条件，我就利用了这个机会。）<span class = "instance-source">——闪电侠 第一季</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b>an <word>alternative</word> to sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">an alternative to<span class = "sb-sth">sth</span></span><span class = "definition-text">n. 可供选择的事物；可供替代的事物<span class = "definition-english-text">sth that can be chosen instead of sth else</span></span></p>
-<ul>
-<li>Is there no <strong>alternative to</strong> retreat then?<span class = "chinese-translation-text">（除了撤退，没有别的路可以选了吗?） <span class = "instance-source">——罗马 第一季</span></span></li>
-<li>The only <strong>alternative to</strong> being taken prisoner was to die fighting.<span class = "chinese-translation-text">（不想当俘虏，唯一的选择就是誓死而战。）<span class = "instance-source">——淘金式巧攻大学英语词汇</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>adapt</word> (onself) to sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">adapt<span class = "sb-sth">(oneself)</span>to<span class = "sb-sth">sth</span></span><span class = "definition-text">vi. vt. 适应<span class = "definition-english-text">to change one’s ideas or behavior in order to deal with a new situation successfully</span></span></p>
-<ul>
-<li>Some animals <strong>adapt to</strong> new surroundings.<span class = "chinese-translation-text">（一些动物会适应新的环境。） <span class = "instance-source">——唐顿庄园 第三季</span></span></li>
-<li>I guess he had a lot on his mind trying to <strong>adapt to</strong> the life on the inside.<span class = "chinese-translation-text">（我猜他在想办法适应牢里的生活。） <span class = "instance-source">——肖申克的救赎</span></span></li>
-<li>Look, it’s an AI, an artificial intelligence. It can think for itself, <strong>adapt itself to</strong> new situations.<span class = "chinese-translation-text">（看，这是一个 A，人工智能。它本身能够自主思考，使自身适应新的情境。。）<span class = "instance-source">——星际之门亚特兰蒂斯 第二季</span></span></li>
-<li>When you go to a foreign country, you must <strong>adapt yourself to</strong> new manners and customs.<span class = "chinese-translation-text">（你去外国时，必须使自己适应新的风俗习惯。） <span class = "instance-source">——刘毅词汇5000</span></span></li>
-</ul>
-</div></div>
-
-  <div class="hide-block"><button type="button" class="hide-button" style=""><b>an alternative to sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">an alternative to<span class = "sb-sth">sth</span></span><span class = "definition-text">n. 可供选择的事物；可供替代的事物<span class = "definition-english-text">sth that can be chosen instead of sth else</span></span></p>
-<ul>
-<li>Is there no <strong>alternative to</strong> retreat then?<span class = "chinese-translation-text">（除了撤退，没有别的路可以选了吗?） <span class = "instance-source">——罗马 第一季</span></span></li>
-<li>The only <strong>alternative to</strong> being taken prisoner was to die fighting.<span class = "chinese-translation-text">（不想当俘虏，唯一的选择就是誓死而战。）<span class = "instance-source">——淘金式巧攻大学英语词汇</span></span></li>
-</ul>
-</div></div>
-</div>]]></content>
-      <categories>
-        <category>English</category>
-      </categories>
-      <tags>
-        <tag>Phrases</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>震惊！OSI参考模型终于有详细解读了！</title>
-    <url>/blog/OSI%E8%AF%A6%E8%A7%A3/</url>
-    <content><![CDATA[<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><h2 id="计算机网络物理层详解"><a href="#计算机网络物理层详解" class="headerlink" title="计算机网络物理层详解"></a>计算机网络物理层详解</h2><blockquote>
-<p>物理层是计算机网络体系结构（如OSI模型和TCP&#x2F;IP模型）中的最底层，是整个网络通信的物理基础。它关注的是如何在连接各种计算机的传输媒体上透明地传输原始的比特流（0和1）。</p>
-</blockquote>
-<h2 id="一、物理层的基本概念与核心作用"><a href="#一、物理层的基本概念与核心作用" class="headerlink" title="一、物理层的基本概念与核心作用"></a>一、物理层的基本概念与核心作用</h2><h3 id="1-1-基本概念"><a href="#1-1-基本概念" class="headerlink" title="1.1 基本概念"></a>1.1 基本概念</h3><blockquote>
-<p>物理层并<strong>不是指具体的传输媒体</strong>（如网线），而是指在传输媒体之上，为数据链路层提供<strong>比特流传输服务</strong>的层级。它规定了为建立、维持和拆除物理链路所需的机械、电气、功能和规程特性。简单来说，物理层确保数据链路层交付下来的比特序列，能够通过各种物理媒介（如双绞线、光纤、无线电波）准确地传送到接收端。</p>
-</blockquote>
-<h3 id="1-2-核心作用"><a href="#1-2-核心作用" class="headerlink" title="1.2 核心作用"></a>1.2 核心作用</h3><p>物理层的核心作用是实现<strong>比特流的透明传输</strong>。其具体任务可归纳为以下几点：</p>
-<ul>
-<li><strong>屏蔽差异</strong>：物理层要尽可能地屏蔽掉不同物理设备、传输媒体和通信手段的差异，使数据链路层感觉不到这些差异，从而只需关注本层的协议和服务。</li>
-<li><strong>提供比特传输能力</strong>：为数据链路层在一条物理的传输媒体上提供传送和接收比特流的能力，并解决物理连接的建立、维持和释放问题。</li>
-<li><strong>定义接口标准</strong>：规定与传输媒体接口的机械、电气、功能和规程四大特性，确保不同厂商的设备能够互联互通。</li>
-</ul>
-<h2 id="二、物理层接口的四大特性"><a href="#二、物理层接口的四大特性" class="headerlink" title="二、物理层接口的四大特性"></a>二、物理层接口的四大特性</h2><p>物理层协议通过定义接口的四个特性来完成其主要任务：</p>
-<table>
-<thead>
-<tr>
-<th align="left">特性</th>
-<th align="left">说明</th>
-<th align="left">通俗比喻</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>机械特性</strong></td>
-<td align="left">定义接口连接器的形状、尺寸、引脚数目和排列顺序、固定和锁定装置等。</td>
-<td align="left">类似于各种电源插头的形状和尺寸都有严格规定，确保插头能插入对应的插座。</td>
-</tr>
-<tr>
-<td align="left"><strong>电气特性</strong></td>
-<td align="left">规定线路上信号的电压范围、阻抗匹配、传输速率和传输距离的限制。</td>
-<td align="left">例如，规定多少伏特的电压代表二进制0，多少伏特代表1。</td>
-</tr>
-<tr>
-<td align="left"><strong>功能特性</strong></td>
-<td align="left">指明接口电缆上每条信号线的功能或用途。</td>
-<td align="left">如哪些是数据线、控制线、定时线或地线。</td>
-</tr>
-<tr>
-<td align="left"><strong>规程特性</strong></td>
-<td align="left">定义比特流传输过程中各种事件发生的先后顺序。</td>
-<td align="left">即物理连接的建立、维持、交换信息和拆除的流程。</td>
-</tr>
-</tbody></table>
-<h2 id="三、数据通信基础"><a href="#三、数据通信基础" class="headerlink" title="三、数据通信基础"></a>三、数据通信基础</h2><h3 id="3-1-数据通信模型"><a href="#3-1-数据通信模型" class="headerlink" title="3.1 数据通信模型"></a>3.1 数据通信模型</h3><p>一个典型的数据通信系统包含三个部分：</p>
-<ul>
-<li><strong>源系统</strong>：包括信源（产生数据的设备）和发送器（如调制解调器，将数字比特流转换为可在信道上传输的信号）。</li>
-<li><strong>传输系统</strong>：即传输媒介构成的信道网络。</li>
-<li><strong>目的系统</strong>：包括接收器（将接收到的信号转换回数字比特流）和信宿（接收数据的最终设备）。</li>
-</ul>
-<h3 id="3-2-通信方式"><a href="#3-2-通信方式" class="headerlink" title="3.2 通信方式"></a>3.2 通信方式</h3><p>根据信息交互方向，通信可分为三种基本方式：</p>
-<ul>
-<li><strong>单工通信</strong>：数据只能单向传输，如广播、电视。</li>
-<li><strong>半双工通信</strong>：数据可以双向传输，但不能同时进行，如对讲机。</li>
-<li><strong>全双工通信</strong>：数据可以双向同时传输，如电话通话。</li>
-</ul>
-<h3 id="3-3-信号与信道"><a href="#3-3-信号与信道" class="headerlink" title="3.3 信号与信道"></a>3.3 信号与信道</h3><ul>
-<li><strong>信号</strong>：是数据的电或电磁的表现形式，分为<strong>模拟信号</strong>（连续变化）和<strong>数字信号</strong>（离散取值）。</li>
-<li><strong>信道</strong>：指传送信号的通道，通常代表一个方向的传输媒介。信道本身不表示具体的物理设备。</li>
-</ul>
-<h3 id="3-4-编码与调制"><a href="#3-4-编码与调制" class="headerlink" title="3.4 编码与调制"></a>3.4 编码与调制</h3><p>由于信源产生的原始信号（基带信号）不一定适合在信道上直接传输，需要进行转换。</p>
-<ul>
-<li><p><strong>编码</strong>：将数字数据转换为数字信号的过程，使其适合在数字信道传输。常见编码方式包括：</p>
-<ul>
-<li><strong>不归零制 (NRZ)</strong>：正电平为1，负电平为0。缺点是无法自同步。</li>
-<li><strong>曼彻斯特编码 (Manchester)</strong>：每位中间有一次电平跳变。跳变既表示时钟，又表示数据。广泛应用于以太网。</li>
-<li><strong>差分曼彻斯特编码</strong>：每位中间的跳变仅提供时钟定时；每位开始时有无跳变表示数据。抗干扰性更强。</li>
-</ul>
-</li>
-<li><p><strong>调制</strong>：将数字数据转换为模拟信号的过程，使其适合在模拟信道（如电话线）传输。基本调制方法有：</p>
-<ul>
-<li><strong>调幅 (ASK)</strong>：通过改变载波的振幅来表示数据。</li>
-<li><strong>调频 (FSK)</strong>：通过改变载波的频率来表示数据。</li>
-<li><strong>调相 (PSK)</strong>：通过改变载波的相位来表示数据。</li>
-<li><strong>正交振幅调制 (QAM)</strong>：结合调幅和调相，可在一个码元上携带更多比特信息。</li>
-</ul>
-</li>
-</ul>
-<h2 id="四、信道容量与极限"><a href="#四、信道容量与极限" class="headerlink" title="四、信道容量与极限"></a>四、信道容量与极限</h2><blockquote>
-<p>信道传输数据的能力不是无限的，主要受限于两个著名定理：</p>
-</blockquote>
-<h3 id="4-1-奈奎斯特准则-Nyquist"><a href="#4-1-奈奎斯特准则-Nyquist" class="headerlink" title="4.1 奈奎斯特准则 (Nyquist)"></a>4.1 奈奎斯特准则 (Nyquist)</h3><p>在<strong>理想低通、无噪声信道</strong>下，为避免码间串扰，<strong>码元传输速率</strong>的上限值为：<br>$$<br>C &#x3D; 2W \log_2 M (\mathrm{Baud})<br>$$其中，<code>W</code> 是信道带宽(Hz)，<code>M</code> 是码元的离散状态数（进制数）。该准则表明，可以通过提高码元状态数（即让一个码元携带更多比特信息）来提升数据传输速率。</p>
-<h3 id="4-2-香农公式-Shannon"><a href="#4-2-香农公式-Shannon" class="headerlink" title="4.2 香农公式 (Shannon)"></a>4.2 香农公式 (Shannon)</h3><p>在<strong>带宽受限、有高斯白噪声</strong>的信道中，<strong>信息的极限传输速率</strong>（信道容量）为：<br>$$<br>C &#x3D; W \log_2 \left(1 + \frac{S}{N}\right) \text{(bit&#x2F;s)}<br>$$其中，<code>W</code> 为信道带宽(Hz)，<code>S/N</code> 为信噪比（信号平均功率&#x2F;噪声平均功率）。香农公式指出，信道的带宽越大或信噪比越高，信道的极限信息传输速率就越高。</p>
-<h2 id="五、传输媒体"><a href="#五、传输媒体" class="headerlink" title="五、传输媒体"></a>五、传输媒体</h2><p>传输媒体是数据传输的物理通路，分为两大类：</p>
-<h3 id="5-1-导向型传输媒体"><a href="#5-1-导向型传输媒体" class="headerlink" title="5.1 导向型传输媒体"></a>5.1 导向型传输媒体</h3><p>电磁波被引导沿固体媒体传播。</p>
-<ul>
-<li><strong>双绞线</strong>：最常见、最经济，分为屏蔽双绞线(STP)和无屏蔽双绞线(UTP)。</li>
-<li><strong>同轴电缆</strong>：抗干扰能力优于双绞线，用于有线电视等。</li>
-<li><strong>光纤</strong>：利用光脉冲传输，具有通信容量大、传输损耗小、抗电磁干扰强、保密性好等优点，是现代骨干网络的核心。分为多模光纤（近距离）和单模光纤（远距离）。</li>
-</ul>
-<h3 id="5-2-非导向型传输媒体"><a href="#5-2-非导向型传输媒体" class="headerlink" title="5.2 非导向型传输媒体"></a>5.2 非导向型传输媒体</h3><p>即自由空间，用于无线传输。</p>
-<ul>
-<li><strong>无线电波</strong>：穿透能力强，适用于移动通信。</li>
-<li><strong>微波</strong>：直线传播，需中继站接力或通过卫星通信。</li>
-<li><strong>红外线</strong>：短距离通信，如遥控器。</li>
-</ul>
-<h2 id="六、信道复用技术"><a href="#六、信道复用技术" class="headerlink" title="六、信道复用技术"></a>六、信道复用技术</h2><p>为使多个用户共享同一物理信道，提高信道利用率，采用复用技术：</p>
-<ul>
-<li><strong>频分复用 (FDM)</strong>：将总带宽划分为多个不重叠的子频带，每个用户独占一个频带。</li>
-<li><strong>时分复用 (TDM)</strong>：将时间划分为等长的时分复用帧，每个用户占用固定的时隙。</li>
-<li><strong>波分复用 (WDM)</strong>：光的频分复用，在一根光纤中同时传输多个不同波长的光载波信号。</li>
-<li><strong>码分复用 (CDM)</strong>：各用户使用经过特殊挑选的、相互正交的不同码型，可以在同一时间、同一频带上进行通信。</li>
-</ul>
-<h2 id="七、物理层设备"><a href="#七、物理层设备" class="headerlink" title="七、物理层设备"></a>七、物理层设备</h2><ul>
-<li><strong>中继器 (Repeater)</strong>：工作在物理层，主要功能是对信号进行<strong>再生和放大</strong>，以扩展网络的传输距离。</li>
-<li><strong>集线器 (Hub)</strong>：本质是一个<strong>多端口中继器</strong>。它对接收到的信号进行放大，然后广播到所有其他端口。所有设备共享同一带宽，属于冲突域的核心。</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
-<p>物理层作为网络体系的基石，其核心价值在于为上层协议提供了一个<strong>统一、透明、可靠</strong>的比特流传输服务。通过定义精确的接口标准和信号规范，它成功地屏蔽了底层传输媒体的复杂性，使得数据链路层及以上的高层可以专注于路由、寻址、会话控制等逻辑功能，而无需关心数据是通过光纤、铜线还是无线电波进行传输。理解物理层是理解整个网络通信过程的第一步。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Datacom-Core Tech</category>
-      </categories>
-      <tags>
-        <tag>OSI Module</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>属于私のHCIA在线题库</title>
     <url>/blog/HCIA%E5%9C%A8%E7%BA%BF%E9%A2%98%E5%BA%93/</url>
     <content><![CDATA[<h1 id="1-60"><a href="#1-60" class="headerlink" title="1-60"></a>1-60</h1><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/1.png"></h2><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/2.png"></h2><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/3.png"></h2><h2 id="-3"><a href="#-3" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/4.png"></h2><h2 id="-4"><a href="#-4" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/5.png"></h2><h2 id="-5"><a href="#-5" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/6.png"></h2><h2 id="-6"><a href="#-6" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/7.png"></h2><h2 id="-7"><a href="#-7" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/8.png"></h2><h2 id="-8"><a href="#-8" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/9.png"></h2><h2 id="-9"><a href="#-9" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/10.png"></h2><h2 id="-10"><a href="#-10" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/11.png"></h2><h2 id="-11"><a href="#-11" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/12.png"></h2><h2 id="-12"><a href="#-12" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/13.png"></h2><h2 id="-13"><a href="#-13" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/14.png"></h2><h2 id="-14"><a href="#-14" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/15.png"></h2><h2 id="-15"><a href="#-15" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/16.png"></h2><h2 id="-16"><a href="#-16" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/17.png"></h2><h2 id="-17"><a href="#-17" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/18.png"></h2><h2 id="-18"><a href="#-18" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/19.png"></h2><h2 id="-19"><a href="#-19" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/20.png"></h2><h2 id="-20"><a href="#-20" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/21.png"></h2><h2 id="-21"><a href="#-21" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/22.png"></h2><h2 id="-22"><a href="#-22" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/23.png"></h2><h2 id="-23"><a href="#-23" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/24.png"></h2><h2 id="-24"><a href="#-24" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/25.png"></h2><h2 id="-25"><a href="#-25" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/26.png"></h2><h2 id="-26"><a href="#-26" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/27.png"></h2><h2 id="-27"><a href="#-27" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/28.png"></h2><h2 id="-28"><a href="#-28" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/29.png"></h2><h2 id="-29"><a href="#-29" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/30.png"></h2><h2 id="-30"><a href="#-30" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/31.png"></h2><h2 id="-31"><a href="#-31" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/32.png"></h2><h2 id="-32"><a href="#-32" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/33.png"></h2><h2 id="-33"><a href="#-33" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/34.png"></h2><h2 id="-34"><a href="#-34" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/35.png"></h2><h2 id="-35"><a href="#-35" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/36.png"></h2><h2 id="-36"><a href="#-36" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/37.png"></h2><h2 id="-37"><a href="#-37" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/38.png"></h2><h2 id="-38"><a href="#-38" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/39.png"></h2><h2 id="-39"><a href="#-39" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/40.png"></h2><h2 id="-40"><a href="#-40" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/41.png"></h2><h2 id="-41"><a href="#-41" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/42.png"></h2><h2 id="-42"><a href="#-42" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/43.png"></h2><h2 id="-43"><a href="#-43" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/44.png"></h2><h2 id="-44"><a href="#-44" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/45.png"></h2><h2 id="-45"><a href="#-45" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/46.png"></h2><h2 id="-46"><a href="#-46" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/47.png"></h2><h2 id="-47"><a href="#-47" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/48.png"></h2><h2 id="-48"><a href="#-48" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/49.png"></h2><h2 id="-49"><a href="#-49" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/50.png"></h2><h2 id="-50"><a href="#-50" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/51.png"></h2><h2 id="-51"><a href="#-51" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/52.png"></h2><h2 id="-52"><a href="#-52" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/53.png"></h2><h2 id="-53"><a href="#-53" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/54.png"></h2><h2 id="-54"><a href="#-54" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/55.png"></h2><h2 id="-55"><a href="#-55" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/56.png"></h2><h2 id="-56"><a href="#-56" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/57.png"></h2><h2 id="-57"><a href="#-57" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/58.png"></h2><h2 id="-58"><a href="#-58" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/59.png"></h2><h2 id="-59"><a href="#-59" class="headerlink" title=""></a><img src="https://s3.cldisk.com/sv-w9/doc/79/5c/dd/d1bced9674e544a8bdfba273fec3dc02/thumb/60.png"></h2><hr>
@@ -1959,138 +2091,6 @@
       </categories>
       <tags>
         <tag>HCIA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Learn English with Video</title>
-    <url>/blog/Learn%20English%20with%20Video/</url>
-    <content><![CDATA[<h1 id="Nov-22-2025"><a href="#Nov-22-2025" class="headerlink" title="Nov 22, 2025"></a>Nov 22, 2025</h1><h2 id="walkie-talkie"><a href="#walkie-talkie" class="headerlink" title="walkie-talkie"></a>walkie-talkie</h2><p><strong>释义</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>n.</strong> 便携式双向无线电通信设备，通常手持，用于短距离无线通信（如对讲机、步话机）。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>n.</strong> （俚语）指爱说闲话或搬弄是非的人。</li>
-</ol>
-</li>
-</ul>
-<h2 id="Come-in"><a href="#Come-in" class="headerlink" title="Come in"></a>Come in</h2><p><strong>含义</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>进来；进入</strong>：表示从外部移动到内部的动作，常用于邀请或允许他人进入某空间。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>到达；抵达</strong>：指事物（如消息、火车、潮水等）到达或传来。</li>
-</ol>
-</li>
-<li><ol start="3">
-<li><strong>（比赛中）获得名次</strong>：在竞赛中取得特定排名，例如获得第一名、第三名等。</li>
-</ol>
-</li>
-<li><ol start="4">
-<li><strong>流行起来；开始被使用</strong>：指时尚、新产品等开始流行或生效。</li>
-</ol>
-</li>
-<li><ol start="5">
-<li><strong>起作用；有份儿</strong>：表示在某事中发挥作用或参与其中。</li>
-</ol>
-</li>
-<li><ol start="6">
-<li><strong>有收入；定期收到钱款</strong>：指金钱方面的收入，如工资、收益等。</li>
-</ol>
-</li>
-<li><ol start="7">
-<li><strong>请求回应或回答</strong>: 相当于”please respond”或”answer me”。</li>
-</ol>
-</li>
-</ul>
-<p><strong>例句</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>表示”进来”</strong>：”I stepped aside so that she might <strong>come in</strong>.”（我往旁边走一步，以便她能进来。）</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>表示”到达”</strong>：”The winter timetable <strong>comes</strong> into effect <strong>in</strong> November.”（冬季时间表将于十一月生效。）</li>
-</ol>
-</li>
-<li><ol start="3">
-<li><strong>表示”获得名次”</strong>：”Jerry <strong>came in</strong> third in the Marathon.”（杰里在马拉松比赛中获得了第三名。）</li>
-</ol>
-</li>
-<li><ol start="4">
-<li><strong>表示”流行起来”</strong>：”This style of jeans <strong>came in</strong> quickly last year.”（这种款式的牛仔裤去年迅速流行起来。）</li>
-</ol>
-</li>
-<li><ol start="5">
-<li><strong>表示”起作用”</strong>：”This is where the argument <strong>comes in</strong>.”（这就是争论的起因。）</li>
-</ol>
-</li>
-<li><ol start="6">
-<li><strong>表示”有收入”</strong>：”He has a small amount of money <strong>coming in</strong> each month.”（他每个月有一小笔收入。）</li>
-</ol>
-</li>
-<li><ol start="7">
-<li><strong>表示”请求回应”</strong>：”Buzz lightyear to Star Command. <strong>Come in</strong>, Star Command.”（巴斯光年向星际指挥部请求回应。）</li>
-</ol>
-</li>
-</ul>
-<h2 id="Do-you-read-me"><a href="#Do-you-read-me" class="headerlink" title="Do you read me?"></a>Do you read me?</h2><p><strong>含义</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>你能听到我说话吗？</strong>：用于无线电通信中，询问对方是否能清楚地听到自己的声音。相当于”Can you hear me?”或”Are you receiving my message?”。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>你理解我的意思吗？</strong>：用于确认对方是否理解自己所传达的信息或指令。</li>
-</ol>
-</li>
-</ul>
-<p><strong>例句</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>用于无线电通信中</strong>：”<strong>Do you read me</strong>? Over.”（你能听到我说话吗？完毕。）</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>用于确认理解</strong>：”I’m going to explain the plan again, <strong>do you read me</strong>?”（我要再解释一遍计划，你明白我的意思吗？）</li>
-</ol>
-</li>
-</ul>
-<h2 id="groundbreaking"><a href="#groundbreaking" class="headerlink" title="groundbreaking"></a>groundbreaking</h2><p><strong>释义</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>adj.</strong> 开创性的，突破性的；指前所未有的、具有创新性的事物。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>n.</strong> 动工，破土（尤指建筑工程开始的仪式）。</li>
-</ol>
-</li>
-</ul>
-<p><strong>例句</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>adj.</strong> Annette Lareau’s <strong>groundbreaking</strong> research on the topic was published in her book <em>Unequal Childhoods</em>（安妮特·拉罗关于这一主题的开创性研究发表于她的著作《不平等的童年》中）。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>n.</strong> The <strong>groundbreaking</strong> for the new building will commence in the morning（新楼的破土仪式将于上午举行）。</li>
-</ol>
-</li>
-<li><ol start="3">
-<li><strong>adj.</strong> With Toy Story, Pixar’s <strong>groundbreaking</strong> masterpiece that revolutionized flimaking as the first fully computer-animated feature film.（通过《玩具总动员》，皮克斯开创性的杰作，作为第一部完全由计算机动画制作的长片，彻底改变了电影制作。）</li>
-</ol>
-</li>
-</ul>
-<h2 id="blast"><a href="#blast" class="headerlink" title="blast"></a>blast</h2>]]></content>
-      <categories>
-        <category>English</category>
-      </categories>
-      <tags>
-        <tag>Learn English with Video</tag>
       </tags>
   </entry>
 </search>

@@ -1,49 +1,672 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Learn English Phrases | Kakyoのせかい</title><meta name="author" content="Kakyo"><meta name="copyright" content="Kakyo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="生疏词组集合（模板开发ing？暂停）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Learn English Phrases">
+<meta property="og:url" content="https://hometown.github.io/blog/English%20Phrases/index.html">
+<meta property="og:site_name" content="Kakyoのせかい">
+<meta property="og:description" content="生疏词组集合（模板开发ing？暂停）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hometown.github.io/media/avatar.jpg">
+<meta property="article:published_time" content="2025-11-30T02:17:00.000Z">
+<meta property="article:modified_time" content="2025-12-11T15:24:41.061Z">
+<meta property="article:author" content="Kakyo">
+<meta property="article:tag" content="Phrases">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hometown.github.io/media/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Learn English Phrases",
+  "url": "https://hometown.github.io/blog/English%20Phrases/",
+  "image": "https://hometown.github.io/media/avatar.jpg",
+  "datePublished": "2025-11-30T02:17:00.000Z",
+  "dateModified": "2025-12-11T15:24:41.061Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kakyo",
+      "url": "https://hometown.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/media/favicon.png"><link rel="canonical" href="https://hometown.github.io/blog/English%20Phrases/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
 
-block content
-  #post
-    if top_img === false
-      include includes/header/post-info.pug
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
 
-    article#article-container.container.post-content
-      if theme.noticeOutdate.enable && page.noticeOutdate !== false
-        include includes/post/outdate-notice.pug
-      else
-        !=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (page.tags.length > 0 && theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
 
-    if theme.reward.enable && theme.reward.QR_code
-      !=partial('includes/post/reward', {}, {cache: true})
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Learn English Phrases',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><script src = "https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
+  preloader.initLoading()
 
-    if theme.post_pagination
-      include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
 
-    if page.comments !== false && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
+  if (true) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="web_bg" style="background-image: url(/media/website_bg.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/media/avatar.jpg" onerror="this.onerror=null;this.src='/media/top_img.jpg'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 传送门</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/media/top_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Kakyoのせかい</span></a><a class="nav-page-title" href="/"><span class="site-name">Learn English Phrases</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 传送门</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Learn English Phrases</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-30T02:17:00.000Z" title="发表于 2025-11-30 10:17:00">2025-11-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-12-11T15:24:41.061Z" title="更新于 2025-12-11 23:24:41">2025-12-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/English/">English</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span class="waline-pageview-count" data-path="/blog/English%20Phrases/"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><style type="text/css">
+  .button-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start;
+  }
 
-    if page.phrases && page.phrases.length > 0
-      .english-phrases-container
-        each phrase in page.phrases
-          +phrase-block(
-            title=phrase.title,
-            structure=phrase.structure,
-            definition=phrase.definition,
-            english_def=phrase.english_definition,
-            examples=phrase.examples
-          )
-    else
-      .post-content
-        != page.content
+  .hide-block {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 1s cubic-bezier(0.3, 0, 0.15, 1), margin-bottom 1s cubic-bezier(0.3, 0, 0.15, 1);
+    margin: 0 8px 32px 0;
+  }
+
+  .hide-block.expanded {
+    grid-template-rows: 1fr;
+  }
+
+  .hide-button {
+    height: 33px;
+  }
+
+  .hide-button > * {
+    font-size: 20px;
+  }
+
+  word {
+    color: black;
+  }
+
+  .hide-content {
+    overflow: hidden;
+    padding-top: 0;
+    transition: padding-top 1s ease-out;
+  }
+
+  .hide-block.expanded .hide-content {
+    padding-top: 12px;
+  }
+
+  .hide-content {
+    overflow: hidden;
+    transition: padding-top 1s cubic-bezier(0.3, 0, 0.15, 1);
+  }
+
+  .hide-block.expanded .hide-content > * {
+    animation: fadeIn 1s ease-in forwards;
+  }
+
+  .hideBlockTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 20px 0;
+    white-space: nowrap;
+  }
+
+  .sb-sth {
+    margin: 0 10px;
+    color: grey;
+    font-size: 20px;
+  }
+
+  .definition-text {
+    font-size: 17px;
+    margin: 0 0 0 40px;
+    white-space: normal;
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .definition-english-text {
+    margin: 0 0 0 20px;
+    display: inline-block;
+  }
+
+  li {
+    font-size: 17px;
+  }
+
+  .chinese-translation-text {
+    font-size: 15px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .instance-source {
+    color: #666666;
+    font-style: italic;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-left: auto;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<div class = "button-container">
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>bump</word> into sb/sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">bump into<span class = "sb-sth"><u>sb&#x2F;sth</u></span></span><span class = "definition-text">vi. vt. 猛碰，撞<span class = "definition-english-text">to hit or knock against sth</span></span></p>
+<ul>
+<li>She stepped backward and <strong>bumped into</strong> someone.<span class = "chinese-translation-text">（她踉跄后退，结果撞到了别人。）<span class = "instance-source">——权力的游戏 有声书</span></span></li>
+<li>If I move slowly, I won’t <strong>bump into</strong> things.<span class = "chinese-translation-text">（如果我走得慢点，就不会撞到东西了。）<span class = "instance-source">——小猪佩奇 第一季</span></span></li>
+</ul>
+</div></div>
+  
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>bump</word> against/on sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">bump <u>against&#x2F;on</u><span class = "sb-sth">sth</span></span><span class = "definition-text">vi. vt. 猛碰，撞<span class = "definition-english-text">to hit or knock against sth</span></span></p>
+<ul>
+<li>I don’t want to <strong>bump</strong> her head <strong>against</strong> the door, you know, pinch her with the seat belt.<span class = "chinese-translation-text">（我不想又把她头撞到门上了，或者说，绑安全带的时候夹到她。）<span class = "instance-source">——摩登家庭 第一季</span></span></li>
+<li>Remember the time you fell off your bike or <strong>bumped</strong> your head <strong>on</strong> a sharp corner?<span class = "chinese-translation-text">（还记得你从自行车上摔下或一头撞到尖角之时吗？）<span class = "instance-source">——TED-Ed</span></span></li>
+</ul>
+</div></div>
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>interact</word> with sb<sup>1</sup>/sth<sup>2</sup></b></button><div class="hide-content"><p><span class = "hideBlockTitle">interact with<span class = "sb-sth">sb</span></span><span class = "definition-text">vi. 相互交流，相互沟通<span class = "definition-english-text">when people interact with each other or interact, they communicate as they work or spend time together</span></span></p>
+<ul>
+<li>Is he the only person you <strong>interact with</strong>?<span class = "chinese-translation-text">（他是唯一和你有交流的人吗？）<span class = "instance-source">——摩登家庭 第一季</span></span></li>
+<li>Number 6: he never <strong>interacts with</strong> youon social media.<span class = "chinese-translation-text">（第六点，他从来不在社交媒体上和你互动。）<span class = "instance-source">——生活百科</span></span></li>
+<li>He doesn’t <strong>interact</strong> much <strong>with</strong> others. He keeps to himself a lot.<span class = "chinese-translation-text">（他不怎么和其他人交流，有什么事都藏在心里。）<span class = "instance-source">——贝茨旅馆 第一季</span></span></li>
+</ul>
+<p><span class = "hideBlockTitle">interact with<span class = "sb-sth">sth</span></span><span class = "definition-text">vi. 相互交流，相互沟通<span class = "definition-english-text">to act on or have an effect on each other</span></span></p>
+<ul>
+<li>Still, it is just a story of how electrons <strong>interact with</strong> light.<span class = "chinese-translation-text">（然而，光与电子的相互作用仅仅是一个故事。） <span class = "instance-source">——VOA 慢速-自然探索</span></span></li>
+<li>It’s all about how one substance <strong>interacts with</strong> another to give us something new.<span class = "chinese-translation-text">（其本质在于两种物质发生化学反应从而生成新物质。）<span class = "instance-source">——化学公开课</span></span></li>
+<li>And this looks at how energy <strong>interacts with</strong> electrons in atoms.<span class = "chinese-translation-text">（这能检测能量与原子中电子间的相互作用。）<span class = "instance-source">——化学公开课</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>interaction</word> with/between sb</b></button><div class="hide-content"><p><span class = "hideBlockTitle">interaction <u>with&#x2F;between</u><span class = "sb-sth">sb</span></span><span class = "definition-text">n. 交流，沟通<span class = "definition-english-text">the activity of talking to other people, and the way that people react to each other</span></span></p>
+<ul>
+<li>He needs social <strong>interaction with</strong> his peers.<span class = "chinese-translation-text">（他需要和同龄人进行社交。） <span class = "instance-source">——无耻家庭 美版 第六季</span></span></li>
+<li>And was that your first <strong>interaction with</strong> Frank since he got back?<span class = "chinese-translation-text">（他回来后这是你第一次见他吗?）<span class = "instance-source">——曼哈顿计划 第二季</span></span></li>
+<li>Their biggest concern: limited <strong>interaction between</strong> teachers and students.<span class = "chinese-translation-text">（他们最大的担忧是，师生之间受限制的互动。）<span class = "instance-source">——科学美国人-60秒科学</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>interaction</word> with/between/of sb/sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">interaction <u>with&#x2F;between</u><span class = "sb-sth"><u>sb&#x2F;sth</u></span></span><span class = "definition-text">n. 相互影响<span class = "definition-english-text">the process by which two or more affect each other or change each other</span></span></p>
+<ul>
+<li>What was your <strong>interaction with</strong> the environment?<span class = "chinese-translation-text">（你与周围的生活环境是如何相互影响的?） <span class = "instance-source">——长生不老</span></span></li>
+<li>Inside, it’s no more than the harmonious <strong>interaction between</strong> human and nature.<span class = "chinese-translation-text">（说穿了，无非是人与天地万物之间的和谐相处。）<span class = "instance-source">——舌尖上的中国</span></span></li>
+<li>The <strong>interaction of</strong> the chemicals in the poison is not predictable.<span class = "chinese-translation-text">（毒药中化合物间的相互作用不可预测。）<span class = "instance-source">——迷离档案 危机边缘 第四季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>in <word>addition</word> (to sb/sth)</b></button><div class="hide-content"><p><span class = "hideBlockTitle">in addition<span class = "sb-sth">(to <u>sb&#x2F;sth</u>)</span></span><span class = "definition-text">IDM. 此外；除…以外<span class = "definition-english-text">used when you want to introduce an additional point or relevant fact</span></span></p>
+<ul>
+<li>Please submit your supporting documents. <strong>In addition</strong>, you will be required to pay an application fee.<span class = "chinese-translation-text">（请提交你的证明文件。此外，你将需要支付申请费。） <span class = "instance-source">——你问我答</span></span></li>
+<li>I can sing, too, you know, <strong>in addition to</strong> the ice skating.<span class = "chinese-translation-text">（除了滑冰，我还会唱歌。）<span class = "instance-source">——女子监狱 第一季</span></span></li>
+<li><strong>In addition to</strong> being a boss, I am also a waitress.<span class = "chinese-translation-text">（我除了是老板之外，还是一名服务员。）<span class = "instance-source">——破产姐妹 第二季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>the <word>addition</word> of sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">the addition of<span class = "sb-sth">sth</span></span><span class = "definition-text">n. 增添，添加<span class = "definition-english-text">the act of adding one thing to another</span></span></p>
+<ul>
+<li><strong>The addition of</strong> a child would disrupt even the happiest of couples.<span class = "chinese-translation-text">（有了孩子，就算最幸福的伴侣也会受到影响。） <span class = "instance-source">——犯罪心理 第十季</span></span></li>
+<li>The British Empire expanded rapidly with <strong>the addition of</strong> Borneo, Burma and New Guinea.<span class = "chinese-translation-text">（随着婆罗洲、缅甸和新几内亚的加入，大英帝国迅速扩张。）<span class = "instance-source">——黑猫系列读物</span></span></li>
+<li>However, <strong>the addition of</strong> water to the land or soil may cause problems in some areas.<span class = "chinese-translation-text">（然而在有的地区，田地里水流的添加会造成问题。）<span class = "instance-source">——VOA慢速-农业报道</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>advance</word> (on sth)</b></button><div class="hide-content"><p><span class = "hideBlockTitle">advance<span class = "sb-sth">(on sth)</span></span><span class = "definition-text">n<sub>1</sub>. 预付款<span class = "definition-english-text">money which is paid to sb before the usual time of payment</span></span></p>
+<ul>
+<li>I need an <strong>advance on</strong> my pay.<span class = "chinese-translation-text">（我需要提前预支些钱。） <span class = "instance-source">——亲密治疗</span></span></li>
+<li>I had to give Howie an <strong>advance on</strong> his allowance.<span class = "chinese-translation-text">（我只好让华仔预支他的零用钱。）<span class = "instance-source">——生活大爆炸 第七季</span></span></li>
+</ul>
+<p><span class = "definition-text">n<sub>2</sub>. （价格、价值的）上涨，上升<span class = "definition-english-text">a rise in the price, value, of sth</span></span></p>
+<ul>
+<li>Any <strong>advance on</strong> 22’000? Anyone?<span class = "chinese-translation-text">（还有比22000更高的出价吗?还有吗?） <span class = "instance-source">——碟中谍5</span></span></li>
+<li>Chumhum has agreed to an <strong>advance on</strong> our fees. It was Cary’s case.<span class = "chinese-translation-text">（Chumhum网已经同意提高代理费。这是Cary的案子。）<span class = "instance-source">——傲骨贤妻 第六季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>a <word>advantage</word> over sb</b></button><div class="hide-content"><p><span class = "hideBlockTitle">a advantage over<span class = "sb-sth">sb</span></span><span class = "definition-text">n. 有利条件，优势<span class = "definition-english-text">something that puts you in a better position than other people</span></span></p>
+<ul>
+<li>What gives you <strong>a</strong> distinct <strong>advantage over</strong> all the other capable people here?<span class = "chinese-translation-text">（相比其他有能力的人，你有什么明显的优势？） <span class = "instance-source">——亿万 第二季</span></span></li>
+<li>You were always the better engineer. But I do have <strong>one advantage over</strong> you.<span class = "chinese-translation-text">（你当工程师一直比我高明，但我确实有一项优势。）<span class = "instance-source">——疑犯追踪 第二季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>take <word>advantage</word> of sth<sup>1</sup>/sb<sup>2</sup></b></button><div class="hide-content"><p><span class = "hideBlockTitle">take advantage of<span class = "sb-sth">sth</span></span><span class = "definition-text">IDM. 利用<span class = "definition-english-text">if you take advantage of sth, you make good use of it while you can</span></span></p>
+<ul>
+<li>Glad to see you’re <strong>taking advantage of</strong> the opportunities offered.<span class = "chinese-translation-text">（很高兴看到你利用了提供给你的机会。）<span class = "instance-source">——英美剧集</span></span></li>
+<li>Just <strong>taking advantage of</strong> the local resources.<span class = "chinese-translation-text">（我只是在利用本地资源。）<span class = "instance-source">——神秘博士 第七季</span></span></li>
+<li>Harry <strong>took advantage of</strong> the temporary silence to eat more breakfast.<span class = "chinese-translation-text">（哈利利用这短暂的沉默，加紧吃他的早餐。）<span class = "instance-source">——哈利波特与混血王子</span></span></li>
+</ul>
+<p><span class = "hideBlockTitle">take advantage of<span class = "sb-sth">sb</span></span><span class = "definition-text">IDM. 占…的便宜；欺骗；捉弄<span class = "definition-english-text">if sb takes advantage of you, they treat you unfairly for their own benefit</span></span></p>
+<ul>
+<li>Frank’s just too soft hearted, and people <strong>take advantage of</strong> him.<span class = "chinese-translation-text">（弗兰克就是心太软了，人们利用他这一点来占他的便宜。） <span class = "instance-source">——《飘》</span></span></li>
+<li>He thinks he can <strong>take advantage of</strong> you because you’re a woman.<span class = "chinese-translation-text">（他觉得你是女人所以就可以占你的便宜。）<span class = "instance-source">——我为喜剧狂 第三季</span></span></li>
+<li>I went down to the free clinic and I <strong>took</strong> full <strong>advantage of</strong> the “free” part for you.<span class = "chinese-translation-text">（我去了免费诊所，并为你大大占了它“免费”的便宜。）<span class = "instance-source">——衰女翻身 第一季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>be/work to one's <word>advantage</word></b></button><div class="hide-content"><p><span class = "hideBlockTitle"><u>be&#x2F;work</u> to<span class = "sb-sth">one’s</span>advantage</span><span class = "definition-text">IDM. 对…有利<span class = "definition-english-text">to give you an advantage; (to be) better for you</span></span></p>
+<ul>
+<li>It’ll definitely <strong>be to our advantage</strong> to have someone who can go in and out freely.<span class = "chinese-translation-text">（有人可以自由进出对我们来说绝对是优势。） <span class = "instance-source">——死亡笔记 英文配音版</span></span></li>
+<li>I used to swim in college — the one place being tall actually <strong>worked to my advantage</strong>.<span class = "chinese-translation-text">（我上大学的时候经常游泳，在大学个子高对我来说很有利。）<span class = "instance-source">——英美剧集</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>to good/best <word>advantage</word></b></button><div class="hide-content"><p><span class = "hideBlockTitle">to <u>good&#x2F;best</u> advantage</span><span class = "definition-text">IDM. 最有利地；最有效地；使优点突出<span class = "definition-english-text">in a way that shows the best features of sth</span></span></p>
+<ul>
+<li>It showed <strong>to advantage</strong> the good shape of his figure.<span class = "chinese-translation-text">（这套衣服凸显了他的好身材。） <span class = "instance-source">——还乡</span></span></li>
+<li>There his faculties stagnate — they cannot develop or appear <strong>to advantage</strong>.<span class = "chinese-translation-text">（在这里他的才能会停滞不前，难以提升或有效施展出来。）<span class = "instance-source">——简 · 爱（原著）</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>use/turn sth to one's <word>advantage</word></b></button><div class="hide-content"><p><span class = "hideBlockTitle"><u>use&#x2F;turn</u><span class = "sb-sth">sth</span>to<span class = "sb-sth">one’s</span>advantage</span><span class = "definition-text">IDM. 最有利地；最有效地；使优点突出<span class = "definition-english-text">to use sth in order to benefit from it, especially when it might be expected to harm or damage you</span></span></p>
+<ul>
+<li>I’m going to <strong>use</strong> the rules of the Death Note <strong>to my advantage</strong>.<span class = "chinese-translation-text">（我打算利用死亡笔记的规则。） <span class = "instance-source">——死亡笔记 英文配音版</span></span></li>
+<li>I saw an opportunity to <strong>turn</strong> things <strong>to my advantage</strong>, and I did.<span class = "chinese-translation-text">（我看到有机会可以把事情转变成对我有利的条件，我就利用了这个机会。）<span class = "instance-source">——闪电侠 第一季</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>an <word>alternative</word> to sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">an alternative to<span class = "sb-sth">sth</span></span><span class = "definition-text">n. 可供选择的事物；可供替代的事物<span class = "definition-english-text">sth that can be chosen instead of sth else</span></span></p>
+<ul>
+<li>Is there no <strong>alternative to</strong> retreat then?<span class = "chinese-translation-text">（除了撤退，没有别的路可以选了吗?） <span class = "instance-source">——罗马 第一季</span></span></li>
+<li>The only <strong>alternative to</strong> being taken prisoner was to die fighting.<span class = "chinese-translation-text">（不想当俘虏，唯一的选择就是誓死而战。）<span class = "instance-source">——淘金式巧攻大学英语词汇</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b><word>adapt</word> (onself) to sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">adapt<span class = "sb-sth">(oneself)</span>to<span class = "sb-sth">sth</span></span><span class = "definition-text">vi. vt. 适应<span class = "definition-english-text">to change one’s ideas or behavior in order to deal with a new situation successfully</span></span></p>
+<ul>
+<li>Some animals <strong>adapt to</strong> new surroundings.<span class = "chinese-translation-text">（一些动物会适应新的环境。） <span class = "instance-source">——唐顿庄园 第三季</span></span></li>
+<li>I guess he had a lot on his mind trying to <strong>adapt to</strong> the life on the inside.<span class = "chinese-translation-text">（我猜他在想办法适应牢里的生活。） <span class = "instance-source">——肖申克的救赎</span></span></li>
+<li>Look, it’s an AI, an artificial intelligence. It can think for itself, <strong>adapt itself to</strong> new situations.<span class = "chinese-translation-text">（看，这是一个 A，人工智能。它本身能够自主思考，使自身适应新的情境。。）<span class = "instance-source">——星际之门亚特兰蒂斯 第二季</span></span></li>
+<li>When you go to a foreign country, you must <strong>adapt yourself to</strong> new manners and customs.<span class = "chinese-translation-text">（你去外国时，必须使自己适应新的风俗习惯。） <span class = "instance-source">——刘毅词汇5000</span></span></li>
+</ul>
+</div></div>
+
+  <div class="hide-block"><button type="button" class="hide-button" style=""><b>an alternative to sth</b></button><div class="hide-content"><p><span class = "hideBlockTitle">an alternative to<span class = "sb-sth">sth</span></span><span class = "definition-text">n. 可供选择的事物；可供替代的事物<span class = "definition-english-text">sth that can be chosen instead of sth else</span></span></p>
+<ul>
+<li>Is there no <strong>alternative to</strong> retreat then?<span class = "chinese-translation-text">（除了撤退，没有别的路可以选了吗?） <span class = "instance-source">——罗马 第一季</span></span></li>
+<li>The only <strong>alternative to</strong> being taken prisoner was to die fighting.<span class = "chinese-translation-text">（不想当俘虏，唯一的选择就是誓死而战。）<span class = "instance-source">——淘金式巧攻大学英语词汇</span></span></li>
+</ul>
+</div></div>
+</div></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Phrases/">Phrases</a></div><div class="post-share"><div class="social-share" data-image="/media/avatar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/media/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/media/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/media/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/media/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/blog/Learn%20English%20with%20Video/" title="Learn English with Video"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Learn English with Video</div></div><div class="info-2"><div class="info-item-1">Learn English with Video 遇到的生疏 词汇词组</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/media/avatar.jpg" onerror="this.onerror=null;this.src='/media/top_img.jpg'" alt="avatar"/></div><div class="author-info-name">Kakyo</div><div class="author-info-description">这里真的什么都没有。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/hometown666"><i class="fab fa-github"></i><span>Follow Me on GitHub</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://space.bilibili.com/510983322" target="_blank" title="Bilibili"><i class="fab fa-bilibili"></i></a><a class="social-icon" href="mailto:whtlalala666@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://github.com/hometown666" target="_blank" title=""><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">嗯呐</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/English%20Phrases/" title="Learn English Phrases">Learn English Phrases</a><time datetime="2025-11-30T02:17:00.000Z" title="发表于 2025-11-30 10:17:00">2025-11-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/Learn%20English%20with%20Video/" title="Learn English with Video">Learn English with Video</a><time datetime="2025-11-25T04:05:00.000Z" title="发表于 2025-11-25 12:05:00">2025-11-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/OSI%E8%AF%A6%E8%A7%A3/" title="震惊！OSI参考模型终于有详细解读了！">震惊！OSI参考模型终于有详细解读了！</a><time datetime="2025-11-17T15:22:00.000Z" title="发表于 2025-11-17 23:22:00">2025-11-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/HCIA%E9%A2%98%E5%BA%93%E7%AC%94%E8%AE%B0/" title="HCIA题库笔记">HCIA题库笔记</a><time datetime="2025-11-09T08:35:00.000Z" title="发表于 2025-11-09 16:35:00">2025-11-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/HCIA%E5%9C%A8%E7%BA%BF%E9%A2%98%E5%BA%93/" title="属于私のHCIA在线题库">属于私のHCIA在线题库</a><time datetime="2025-11-08T16:54:00.000Z" title="发表于 2025-11-09 00:54:00">2025-11-09</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(rgba(0, 0, 0, 0), #00BFFFe6);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By Kakyo</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (false) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"meta":["nick","mail","link"],"pageSize":10,"locale":{"placeholder":"啊吧啊吧！Nickname填写QQ号可以自动获取QQ昵称和QQ头像哦~"},"avatar":"mm","emoji":true}
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'https://kakyo-waline.vercel.app',
+      pageview: true,
+      dark: 'html[data-theme="dark"]',
+      comment: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css')
+        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><div class="aplayer no-destroy" data-id="2875359711" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script src = "/js/kakyo/random-hideBlock-bg.js"></script><script src = "/js/kakyo/instance-source-floatright.js"></script><script src = "/js/kakyo/block-button-transition.js"></scrit><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      true
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
