@@ -1,8 +1,9 @@
 function initArticleScript() {
     const currentPath = window.location.pathname;
-    const targetArticle = 'English%20Phrases/';
+    const targetArticles = ['English%20Phrases/', '%E6%AF%9B%E6%A6%82%E6%9C%9F%E6%9C%AB/'];
     
-    if (currentPath.includes(targetArticle)) {
+    if (targetArticles.some(article => currentPath.includes(article))) {
+        console.log('我要进来啦！！！<(￣︶￣)↗[GO!]');
         const hideButtons = document.querySelectorAll('.hide-button');
         let previousColorIndex = null;
         const totalColorSchemes = 20;

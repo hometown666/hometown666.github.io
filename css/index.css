@@ -1684,19 +1684,21 @@ canvas:not(#ribbon-canvas),
 }
 :root {
   --btn-color: #fff;
-  --btn-default-color: #777;
-  --tags-blue-color: #428bca;
-  --tags-blue-color-lighten: #e3eef7;
-  --tags-pink-color: #ff69b4;
-  --tags-pink-color-lighten: #ffe9f4;
-  --tags-red-color: #f00;
-  --tags-red-color-lighten: #ffd9d9;
-  --tags-orange-color: #ff8c00;
-  --tags-orange-color-lighten: #ffeed9;
-  --tags-purple-color: #6f42c1;
-  --tags-purple-color-lighten: #e9e3f6;
-  --tags-green-color: #5cb85c;
-  --tags-green-color-lighten: #e7f4e7;
+/* 转移到 kakyo 下，并添加 yellow 配色
+  --btn-default-color: $btn-default-color
+  --tags-blue-color: $tagsP-blue-color
+  --tags-blue-color-lighten: lighten($tagsP-blue-color, 85%)
+  --tags-pink-color: $tagsP-pink-color
+  --tags-pink-color-lighten: lighten($tagsP-pink-color, 85%)
+  --tags-red-color: $tagsP-red-color
+  --tags-red-color-lighten: lighten($tagsP-red-color, 85%)
+  --tags-orange-color: $tagsP-orange-color
+  --tags-orange-color-lighten: lighten($tagsP-orange-color, 85%)
+  --tags-purple-color: $tagsP-purple-color
+  --tags-purple-color-lighten: lighten($tagsP-purple-color, 85%)
+  --tags-green-color: $tagsP-green-color
+  --tags-green-color-lighten: lighten($tagsP-green-color, 85%)
+  */
   --note-default-border: #777;
   --note-default-bg: #f7f7f7;
   --note-default-text: #777;
@@ -5434,10 +5436,6 @@ figure.highlight pre .javascript .function {
   -ms-transition: filter 375ms ease-in 0.2s;
   transition: filter 375ms ease-in 0.2s;
   border-radius: 6px;
-/*kakyo 图片透明度调整*/
-  opacity: 0.65;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-  filter: alpha(opacity=65);
 }
 .container p {
   margin: 0 0 16px;
@@ -6316,6 +6314,9 @@ mjx-assistive-mml {
 .container .btn-beautify.green {
   --btn-beautify-color: var(--tags-green-color);
 }
+.container .btn-beautify.yellow {
+  --btn-beautify-color: var(--tags-yellow-color);
+}
 .container .btn-beautify:hover {
   background-color: var(--btn-hover-color);
 }
@@ -7046,6 +7047,9 @@ blockquote.pullquote.right {
 .hl-label.green {
   background-color: var(--tags-green-color);
 }
+.hl-label.yellow {
+  background-color: var(--tags-yellow-color);
+}
 .note {
   position: relative;
   margin: 0 0 20px;
@@ -7138,6 +7142,19 @@ blockquote.pullquote.right {
 }
 .note.green > .note-icon {
   color: var(--tags-green-color);
+}
+.note.yellow:not(.disabled) {
+  border-left-color: var(--tags-yellow-color) !important;
+}
+.note.yellow:not(.disabled).modern {
+  border-left-color: transparent !important;
+  color: var(--tags-yellow-color);
+}
+.note.yellow:not(.disabled):not(.simple) {
+  background: var(--tags-yellow-color-lighten);
+}
+.note.yellow > .note-icon {
+  color: var(--tags-yellow-color);
 }
 .note.simple {
   border: 1px solid var(--note-default-border);
@@ -7567,6 +7584,10 @@ blockquote.pullquote.right {
 .container .timeline.green {
   --timeline-color: #5cb85c;
   --timeline-bg: rgba(92,184,92, 0.2);
+}
+.container .timeline.yellow {
+  --timeline-color: #dcdc00;
+  --timeline-bg: rgba(220,220,0, 0.2);
 }
 .container .timeline .timeline-item {
   margin: 0 0 15px;
@@ -8524,4 +8545,19 @@ blockquote.pullquote.right {
   --color-scheme-18-bg: #8044e1;
   --color-scheme-19-bg: #d63384;
   --color-scheme-20-bg: #5d92c6;
+  --btn-default-color: #777;
+  --tags-blue-color: #428bca;
+  --tags-blue-color-lighten: #e3eef7;
+  --tags-pink-color: #ff69b4;
+  --tags-pink-color-lighten: #ffe9f4;
+  --tags-red-color: #f00;
+  --tags-red-color-lighten: #ffd9d9;
+  --tags-orange-color: #ff8c00;
+  --tags-orange-color-lighten: #ffeed9;
+  --tags-yellow-color: #dcdc00;
+  --tags-yellow-color-lighten: #ffffd4;
+  --tags-purple-color: #6f42c1;
+  --tags-purple-color-lighten: #e9e3f6;
+  --tags-green-color: #5cb85c;
+  --tags-green-color-lighten: #e7f4e7;
 }
