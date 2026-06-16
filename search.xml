@@ -625,395 +625,123 @@
       </tags>
   </entry>
   <entry>
-    <title>Learn English with Video</title>
-    <url>/blog/Learn%20English%20with%20Video/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Nov-22-2025"><a href="#Nov-22-2025" class="headerlink" title="Nov 22, 2025"></a>Nov 22, 2025</h1><h2 id="walkie-talkie"><a href="#walkie-talkie" class="headerlink" title="walkie-talkie"></a>walkie-talkie</h2><p><strong>释义</strong>：</p>
+    <title>震惊！OSI参考模型终于有详细解读了！</title>
+    <url>/blog/OSI%E8%AF%A6%E8%A7%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><h2 id="计算机网络物理层详解"><a href="#计算机网络物理层详解" class="headerlink" title="计算机网络物理层详解"></a>计算机网络物理层详解</h2><blockquote>
+<p>物理层是计算机网络体系结构（如OSI模型和TCP&#x2F;IP模型）中的最底层，是整个网络通信的物理基础。它关注的是如何在连接各种计算机的传输媒体上透明地传输原始的比特流（0和1）。</p>
+</blockquote>
+<h2 id="一、物理层的基本概念与核心作用"><a href="#一、物理层的基本概念与核心作用" class="headerlink" title="一、物理层的基本概念与核心作用"></a>一、物理层的基本概念与核心作用</h2><h3 id="1-1-基本概念"><a href="#1-1-基本概念" class="headerlink" title="1.1 基本概念"></a>1.1 基本概念</h3><blockquote>
+<p>物理层并<strong>不是指具体的传输媒体</strong>（如网线），而是指在传输媒体之上，为数据链路层提供<strong>比特流传输服务</strong>的层级。它规定了为建立、维持和拆除物理链路所需的机械、电气、功能和规程特性。简单来说，物理层确保数据链路层交付下来的比特序列，能够通过各种物理媒介（如双绞线、光纤、无线电波）准确地传送到接收端。</p>
+</blockquote>
+<h3 id="1-2-核心作用"><a href="#1-2-核心作用" class="headerlink" title="1.2 核心作用"></a>1.2 核心作用</h3><p>物理层的核心作用是实现<strong>比特流的透明传输</strong>。其具体任务可归纳为以下几点：</p>
 <ul>
-<li><ol>
-<li><strong>n.</strong> 便携式双向无线电通信设备，通常手持，用于短距离无线通信（如对讲机、步话机）。</li>
-</ol>
+<li><strong>屏蔽差异</strong>：物理层要尽可能地屏蔽掉不同物理设备、传输媒体和通信手段的差异，使数据链路层感觉不到这些差异，从而只需关注本层的协议和服务。</li>
+<li><strong>提供比特传输能力</strong>：为数据链路层在一条物理的传输媒体上提供传送和接收比特流的能力，并解决物理连接的建立、维持和释放问题。</li>
+<li><strong>定义接口标准</strong>：规定与传输媒体接口的机械、电气、功能和规程四大特性，确保不同厂商的设备能够互联互通。</li>
+</ul>
+<h2 id="二、物理层接口的四大特性"><a href="#二、物理层接口的四大特性" class="headerlink" title="二、物理层接口的四大特性"></a>二、物理层接口的四大特性</h2><p>物理层协议通过定义接口的四个特性来完成其主要任务：</p>
+<table>
+<thead>
+<tr>
+<th align="left">特性</th>
+<th align="left">说明</th>
+<th align="left">通俗比喻</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>机械特性</strong></td>
+<td align="left">定义接口连接器的形状、尺寸、引脚数目和排列顺序、固定和锁定装置等。</td>
+<td align="left">类似于各种电源插头的形状和尺寸都有严格规定，确保插头能插入对应的插座。</td>
+</tr>
+<tr>
+<td align="left"><strong>电气特性</strong></td>
+<td align="left">规定线路上信号的电压范围、阻抗匹配、传输速率和传输距离的限制。</td>
+<td align="left">例如，规定多少伏特的电压代表二进制0，多少伏特代表1。</td>
+</tr>
+<tr>
+<td align="left"><strong>功能特性</strong></td>
+<td align="left">指明接口电缆上每条信号线的功能或用途。</td>
+<td align="left">如哪些是数据线、控制线、定时线或地线。</td>
+</tr>
+<tr>
+<td align="left"><strong>规程特性</strong></td>
+<td align="left">定义比特流传输过程中各种事件发生的先后顺序。</td>
+<td align="left">即物理连接的建立、维持、交换信息和拆除的流程。</td>
+</tr>
+</tbody></table>
+<h2 id="三、数据通信基础"><a href="#三、数据通信基础" class="headerlink" title="三、数据通信基础"></a>三、数据通信基础</h2><h3 id="3-1-数据通信模型"><a href="#3-1-数据通信模型" class="headerlink" title="3.1 数据通信模型"></a>3.1 数据通信模型</h3><p>一个典型的数据通信系统包含三个部分：</p>
+<ul>
+<li><strong>源系统</strong>：包括信源（产生数据的设备）和发送器（如调制解调器，将数字比特流转换为可在信道上传输的信号）。</li>
+<li><strong>传输系统</strong>：即传输媒介构成的信道网络。</li>
+<li><strong>目的系统</strong>：包括接收器（将接收到的信号转换回数字比特流）和信宿（接收数据的最终设备）。</li>
+</ul>
+<h3 id="3-2-通信方式"><a href="#3-2-通信方式" class="headerlink" title="3.2 通信方式"></a>3.2 通信方式</h3><p>根据信息交互方向，通信可分为三种基本方式：</p>
+<ul>
+<li><strong>单工通信</strong>：数据只能单向传输，如广播、电视。</li>
+<li><strong>半双工通信</strong>：数据可以双向传输，但不能同时进行，如对讲机。</li>
+<li><strong>全双工通信</strong>：数据可以双向同时传输，如电话通话。</li>
+</ul>
+<h3 id="3-3-信号与信道"><a href="#3-3-信号与信道" class="headerlink" title="3.3 信号与信道"></a>3.3 信号与信道</h3><ul>
+<li><strong>信号</strong>：是数据的电或电磁的表现形式，分为<strong>模拟信号</strong>（连续变化）和<strong>数字信号</strong>（离散取值）。</li>
+<li><strong>信道</strong>：指传送信号的通道，通常代表一个方向的传输媒介。信道本身不表示具体的物理设备。</li>
+</ul>
+<h3 id="3-4-编码与调制"><a href="#3-4-编码与调制" class="headerlink" title="3.4 编码与调制"></a>3.4 编码与调制</h3><p>由于信源产生的原始信号（基带信号）不一定适合在信道上直接传输，需要进行转换。</p>
+<ul>
+<li><p><strong>编码</strong>：将数字数据转换为数字信号的过程，使其适合在数字信道传输。常见编码方式包括：</p>
+<ul>
+<li><strong>不归零制 (NRZ)</strong>：正电平为1，负电平为0。缺点是无法自同步。</li>
+<li><strong>曼彻斯特编码 (Manchester)</strong>：每位中间有一次电平跳变。跳变既表示时钟，又表示数据。广泛应用于以太网。</li>
+<li><strong>差分曼彻斯特编码</strong>：每位中间的跳变仅提供时钟定时；每位开始时有无跳变表示数据。抗干扰性更强。</li>
+</ul>
 </li>
-<li><ol start="2">
-<li><strong>n.</strong> （俚语）指爱说闲话或搬弄是非的人。</li>
-</ol>
+<li><p><strong>调制</strong>：将数字数据转换为模拟信号的过程，使其适合在模拟信道（如电话线）传输。基本调制方法有：</p>
+<ul>
+<li><strong>调幅 (ASK)</strong>：通过改变载波的振幅来表示数据。</li>
+<li><strong>调频 (FSK)</strong>：通过改变载波的频率来表示数据。</li>
+<li><strong>调相 (PSK)</strong>：通过改变载波的相位来表示数据。</li>
+<li><strong>正交振幅调制 (QAM)</strong>：结合调幅和调相，可在一个码元上携带更多比特信息。</li>
+</ul>
 </li>
 </ul>
-<h2 id="Come-in"><a href="#Come-in" class="headerlink" title="Come in"></a>Come in</h2><p><strong>含义</strong>：</p>
+<h2 id="四、信道容量与极限"><a href="#四、信道容量与极限" class="headerlink" title="四、信道容量与极限"></a>四、信道容量与极限</h2><blockquote>
+<p>信道传输数据的能力不是无限的，主要受限于两个著名定理：</p>
+</blockquote>
+<h3 id="4-1-奈奎斯特准则-Nyquist"><a href="#4-1-奈奎斯特准则-Nyquist" class="headerlink" title="4.1 奈奎斯特准则 (Nyquist)"></a>4.1 奈奎斯特准则 (Nyquist)</h3><p>在<strong>理想低通、无噪声信道</strong>下，为避免码间串扰，<strong>码元传输速率</strong>的上限值为：<br>$$<br>C &#x3D; 2W \log_2 M (\mathrm{Baud})<br>$$其中，<code>W</code> 是信道带宽(Hz)，<code>M</code> 是码元的离散状态数（进制数）。该准则表明，可以通过提高码元状态数（即让一个码元携带更多比特信息）来提升数据传输速率。</p>
+<h3 id="4-2-香农公式-Shannon"><a href="#4-2-香农公式-Shannon" class="headerlink" title="4.2 香农公式 (Shannon)"></a>4.2 香农公式 (Shannon)</h3><p>在<strong>带宽受限、有高斯白噪声</strong>的信道中，<strong>信息的极限传输速率</strong>（信道容量）为：<br>$$<br>C &#x3D; W \log_2 \left(1 + \frac{S}{N}\right) \text{(bit&#x2F;s)}<br>$$其中，<code>W</code> 为信道带宽(Hz)，<code>S/N</code> 为信噪比（信号平均功率&#x2F;噪声平均功率）。香农公式指出，信道的带宽越大或信噪比越高，信道的极限信息传输速率就越高。</p>
+<h2 id="五、传输媒体"><a href="#五、传输媒体" class="headerlink" title="五、传输媒体"></a>五、传输媒体</h2><p>传输媒体是数据传输的物理通路，分为两大类：</p>
+<h3 id="5-1-导向型传输媒体"><a href="#5-1-导向型传输媒体" class="headerlink" title="5.1 导向型传输媒体"></a>5.1 导向型传输媒体</h3><p>电磁波被引导沿固体媒体传播。</p>
 <ul>
-<li><ol>
-<li><strong>进来；进入</strong>：表示从外部移动到内部的动作，常用于邀请或允许他人进入某空间。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>到达；抵达</strong>：指事物（如消息、火车、潮水等）到达或传来。</li>
-</ol>
-</li>
-<li><ol start="3">
-<li><strong>（比赛中）获得名次</strong>：在竞赛中取得特定排名，例如获得第一名、第三名等。</li>
-</ol>
-</li>
-<li><ol start="4">
-<li><strong>流行起来；开始被使用</strong>：指时尚、新产品等开始流行或生效。</li>
-</ol>
-</li>
-<li><ol start="5">
-<li><strong>起作用；有份儿</strong>：表示在某事中发挥作用或参与其中。</li>
-</ol>
-</li>
-<li><ol start="6">
-<li><strong>有收入；定期收到钱款</strong>：指金钱方面的收入，如工资、收益等。</li>
-</ol>
-</li>
-<li><ol start="7">
-<li><strong>请求回应或回答</strong>: 相当于”please respond”或”answer me”。</li>
-</ol>
-</li>
+<li><strong>双绞线</strong>：最常见、最经济，分为屏蔽双绞线(STP)和无屏蔽双绞线(UTP)。</li>
+<li><strong>同轴电缆</strong>：抗干扰能力优于双绞线，用于有线电视等。</li>
+<li><strong>光纤</strong>：利用光脉冲传输，具有通信容量大、传输损耗小、抗电磁干扰强、保密性好等优点，是现代骨干网络的核心。分为多模光纤（近距离）和单模光纤（远距离）。</li>
 </ul>
-<p><strong>例句</strong>：</p>
+<h3 id="5-2-非导向型传输媒体"><a href="#5-2-非导向型传输媒体" class="headerlink" title="5.2 非导向型传输媒体"></a>5.2 非导向型传输媒体</h3><p>即自由空间，用于无线传输。</p>
 <ul>
-<li><ol>
-<li><strong>表示”进来”</strong>：”I stepped aside so that she might <strong>come in</strong>.”（我往旁边走一步，以便她能进来。）</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>表示”到达”</strong>：”The winter timetable <strong>comes</strong> into effect <strong>in</strong> November.”（冬季时间表将于十一月生效。）</li>
-</ol>
-</li>
-<li><ol start="3">
-<li><strong>表示”获得名次”</strong>：”Jerry <strong>came in</strong> third in the Marathon.”（杰里在马拉松比赛中获得了第三名。）</li>
-</ol>
-</li>
-<li><ol start="4">
-<li><strong>表示”流行起来”</strong>：”This style of jeans <strong>came in</strong> quickly last year.”（这种款式的牛仔裤去年迅速流行起来。）</li>
-</ol>
-</li>
-<li><ol start="5">
-<li><strong>表示”起作用”</strong>：”This is where the argument <strong>comes in</strong>.”（这就是争论的起因。）</li>
-</ol>
-</li>
-<li><ol start="6">
-<li><strong>表示”有收入”</strong>：”He has a small amount of money <strong>coming in</strong> each month.”（他每个月有一小笔收入。）</li>
-</ol>
-</li>
-<li><ol start="7">
-<li><strong>表示”请求回应”</strong>：”Buzz lightyear to Star Command. <strong>Come in</strong>, Star Command.”（巴斯光年向星际指挥部请求回应。）</li>
-</ol>
-</li>
+<li><strong>无线电波</strong>：穿透能力强，适用于移动通信。</li>
+<li><strong>微波</strong>：直线传播，需中继站接力或通过卫星通信。</li>
+<li><strong>红外线</strong>：短距离通信，如遥控器。</li>
 </ul>
-<h2 id="Do-you-read-me"><a href="#Do-you-read-me" class="headerlink" title="Do you read me?"></a>Do you read me?</h2><p><strong>含义</strong>：</p>
+<h2 id="六、信道复用技术"><a href="#六、信道复用技术" class="headerlink" title="六、信道复用技术"></a>六、信道复用技术</h2><p>为使多个用户共享同一物理信道，提高信道利用率，采用复用技术：</p>
 <ul>
-<li><ol>
-<li><strong>你能听到我说话吗？</strong>：用于无线电通信中，询问对方是否能清楚地听到自己的声音。相当于”Can you hear me?”或”Are you receiving my message?”。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>你理解我的意思吗？</strong>：用于确认对方是否理解自己所传达的信息或指令。</li>
-</ol>
-</li>
+<li><strong>频分复用 (FDM)</strong>：将总带宽划分为多个不重叠的子频带，每个用户独占一个频带。</li>
+<li><strong>时分复用 (TDM)</strong>：将时间划分为等长的时分复用帧，每个用户占用固定的时隙。</li>
+<li><strong>波分复用 (WDM)</strong>：光的频分复用，在一根光纤中同时传输多个不同波长的光载波信号。</li>
+<li><strong>码分复用 (CDM)</strong>：各用户使用经过特殊挑选的、相互正交的不同码型，可以在同一时间、同一频带上进行通信。</li>
 </ul>
-<p><strong>例句</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>用于无线电通信中</strong>：”<strong>Do you read me</strong>? Over.”（你能听到我说话吗？完毕。）</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>用于确认理解</strong>：”I’m going to explain the plan again, <strong>do you read me</strong>?”（我要再解释一遍计划，你明白我的意思吗？）</li>
-</ol>
-</li>
+<h2 id="七、物理层设备"><a href="#七、物理层设备" class="headerlink" title="七、物理层设备"></a>七、物理层设备</h2><ul>
+<li><strong>中继器 (Repeater)</strong>：工作在物理层，主要功能是对信号进行<strong>再生和放大</strong>，以扩展网络的传输距离。</li>
+<li><strong>集线器 (Hub)</strong>：本质是一个<strong>多端口中继器</strong>。它对接收到的信号进行放大，然后广播到所有其他端口。所有设备共享同一带宽，属于冲突域的核心。</li>
 </ul>
-<h2 id="groundbreaking"><a href="#groundbreaking" class="headerlink" title="groundbreaking"></a>groundbreaking</h2><p><strong>释义</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>adj.</strong> 开创性的，突破性的；指前所未有的、具有创新性的事物。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>n.</strong> 动工，破土（尤指建筑工程开始的仪式）。</li>
-</ol>
-</li>
-</ul>
-<p><strong>例句</strong>：</p>
-<ul>
-<li><ol>
-<li><strong>adj.</strong> Annette Lareau’s <strong>groundbreaking</strong> research on the topic was published in her book <em>Unequal Childhoods</em>（安妮特·拉罗关于这一主题的开创性研究发表于她的著作《不平等的童年》中）。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li><strong>n.</strong> The <strong>groundbreaking</strong> for the new building will commence in the morning（新楼的破土仪式将于上午举行）。</li>
-</ol>
-</li>
-<li><ol start="3">
-<li><strong>adj.</strong> With Toy Story, Pixar’s <strong>groundbreaking</strong> masterpiece that revolutionized flimaking as the first fully computer-animated feature film.（通过《玩具总动员》，皮克斯开创性的杰作，作为第一部完全由计算机动画制作的长片，彻底改变了电影制作。）</li>
-</ol>
-</li>
-</ul>
-<h2 id="blast"><a href="#blast" class="headerlink" title="blast"></a>blast</h2>]]></content>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
+<p>物理层作为网络体系的基石，其核心价值在于为上层协议提供了一个<strong>统一、透明、可靠</strong>的比特流传输服务。通过定义精确的接口标准和信号规范，它成功地屏蔽了底层传输媒体的复杂性，使得数据链路层及以上的高层可以专注于路由、寻址、会话控制等逻辑功能，而无需关心数据是通过光纤、铜线还是无线电波进行传输。理解物理层是理解整个网络通信过程的第一步。</p>
+</blockquote>
+]]></content>
       <categories>
-        <category>English</category>
+        <category>Datacom-Core Tech</category>
       </categories>
       <tags>
-        <tag>Learn English with Video</tag>
+        <tag>OSI Module</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>phrases编写说明</title>
-    <url>/blog/phrases%E7%BC%96%E5%86%99%E8%AF%B4%E6%98%8E/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Phrases-YAML-编写说明"><a href="#Phrases-YAML-编写说明" class="headerlink" title="Phrases YAML 编写说明"></a>Phrases YAML 编写说明</h1><p>本文档说明如何为「Learn English Phrases」页面编写词组数据文件。数据存放在 <code>source/_data/phrases/</code> 目录，由主题标签 <code>{% phrases %}</code> 读取并渲染为可折叠的词组卡片。</p>
-<hr>
-<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">source/_data/phrases/</span><br><span class="line">├── a.yml    # 以 a 开头的关键词（adapt, addition, advantage …）</span><br><span class="line">├── b.yml    # 以 b 开头的关键词（bump …）</span><br><span class="line">├── i.yml    # 以 i 开头的关键词（interact, interaction …）</span><br><span class="line">└── …        # 按需新增，文件名 = 首字母小写 + .yml</span><br></pre></td></tr></table></figure>
-
-<p><strong>命名规则：</strong> 每个文件对应一个词组<strong>关键词首字母</strong>（小写）。例如 <code>adapt oneself to sth</code> 的关键词是 <code>adapt</code>，写入 <code>a.yml</code>；<code>bump into sb/sth</code> 的关键词是 <code>bump</code>，写入 <code>b.yml</code>。</p>
-<p>同一文件内可包含任意多条词组，构建时会按关键词字母序、再按按钮全文排序。</p>
-<hr>
-<h2 id="在文章中使用"><a href="#在文章中使用" class="headerlink" title="在文章中使用"></a>在文章中使用</h2><p>在 Markdown 文章中通过 Hexo 标签引入：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## A</span></span><br><span class="line"></span><br><span class="line">&#123;% phrases a %&#125;</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## B</span></span><br><span class="line"></span><br><span class="line">&#123;% phrases b %&#125;</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## I</span></span><br><span class="line"></span><br><span class="line">&#123;% phrases i %&#125;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>写法</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>{% phrases %}</code></td>
-<td>加载 <code>phrases/</code> 下全部 <code>.yml</code></td>
-</tr>
-<tr>
-<td><code>{% phrases a %}</code></td>
-<td>仅加载 <code>a.yml</code></td>
-</tr>
-<tr>
-<td><code>{% phrases a,b,i %}</code></td>
-<td>加载多个文件（逗号或空格分隔均可）</td>
-</tr>
-</tbody></table>
-<p>参考：<code>source/_posts/English Phrases.md</code></p>
-<hr>
-<h2 id="顶层结构"><a href="#顶层结构" class="headerlink" title="顶层结构"></a>顶层结构</h2><p>每个 <code>.yml</code> 文件是一个<strong>数组</strong>，数组中每一项代表一个词组条目：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">id:</span> <span class="string">bump-into-sb-sth</span></span><br><span class="line">  <span class="attr">button:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">bump</span></span><br><span class="line">      <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; into sb/sth&quot;</span></span><br><span class="line">  <span class="attr">senses:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span> <span class="string">…</span></span><br><span class="line">      <span class="attr">pos:</span> <span class="string">vi.</span> <span class="string">vt.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">猛碰，撞</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">to</span> <span class="string">hit</span> <span class="string">or</span> <span class="string">knock</span> <span class="string">against</span> <span class="string">sth</span></span><br><span class="line">      <span class="attr">examples:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">She</span> <span class="string">**bumped</span> <span class="string">into**</span> <span class="string">someone.</span></span><br><span class="line">          <span class="attr">zh:</span> <span class="string">她撞到了别人。</span></span><br><span class="line">          <span class="attr">source:</span> <span class="string">权力的游戏</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="字段一览"><a href="#字段一览" class="headerlink" title="字段一览"></a>字段一览</h3><table>
-<thead>
-<tr>
-<th>字段</th>
-<th>必填</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>id</code></td>
-<td>推荐</td>
-<td>唯一标识，用于 <code>data-phrase-id</code> 属性，建议用 kebab-case</td>
-</tr>
-<tr>
-<td><code>button</code></td>
-<td>是</td>
-<td>折叠按钮上显示的文字，由多个片段组成</td>
-</tr>
-<tr>
-<td><code>senses</code></td>
-<td>是</td>
-<td>释义列表，一条词组可含多个义项</td>
-</tr>
-<tr>
-<td><code>keyword</code></td>
-<td>否</td>
-<td>自定义排序用关键词；省略时取 <code>button</code> 中 <code>word: true</code> 的片段</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="button-—-按钮文字"><a href="#button-—-按钮文字" class="headerlink" title="button — 按钮文字"></a>button — 按钮文字</h2><p><code>button</code> 是片段数组，按顺序拼接成按钮上的可见文字。</p>
-<h3 id="普通片段"><a href="#普通片段" class="headerlink" title="普通片段"></a>普通片段</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">button:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot;in &quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">addition</span></span><br><span class="line">    <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; (to sb/sth)&quot;</span></span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>text</code></td>
-<td>显示文字</td>
-</tr>
-<tr>
-<td><code>word</code></td>
-<td>设为 <code>true</code> 时，该片段用 <code>&lt;word&gt;</code> 标签包裹（关键词高亮样式）</td>
-</tr>
-<tr>
-<td><code>sup</code></td>
-<td>上标文字，用于区分同一按钮下的多个义项编号</td>
-</tr>
-</tbody></table>
-<p><strong><code>word: true</code> 的作用：</strong></p>
-<ol>
-<li>按钮上突出显示关键词（如 <code>adapt</code>、<code>bump</code>）</li>
-<li>作为默认排序关键词（除非设置了 <code>keyword</code> 字段）</li>
-</ol>
-<h3 id="多义项编号（上标）"><a href="#多义项编号（上标）" class="headerlink" title="多义项编号（上标）"></a>多义项编号（上标）</h3><p>同一按钮对应多个义项时，可在按钮片段上加 <code>sup</code>：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">button:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">take</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; &quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advantage</span></span><br><span class="line">    <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; of sth&quot;</span></span><br><span class="line">    <span class="attr">sup:</span> <span class="string">&quot;1&quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">/sb</span></span><br><span class="line">    <span class="attr">sup:</span> <span class="string">&quot;2&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>渲染效果：<code>take advantage of sth¹/sb²</code></p>
-<hr>
-<h2 id="senses-—-义项"><a href="#senses-—-义项" class="headerlink" title="senses — 义项"></a>senses — 义项</h2><p>每个 sense 代表一个词性&#x2F;含义，展开折叠块后依次显示。</p>
-<h3 id="基本字段"><a href="#基本字段" class="headerlink" title="基本字段"></a>基本字段</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">senses:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">title:</span> <span class="string">…</span>          <span class="comment"># 可选，词组标题行</span></span><br><span class="line">    <span class="attr">pos:</span> <span class="string">vi.</span> <span class="string">vt.</span>      <span class="comment"># 词性（纯文本）</span></span><br><span class="line">    <span class="attr">cn:</span> <span class="string">猛碰，撞</span>       <span class="comment"># 中文释义</span></span><br><span class="line">    <span class="attr">en:</span> <span class="string">to</span> <span class="string">hit</span> <span class="string">or</span> <span class="string">knock</span> <span class="string">against</span> <span class="string">sth</span>   <span class="comment"># 英文释义</span></span><br><span class="line">    <span class="attr">examples:</span> <span class="string">…</span>       <span class="comment"># 例句列表</span></span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>必填</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>title</code></td>
-<td>否</td>
-<td>展开后的标题行；省略则只显示释义</td>
-</tr>
-<tr>
-<td><code>pos</code></td>
-<td>否</td>
-<td>词性，如 <code>n.</code>、<code>vi.</code>、<code>IDM.</code></td>
-</tr>
-<tr>
-<td><code>posHtml</code></td>
-<td>否</td>
-<td>词性 HTML，与 <code>pos</code> 二选一；用于下标等，如 <code>n&lt;sub&gt;1&lt;/sub&gt;.</code></td>
-</tr>
-<tr>
-<td><code>cn</code></td>
-<td>推荐</td>
-<td>中文释义</td>
-</tr>
-<tr>
-<td><code>en</code></td>
-<td>否</td>
-<td>英文释义</td>
-</tr>
-<tr>
-<td><code>examples</code></td>
-<td>否</td>
-<td>例句数组</td>
-</tr>
-</tbody></table>
-<p><strong><code>pos</code> 与 <code>posHtml</code>：</strong> 若两者都未设置，词性区域为空。同一 entry 内多个 sense 可分别使用，例如：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">senses:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">title:</span> <span class="string">…</span></span><br><span class="line">    <span class="attr">posHtml:</span> <span class="string">n&lt;sub&gt;1&lt;/sub&gt;.</span></span><br><span class="line">    <span class="attr">cn:</span> <span class="string">预付款</span></span><br><span class="line">    <span class="attr">en:</span> <span class="string">money</span> <span class="string">paid</span> <span class="string">before</span> <span class="string">the</span> <span class="string">usual</span> <span class="string">time</span></span><br><span class="line">    <span class="attr">examples:</span> <span class="string">…</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">posHtml:</span> <span class="string">n&lt;sub&gt;2&lt;/sub&gt;.</span></span><br><span class="line">    <span class="attr">cn:</span> <span class="string">（价格、价值的）上涨</span></span><br><span class="line">    <span class="attr">en:</span> <span class="string">a</span> <span class="string">rise</span> <span class="string">in</span> <span class="string">the</span> <span class="string">price</span> <span class="string">or</span> <span class="string">value</span> <span class="string">of</span> <span class="string">sth</span></span><br><span class="line">    <span class="attr">examples:</span> <span class="string">…</span></span><br></pre></td></tr></table></figure>
-
-<p>第二个 sense 可以省略 <code>title</code>，只保留释义和例句。</p>
-<hr>
-<h2 id="title-—-标题行片段"><a href="#title-—-标题行片段" class="headerlink" title="title — 标题行片段"></a>title — 标题行片段</h2><p><code>title</code> 与 <code>button</code> 类似，也是片段数组，但用于展开内容顶部的完整词组展示，支持更丰富的格式。</p>
-<h3 id="普通文字"><a href="#普通文字" class="headerlink" title="普通文字"></a>普通文字</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">bump</span> <span class="string">into</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">sb/sth</span></span><br><span class="line">    <span class="attr">underline:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>text</code></td>
-<td>普通文字</td>
-</tr>
-<tr>
-<td><code>word</code></td>
-<td>用 <code>&lt;word&gt;</code> 包裹（较少在 title 中使用）</td>
-</tr>
-<tr>
-<td><code>underline</code></td>
-<td>设为 <code>true</code> 时加下划线</td>
-</tr>
-</tbody></table>
-<h3 id="sb-片段（sb-sth-占位符）"><a href="#sb-片段（sb-sth-占位符）" class="headerlink" title="sb 片段（sb&#x2F;sth 占位符）"></a>sb 片段（sb&#x2F;sth 占位符）</h3><p>当片段含 <code>sb: true</code> 时，渲染为 <code>&lt;span class=&quot;sb-sth&quot;&gt;…&lt;/span&gt;</code>，用于 <code>sb</code>、<code>sth</code>、<code>sb/sth</code> 等搭配占位符：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">adapt</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">(oneself)</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">to</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">sth</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="带括号包裹的-sb-片段"><a href="#带括号包裹的-sb-片段" class="headerlink" title="带括号包裹的 sb 片段"></a>带括号包裹的 sb 片段</h3><p>需要自定义括号或前后缀时，使用 <code>prefix</code> &#x2F; <code>suffix</code>：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">in</span> <span class="string">addition</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">prefix:</span> <span class="string">&quot;(to &quot;</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">sb/sth</span></span><br><span class="line">    <span class="attr">underline:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">suffix:</span> <span class="string">&quot;)&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>渲染效果：<code>in addition (to sb/sth)</code>，其中 <code>sb/sth</code> 带下划线。</p>
-<h3 id="可变搭配（斜杠分隔）"><a href="#可变搭配（斜杠分隔）" class="headerlink" title="可变搭配（斜杠分隔）"></a>可变搭配（斜杠分隔）</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot;to &quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">underline:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">good/best</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; advantage&quot;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">underline:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">use/turn</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">sth</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">to</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">one&#x27;s</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advantage</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="examples-—-例句"><a href="#examples-—-例句" class="headerlink" title="examples — 例句"></a>examples — 例句</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">examples:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">She</span> <span class="string">stepped</span> <span class="string">backward</span> <span class="string">and</span> <span class="string">**bumped</span> <span class="string">into**</span> <span class="string">someone.</span></span><br><span class="line">    <span class="attr">zh:</span> <span class="string">她踉跄后退，结果撞到了别人。</span></span><br><span class="line">    <span class="attr">source:</span> <span class="string">权力的游戏</span> <span class="string">有声书</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">If</span> <span class="string">I</span> <span class="string">move</span> <span class="string">slowly,</span> <span class="string">I</span> <span class="string">won&#x27;t</span> <span class="string">**bump</span> <span class="string">into**</span> <span class="string">things.</span></span><br><span class="line">    <span class="attr">zh:</span> <span class="string">如果我走得慢点，就不会撞到东西了。</span></span><br><span class="line">    <span class="attr">source:</span> <span class="string">小猪佩奇</span> <span class="string">第一季</span></span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>必填</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>en</code></td>
-<td>是</td>
-<td>英文例句；<code>**短语**</code> 会渲染为 <code>&lt;strong&gt;</code> 加粗</td>
-</tr>
-<tr>
-<td><code>zh</code></td>
-<td>否</td>
-<td>中文翻译，显示为 <code>（…）</code></td>
-</tr>
-<tr>
-<td><code>source</code></td>
-<td>否</td>
-<td>出处，显示为 <code>——出处</code></td>
-</tr>
-</tbody></table>
-<p><strong>加粗规则：</strong> 在 <code>en</code> 中用 Markdown 风格的 <code>**…**</code> 标记需要强调的短语部分，例如 <code>**bumped into**</code>、<code>**adapt to**</code>。</p>
-<hr>
-<h2 id="完整示例"><a href="#完整示例" class="headerlink" title="完整示例"></a>完整示例</h2><h3 id="简单词条"><a href="#简单词条" class="headerlink" title="简单词条"></a>简单词条</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">id:</span> <span class="string">bump-into-sb-sth</span></span><br><span class="line">  <span class="attr">button:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">bump</span></span><br><span class="line">      <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; into sb/sth&quot;</span></span><br><span class="line">  <span class="attr">senses:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">bump</span> <span class="string">into</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">text:</span> <span class="string">sb/sth</span></span><br><span class="line">          <span class="attr">underline:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">pos:</span> <span class="string">vi.</span> <span class="string">vt.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">猛碰，撞</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">to</span> <span class="string">hit</span> <span class="string">or</span> <span class="string">knock</span> <span class="string">against</span> <span class="string">sth</span></span><br><span class="line">      <span class="attr">examples:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">She</span> <span class="string">stepped</span> <span class="string">backward</span> <span class="string">and</span> <span class="string">**bumped</span> <span class="string">into**</span> <span class="string">someone.</span></span><br><span class="line">          <span class="attr">zh:</span> <span class="string">她踉跄后退，结果撞到了别人。</span></span><br><span class="line">          <span class="attr">source:</span> <span class="string">权力的游戏</span> <span class="string">有声书</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="一词多义（同一-entry-多个-sense）"><a href="#一词多义（同一-entry-多个-sense）" class="headerlink" title="一词多义（同一 entry 多个 sense）"></a>一词多义（同一 entry 多个 sense）</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">id:</span> <span class="string">advance-on-sth</span></span><br><span class="line">  <span class="attr">button:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advance</span></span><br><span class="line">      <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; (on sth)&quot;</span></span><br><span class="line">  <span class="attr">senses:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advance</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">text:</span> <span class="string">(on</span> <span class="string">sth)</span></span><br><span class="line">      <span class="attr">posHtml:</span> <span class="string">n&lt;sub&gt;1&lt;/sub&gt;.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">预付款</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">money</span> <span class="string">which</span> <span class="string">is</span> <span class="string">paid</span> <span class="string">to</span> <span class="string">sb</span> <span class="string">before</span> <span class="string">the</span> <span class="string">usual</span> <span class="string">time</span> <span class="string">of</span> <span class="string">payment</span></span><br><span class="line">      <span class="attr">examples:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">I</span> <span class="string">need</span> <span class="string">an</span> <span class="string">**advance</span> <span class="string">on**</span> <span class="string">my</span> <span class="string">pay.</span></span><br><span class="line">          <span class="attr">zh:</span> <span class="string">我需要提前预支些钱。</span></span><br><span class="line">          <span class="attr">source:</span> <span class="string">亲密治疗</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">posHtml:</span> <span class="string">n&lt;sub&gt;2&lt;/sub&gt;.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">（价格、价值的）上涨，上升</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">a</span> <span class="string">rise</span> <span class="string">in</span> <span class="string">the</span> <span class="string">price,</span> <span class="string">value,</span> <span class="string">of</span> <span class="string">sth</span></span><br><span class="line">      <span class="attr">examples:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">Any</span> <span class="string">**advance</span> <span class="string">on**</span> <span class="number">22</span><span class="string">&#x27;000? Anyone?</span></span><br><span class="line"><span class="string">          zh: 还有比22000更高的出价吗?</span></span><br><span class="line"><span class="string">          source: 碟中谍5</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="按钮与义项均带编号"><a href="#按钮与义项均带编号" class="headerlink" title="按钮与义项均带编号"></a>按钮与义项均带编号</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">id:</span> <span class="string">take-advantage-of-sth-sb</span></span><br><span class="line">  <span class="attr">button:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">take</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; &quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advantage</span></span><br><span class="line">      <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; of sth&quot;</span></span><br><span class="line">      <span class="attr">sup:</span> <span class="string">&quot;1&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">/sb</span></span><br><span class="line">      <span class="attr">sup:</span> <span class="string">&quot;2&quot;</span></span><br><span class="line">  <span class="attr">senses:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">take</span> <span class="string">advantage</span> <span class="string">of</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">text:</span> <span class="string">sth</span></span><br><span class="line">      <span class="attr">pos:</span> <span class="string">IDM.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">利用</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">if</span> <span class="string">you</span> <span class="string">take</span> <span class="string">advantage</span> <span class="string">of</span> <span class="string">sth,</span> <span class="string">you</span> <span class="string">make</span> <span class="string">good</span> <span class="string">use</span> <span class="string">of</span> <span class="string">it</span> <span class="string">while</span> <span class="string">you</span> <span class="string">can</span></span><br><span class="line">      <span class="attr">examples:</span> <span class="string">…</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">take</span> <span class="string">advantage</span> <span class="string">of</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">text:</span> <span class="string">sb</span></span><br><span class="line">      <span class="attr">pos:</span> <span class="string">IDM.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">占…的便宜；欺骗；捉弄</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">if</span> <span class="string">sb</span> <span class="string">takes</span> <span class="string">advantage</span> <span class="string">of</span> <span class="string">you,</span> <span class="string">they</span> <span class="string">treat</span> <span class="string">you</span> <span class="string">unfairly</span> <span class="string">for</span> <span class="string">their</span> <span class="string">own</span> <span class="string">benefit</span></span><br><span class="line">      <span class="attr">examples:</span> <span class="string">…</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="YAML-编写注意事项"><a href="#YAML-编写注意事项" class="headerlink" title="YAML 编写注意事项"></a>YAML 编写注意事项</h2><ol>
-<li><p><strong>含特殊字符的 text 请加引号</strong><br>空格、冒号、括号、<code>#</code> 等可能导致 YAML 解析错误，建议写成 <code>&quot; into sb/sth&quot;</code>、<code>&quot;(to &quot;</code>。</p>
-</li>
-<li><p><strong>缩进使用空格，不要用 Tab</strong><br>统一 2 空格缩进，与现有文件保持一致。</p>
-</li>
-<li><p><strong>id 命名建议</strong><br>使用小写英文 + 连字符，如 <code>adapt-oneself-to-sth</code>、<code>bump-into-sb-sth</code>，便于识别且避免重复。</p>
-</li>
-<li><p><strong>修改后需重新生成</strong><br>数据在 Hexo 构建时读取并缓存；修改 yml 后执行 <code>hexo clean &amp;&amp; hexo g</code>（或 <code>hexo s</code>）才能看到更新。</p>
-</li>
-<li><p><strong>文件为空或不存在</strong><br>若指定字母的文件不存在或无有效条目，页面会输出 HTML 注释 <code>&lt;!-- phrases: no data (a) --&gt;</code>，不会报错。</p>
-</li>
-</ol>
-<hr>
-<h2 id="与-phrase-标签的区别"><a href="#与-phrase-标签的区别" class="headerlink" title="与 {% phrase %} 标签的区别"></a>与 <code>{% phrase %}</code> 标签的区别</h2><p>项目中还存在旧式单行标签 <code>{% phrase %}…{% endphrase %}</code>（见 <code>themes/kakyo-hexo-theme-butterfly/scripts/tag/phrase.js</code>），直接在 Markdown 里写参数和例句，适合零散添加少量词条。</p>
-<table>
-<thead>
-<tr>
-<th>方式</th>
-<th>数据位置</th>
-<th>适用场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>YAML + <code>{% phrases %}</code></strong></td>
-<td><code>source/_data/phrases/*.yml</code></td>
-<td>批量维护、按字母分文件、统一样式</td>
-</tr>
-<tr>
-<td><strong><code>{% phrase %}</code> 标签</strong></td>
-<td>写在文章 Markdown 内</td>
-<td>单条词组、快速草稿</td>
-</tr>
-</tbody></table>
-<p>新词条建议优先写入 YAML，便于统一管理与排序。</p>
-<hr>
-<h2 id="渲染结果结构（供调试参考）"><a href="#渲染结果结构（供调试参考）" class="headerlink" title="渲染结果结构（供调试参考）"></a>渲染结果结构（供调试参考）</h2><p>每条 entry 最终渲染为：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;phrase-item&quot;</span> <span class="attr">data-phrase-id</span>=<span class="string">&quot;…&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;hide-block&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">class</span>=<span class="string">&quot;hide-button&quot;</span>&gt;</span>…<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;hide-content&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;hideBlockTitle&quot;</span>&gt;</span>…<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;definition-text&quot;</span>&gt;</span>词性 中文<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;definition-english-text&quot;</span>&gt;</span>英文<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>例句<span class="tag">&lt;<span class="name">strong</span>&gt;</span>高亮<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;chinese-translation-text&quot;</span>&gt;</span>…<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>相关实现：<code>themes/kakyo-hexo-theme-butterfly/scripts/tag/kakyo/phrases.js</code></p>
-]]></content>
   </entry>
   <entry>
     <title>HCIP期末</title>
@@ -1308,1147 +1036,373 @@
 ]]></content>
   </entry>
   <entry>
-    <title>震惊！OSI参考模型终于有详细解读了！</title>
-    <url>/blog/OSI%E8%AF%A6%E8%A7%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><h2 id="计算机网络物理层详解"><a href="#计算机网络物理层详解" class="headerlink" title="计算机网络物理层详解"></a>计算机网络物理层详解</h2><blockquote>
-<p>物理层是计算机网络体系结构（如OSI模型和TCP&#x2F;IP模型）中的最底层，是整个网络通信的物理基础。它关注的是如何在连接各种计算机的传输媒体上透明地传输原始的比特流（0和1）。</p>
-</blockquote>
-<h2 id="一、物理层的基本概念与核心作用"><a href="#一、物理层的基本概念与核心作用" class="headerlink" title="一、物理层的基本概念与核心作用"></a>一、物理层的基本概念与核心作用</h2><h3 id="1-1-基本概念"><a href="#1-1-基本概念" class="headerlink" title="1.1 基本概念"></a>1.1 基本概念</h3><blockquote>
-<p>物理层并<strong>不是指具体的传输媒体</strong>（如网线），而是指在传输媒体之上，为数据链路层提供<strong>比特流传输服务</strong>的层级。它规定了为建立、维持和拆除物理链路所需的机械、电气、功能和规程特性。简单来说，物理层确保数据链路层交付下来的比特序列，能够通过各种物理媒介（如双绞线、光纤、无线电波）准确地传送到接收端。</p>
-</blockquote>
-<h3 id="1-2-核心作用"><a href="#1-2-核心作用" class="headerlink" title="1.2 核心作用"></a>1.2 核心作用</h3><p>物理层的核心作用是实现<strong>比特流的透明传输</strong>。其具体任务可归纳为以下几点：</p>
-<ul>
-<li><strong>屏蔽差异</strong>：物理层要尽可能地屏蔽掉不同物理设备、传输媒体和通信手段的差异，使数据链路层感觉不到这些差异，从而只需关注本层的协议和服务。</li>
-<li><strong>提供比特传输能力</strong>：为数据链路层在一条物理的传输媒体上提供传送和接收比特流的能力，并解决物理连接的建立、维持和释放问题。</li>
-<li><strong>定义接口标准</strong>：规定与传输媒体接口的机械、电气、功能和规程四大特性，确保不同厂商的设备能够互联互通。</li>
-</ul>
-<h2 id="二、物理层接口的四大特性"><a href="#二、物理层接口的四大特性" class="headerlink" title="二、物理层接口的四大特性"></a>二、物理层接口的四大特性</h2><p>物理层协议通过定义接口的四个特性来完成其主要任务：</p>
+    <title>phrases编写说明</title>
+    <url>/blog/phrases%E7%BC%96%E5%86%99%E8%AF%B4%E6%98%8E/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Phrases-YAML-编写说明"><a href="#Phrases-YAML-编写说明" class="headerlink" title="Phrases YAML 编写说明"></a>Phrases YAML 编写说明</h1><p>本文档说明如何为「Learn English Phrases」页面编写词组数据文件。数据存放在 <code>source/_data/phrases/</code> 目录，由主题标签 <code>{% phrases %}</code> 读取并渲染为可折叠的词组卡片。</p>
+<hr>
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">source/_data/phrases/</span><br><span class="line">├── a.yml    # 以 a 开头的关键词（adapt, addition, advantage …）</span><br><span class="line">├── b.yml    # 以 b 开头的关键词（bump …）</span><br><span class="line">├── i.yml    # 以 i 开头的关键词（interact, interaction …）</span><br><span class="line">└── …        # 按需新增，文件名 = 首字母小写 + .yml</span><br></pre></td></tr></table></figure>
+
+<p><strong>命名规则：</strong> 每个文件对应一个词组<strong>关键词首字母</strong>（小写）。例如 <code>adapt oneself to sth</code> 的关键词是 <code>adapt</code>，写入 <code>a.yml</code>；<code>bump into sb/sth</code> 的关键词是 <code>bump</code>，写入 <code>b.yml</code>。</p>
+<p>同一文件内可包含任意多条词组，构建时会按关键词字母序、再按按钮全文排序。</p>
+<hr>
+<h2 id="在文章中使用"><a href="#在文章中使用" class="headerlink" title="在文章中使用"></a>在文章中使用</h2><p>在 Markdown 文章中通过 Hexo 标签引入：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## A</span></span><br><span class="line"></span><br><span class="line">&#123;% phrases a %&#125;</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## B</span></span><br><span class="line"></span><br><span class="line">&#123;% phrases b %&#125;</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## I</span></span><br><span class="line"></span><br><span class="line">&#123;% phrases i %&#125;</span><br></pre></td></tr></table></figure>
+
 <table>
 <thead>
 <tr>
-<th align="left">特性</th>
-<th align="left">说明</th>
-<th align="left">通俗比喻</th>
+<th>写法</th>
+<th>效果</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><strong>机械特性</strong></td>
-<td align="left">定义接口连接器的形状、尺寸、引脚数目和排列顺序、固定和锁定装置等。</td>
-<td align="left">类似于各种电源插头的形状和尺寸都有严格规定，确保插头能插入对应的插座。</td>
+<td><code>{% phrases %}</code></td>
+<td>加载 <code>phrases/</code> 下全部 <code>.yml</code></td>
 </tr>
 <tr>
-<td align="left"><strong>电气特性</strong></td>
-<td align="left">规定线路上信号的电压范围、阻抗匹配、传输速率和传输距离的限制。</td>
-<td align="left">例如，规定多少伏特的电压代表二进制0，多少伏特代表1。</td>
+<td><code>{% phrases a %}</code></td>
+<td>仅加载 <code>a.yml</code></td>
 </tr>
 <tr>
-<td align="left"><strong>功能特性</strong></td>
-<td align="left">指明接口电缆上每条信号线的功能或用途。</td>
-<td align="left">如哪些是数据线、控制线、定时线或地线。</td>
-</tr>
-<tr>
-<td align="left"><strong>规程特性</strong></td>
-<td align="left">定义比特流传输过程中各种事件发生的先后顺序。</td>
-<td align="left">即物理连接的建立、维持、交换信息和拆除的流程。</td>
+<td><code>{% phrases a,b,i %}</code></td>
+<td>加载多个文件（逗号或空格分隔均可）</td>
 </tr>
 </tbody></table>
-<h2 id="三、数据通信基础"><a href="#三、数据通信基础" class="headerlink" title="三、数据通信基础"></a>三、数据通信基础</h2><h3 id="3-1-数据通信模型"><a href="#3-1-数据通信模型" class="headerlink" title="3.1 数据通信模型"></a>3.1 数据通信模型</h3><p>一个典型的数据通信系统包含三个部分：</p>
-<ul>
-<li><strong>源系统</strong>：包括信源（产生数据的设备）和发送器（如调制解调器，将数字比特流转换为可在信道上传输的信号）。</li>
-<li><strong>传输系统</strong>：即传输媒介构成的信道网络。</li>
-<li><strong>目的系统</strong>：包括接收器（将接收到的信号转换回数字比特流）和信宿（接收数据的最终设备）。</li>
-</ul>
-<h3 id="3-2-通信方式"><a href="#3-2-通信方式" class="headerlink" title="3.2 通信方式"></a>3.2 通信方式</h3><p>根据信息交互方向，通信可分为三种基本方式：</p>
-<ul>
-<li><strong>单工通信</strong>：数据只能单向传输，如广播、电视。</li>
-<li><strong>半双工通信</strong>：数据可以双向传输，但不能同时进行，如对讲机。</li>
-<li><strong>全双工通信</strong>：数据可以双向同时传输，如电话通话。</li>
-</ul>
-<h3 id="3-3-信号与信道"><a href="#3-3-信号与信道" class="headerlink" title="3.3 信号与信道"></a>3.3 信号与信道</h3><ul>
-<li><strong>信号</strong>：是数据的电或电磁的表现形式，分为<strong>模拟信号</strong>（连续变化）和<strong>数字信号</strong>（离散取值）。</li>
-<li><strong>信道</strong>：指传送信号的通道，通常代表一个方向的传输媒介。信道本身不表示具体的物理设备。</li>
-</ul>
-<h3 id="3-4-编码与调制"><a href="#3-4-编码与调制" class="headerlink" title="3.4 编码与调制"></a>3.4 编码与调制</h3><p>由于信源产生的原始信号（基带信号）不一定适合在信道上直接传输，需要进行转换。</p>
-<ul>
-<li><p><strong>编码</strong>：将数字数据转换为数字信号的过程，使其适合在数字信道传输。常见编码方式包括：</p>
-<ul>
-<li><strong>不归零制 (NRZ)</strong>：正电平为1，负电平为0。缺点是无法自同步。</li>
-<li><strong>曼彻斯特编码 (Manchester)</strong>：每位中间有一次电平跳变。跳变既表示时钟，又表示数据。广泛应用于以太网。</li>
-<li><strong>差分曼彻斯特编码</strong>：每位中间的跳变仅提供时钟定时；每位开始时有无跳变表示数据。抗干扰性更强。</li>
-</ul>
+<p>参考：<code>source/_posts/English Phrases.md</code></p>
+<hr>
+<h2 id="顶层结构"><a href="#顶层结构" class="headerlink" title="顶层结构"></a>顶层结构</h2><p>每个 <code>.yml</code> 文件是一个<strong>数组</strong>，数组中每一项代表一个词组条目：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">id:</span> <span class="string">bump-into-sb-sth</span></span><br><span class="line">  <span class="attr">button:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">bump</span></span><br><span class="line">      <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; into sb/sth&quot;</span></span><br><span class="line">  <span class="attr">senses:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span> <span class="string">…</span></span><br><span class="line">      <span class="attr">pos:</span> <span class="string">vi.</span> <span class="string">vt.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">猛碰，撞</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">to</span> <span class="string">hit</span> <span class="string">or</span> <span class="string">knock</span> <span class="string">against</span> <span class="string">sth</span></span><br><span class="line">      <span class="attr">examples:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">She</span> <span class="string">**bumped</span> <span class="string">into**</span> <span class="string">someone.</span></span><br><span class="line">          <span class="attr">zh:</span> <span class="string">她撞到了别人。</span></span><br><span class="line">          <span class="attr">source:</span> <span class="string">权力的游戏</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字段一览"><a href="#字段一览" class="headerlink" title="字段一览"></a>字段一览</h3><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>id</code></td>
+<td>推荐</td>
+<td>唯一标识，用于 <code>data-phrase-id</code> 属性，建议用 kebab-case</td>
+</tr>
+<tr>
+<td><code>button</code></td>
+<td>是</td>
+<td>折叠按钮上显示的文字，由多个片段组成</td>
+</tr>
+<tr>
+<td><code>senses</code></td>
+<td>是</td>
+<td>释义列表，一条词组可含多个义项</td>
+</tr>
+<tr>
+<td><code>keyword</code></td>
+<td>否</td>
+<td>自定义排序用关键词；省略时取 <code>button</code> 中 <code>word: true</code> 的片段</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="button-—-按钮文字"><a href="#button-—-按钮文字" class="headerlink" title="button — 按钮文字"></a>button — 按钮文字</h2><p><code>button</code> 是片段数组，按顺序拼接成按钮上的可见文字。</p>
+<h3 id="普通片段"><a href="#普通片段" class="headerlink" title="普通片段"></a>普通片段</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">button:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot;in &quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">addition</span></span><br><span class="line">    <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; (to sb/sth)&quot;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>text</code></td>
+<td>显示文字</td>
+</tr>
+<tr>
+<td><code>word</code></td>
+<td>设为 <code>true</code> 时，该片段用 <code>&lt;word&gt;</code> 标签包裹（关键词高亮样式）</td>
+</tr>
+<tr>
+<td><code>sup</code></td>
+<td>上标文字，用于区分同一按钮下的多个义项编号</td>
+</tr>
+</tbody></table>
+<p><strong><code>word: true</code> 的作用：</strong></p>
+<ol>
+<li>按钮上突出显示关键词（如 <code>adapt</code>、<code>bump</code>）</li>
+<li>作为默认排序关键词（除非设置了 <code>keyword</code> 字段）</li>
+</ol>
+<h3 id="多义项编号（上标）"><a href="#多义项编号（上标）" class="headerlink" title="多义项编号（上标）"></a>多义项编号（上标）</h3><p>同一按钮对应多个义项时，可在按钮片段上加 <code>sup</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">button:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">take</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; &quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advantage</span></span><br><span class="line">    <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; of sth&quot;</span></span><br><span class="line">    <span class="attr">sup:</span> <span class="string">&quot;1&quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">/sb</span></span><br><span class="line">    <span class="attr">sup:</span> <span class="string">&quot;2&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>渲染效果：<code>take advantage of sth¹/sb²</code></p>
+<hr>
+<h2 id="senses-—-义项"><a href="#senses-—-义项" class="headerlink" title="senses — 义项"></a>senses — 义项</h2><p>每个 sense 代表一个词性&#x2F;含义，展开折叠块后依次显示。</p>
+<h3 id="基本字段"><a href="#基本字段" class="headerlink" title="基本字段"></a>基本字段</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">senses:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">title:</span> <span class="string">…</span>          <span class="comment"># 可选，词组标题行</span></span><br><span class="line">    <span class="attr">pos:</span> <span class="string">vi.</span> <span class="string">vt.</span>      <span class="comment"># 词性（纯文本）</span></span><br><span class="line">    <span class="attr">cn:</span> <span class="string">猛碰，撞</span>       <span class="comment"># 中文释义</span></span><br><span class="line">    <span class="attr">en:</span> <span class="string">to</span> <span class="string">hit</span> <span class="string">or</span> <span class="string">knock</span> <span class="string">against</span> <span class="string">sth</span>   <span class="comment"># 英文释义</span></span><br><span class="line">    <span class="attr">examples:</span> <span class="string">…</span>       <span class="comment"># 例句列表</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>title</code></td>
+<td>否</td>
+<td>展开后的标题行；省略则只显示释义</td>
+</tr>
+<tr>
+<td><code>pos</code></td>
+<td>否</td>
+<td>词性，如 <code>n.</code>、<code>vi.</code>、<code>IDM.</code></td>
+</tr>
+<tr>
+<td><code>posHtml</code></td>
+<td>否</td>
+<td>词性 HTML，与 <code>pos</code> 二选一；用于下标等，如 <code>n&lt;sub&gt;1&lt;/sub&gt;.</code></td>
+</tr>
+<tr>
+<td><code>cn</code></td>
+<td>推荐</td>
+<td>中文释义</td>
+</tr>
+<tr>
+<td><code>en</code></td>
+<td>否</td>
+<td>英文释义</td>
+</tr>
+<tr>
+<td><code>examples</code></td>
+<td>否</td>
+<td>例句数组</td>
+</tr>
+</tbody></table>
+<p><strong><code>pos</code> 与 <code>posHtml</code>：</strong> 若两者都未设置，词性区域为空。同一 entry 内多个 sense 可分别使用，例如：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">senses:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">title:</span> <span class="string">…</span></span><br><span class="line">    <span class="attr">posHtml:</span> <span class="string">n&lt;sub&gt;1&lt;/sub&gt;.</span></span><br><span class="line">    <span class="attr">cn:</span> <span class="string">预付款</span></span><br><span class="line">    <span class="attr">en:</span> <span class="string">money</span> <span class="string">paid</span> <span class="string">before</span> <span class="string">the</span> <span class="string">usual</span> <span class="string">time</span></span><br><span class="line">    <span class="attr">examples:</span> <span class="string">…</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">posHtml:</span> <span class="string">n&lt;sub&gt;2&lt;/sub&gt;.</span></span><br><span class="line">    <span class="attr">cn:</span> <span class="string">（价格、价值的）上涨</span></span><br><span class="line">    <span class="attr">en:</span> <span class="string">a</span> <span class="string">rise</span> <span class="string">in</span> <span class="string">the</span> <span class="string">price</span> <span class="string">or</span> <span class="string">value</span> <span class="string">of</span> <span class="string">sth</span></span><br><span class="line">    <span class="attr">examples:</span> <span class="string">…</span></span><br></pre></td></tr></table></figure>
+
+<p>第二个 sense 可以省略 <code>title</code>，只保留释义和例句。</p>
+<hr>
+<h2 id="title-—-标题行片段"><a href="#title-—-标题行片段" class="headerlink" title="title — 标题行片段"></a>title — 标题行片段</h2><p><code>title</code> 与 <code>button</code> 类似，也是片段数组，但用于展开内容顶部的完整词组展示，支持更丰富的格式。</p>
+<h3 id="普通文字"><a href="#普通文字" class="headerlink" title="普通文字"></a>普通文字</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">bump</span> <span class="string">into</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">sb/sth</span></span><br><span class="line">    <span class="attr">underline:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>text</code></td>
+<td>普通文字</td>
+</tr>
+<tr>
+<td><code>word</code></td>
+<td>用 <code>&lt;word&gt;</code> 包裹（较少在 title 中使用）</td>
+</tr>
+<tr>
+<td><code>underline</code></td>
+<td>设为 <code>true</code> 时加下划线</td>
+</tr>
+</tbody></table>
+<h3 id="sb-片段（sb-sth-占位符）"><a href="#sb-片段（sb-sth-占位符）" class="headerlink" title="sb 片段（sb&#x2F;sth 占位符）"></a>sb 片段（sb&#x2F;sth 占位符）</h3><p>当片段含 <code>sb: true</code> 时，渲染为 <code>&lt;span class=&quot;sb-sth&quot;&gt;…&lt;/span&gt;</code>，用于 <code>sb</code>、<code>sth</code>、<code>sb/sth</code> 等搭配占位符：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">adapt</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">(oneself)</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">to</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">sth</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="带括号包裹的-sb-片段"><a href="#带括号包裹的-sb-片段" class="headerlink" title="带括号包裹的 sb 片段"></a>带括号包裹的 sb 片段</h3><p>需要自定义括号或前后缀时，使用 <code>prefix</code> &#x2F; <code>suffix</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">in</span> <span class="string">addition</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">prefix:</span> <span class="string">&quot;(to &quot;</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">sb/sth</span></span><br><span class="line">    <span class="attr">underline:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">suffix:</span> <span class="string">&quot;)&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>渲染效果：<code>in addition (to sb/sth)</code>，其中 <code>sb/sth</code> 带下划线。</p>
+<h3 id="可变搭配（斜杠分隔）"><a href="#可变搭配（斜杠分隔）" class="headerlink" title="可变搭配（斜杠分隔）"></a>可变搭配（斜杠分隔）</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot;to &quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">underline:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">good/best</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; advantage&quot;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">underline:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">use/turn</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">sth</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">to</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">one&#x27;s</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advantage</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="examples-—-例句"><a href="#examples-—-例句" class="headerlink" title="examples — 例句"></a>examples — 例句</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">examples:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">She</span> <span class="string">stepped</span> <span class="string">backward</span> <span class="string">and</span> <span class="string">**bumped</span> <span class="string">into**</span> <span class="string">someone.</span></span><br><span class="line">    <span class="attr">zh:</span> <span class="string">她踉跄后退，结果撞到了别人。</span></span><br><span class="line">    <span class="attr">source:</span> <span class="string">权力的游戏</span> <span class="string">有声书</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">If</span> <span class="string">I</span> <span class="string">move</span> <span class="string">slowly,</span> <span class="string">I</span> <span class="string">won&#x27;t</span> <span class="string">**bump</span> <span class="string">into**</span> <span class="string">things.</span></span><br><span class="line">    <span class="attr">zh:</span> <span class="string">如果我走得慢点，就不会撞到东西了。</span></span><br><span class="line">    <span class="attr">source:</span> <span class="string">小猪佩奇</span> <span class="string">第一季</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>en</code></td>
+<td>是</td>
+<td>英文例句；<code>**短语**</code> 会渲染为 <code>&lt;strong&gt;</code> 加粗</td>
+</tr>
+<tr>
+<td><code>zh</code></td>
+<td>否</td>
+<td>中文翻译，显示为 <code>（…）</code></td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>否</td>
+<td>出处，显示为 <code>——出处</code></td>
+</tr>
+</tbody></table>
+<p><strong>加粗规则：</strong> 在 <code>en</code> 中用 Markdown 风格的 <code>**…**</code> 标记需要强调的短语部分，例如 <code>**bumped into**</code>、<code>**adapt to**</code>。</p>
+<hr>
+<h2 id="完整示例"><a href="#完整示例" class="headerlink" title="完整示例"></a>完整示例</h2><h3 id="简单词条"><a href="#简单词条" class="headerlink" title="简单词条"></a>简单词条</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">id:</span> <span class="string">bump-into-sb-sth</span></span><br><span class="line">  <span class="attr">button:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">bump</span></span><br><span class="line">      <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; into sb/sth&quot;</span></span><br><span class="line">  <span class="attr">senses:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">bump</span> <span class="string">into</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">text:</span> <span class="string">sb/sth</span></span><br><span class="line">          <span class="attr">underline:</span> <span class="literal">true</span></span><br><span class="line">      <span class="attr">pos:</span> <span class="string">vi.</span> <span class="string">vt.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">猛碰，撞</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">to</span> <span class="string">hit</span> <span class="string">or</span> <span class="string">knock</span> <span class="string">against</span> <span class="string">sth</span></span><br><span class="line">      <span class="attr">examples:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">She</span> <span class="string">stepped</span> <span class="string">backward</span> <span class="string">and</span> <span class="string">**bumped</span> <span class="string">into**</span> <span class="string">someone.</span></span><br><span class="line">          <span class="attr">zh:</span> <span class="string">她踉跄后退，结果撞到了别人。</span></span><br><span class="line">          <span class="attr">source:</span> <span class="string">权力的游戏</span> <span class="string">有声书</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="一词多义（同一-entry-多个-sense）"><a href="#一词多义（同一-entry-多个-sense）" class="headerlink" title="一词多义（同一 entry 多个 sense）"></a>一词多义（同一 entry 多个 sense）</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">id:</span> <span class="string">advance-on-sth</span></span><br><span class="line">  <span class="attr">button:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advance</span></span><br><span class="line">      <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; (on sth)&quot;</span></span><br><span class="line">  <span class="attr">senses:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advance</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">text:</span> <span class="string">(on</span> <span class="string">sth)</span></span><br><span class="line">      <span class="attr">posHtml:</span> <span class="string">n&lt;sub&gt;1&lt;/sub&gt;.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">预付款</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">money</span> <span class="string">which</span> <span class="string">is</span> <span class="string">paid</span> <span class="string">to</span> <span class="string">sb</span> <span class="string">before</span> <span class="string">the</span> <span class="string">usual</span> <span class="string">time</span> <span class="string">of</span> <span class="string">payment</span></span><br><span class="line">      <span class="attr">examples:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">I</span> <span class="string">need</span> <span class="string">an</span> <span class="string">**advance</span> <span class="string">on**</span> <span class="string">my</span> <span class="string">pay.</span></span><br><span class="line">          <span class="attr">zh:</span> <span class="string">我需要提前预支些钱。</span></span><br><span class="line">          <span class="attr">source:</span> <span class="string">亲密治疗</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">posHtml:</span> <span class="string">n&lt;sub&gt;2&lt;/sub&gt;.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">（价格、价值的）上涨，上升</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">a</span> <span class="string">rise</span> <span class="string">in</span> <span class="string">the</span> <span class="string">price,</span> <span class="string">value,</span> <span class="string">of</span> <span class="string">sth</span></span><br><span class="line">      <span class="attr">examples:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">en:</span> <span class="string">Any</span> <span class="string">**advance</span> <span class="string">on**</span> <span class="number">22</span><span class="string">&#x27;000? Anyone?</span></span><br><span class="line"><span class="string">          zh: 还有比22000更高的出价吗?</span></span><br><span class="line"><span class="string">          source: 碟中谍5</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="按钮与义项均带编号"><a href="#按钮与义项均带编号" class="headerlink" title="按钮与义项均带编号"></a>按钮与义项均带编号</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">id:</span> <span class="string">take-advantage-of-sth-sb</span></span><br><span class="line">  <span class="attr">button:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">take</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; &quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">advantage</span></span><br><span class="line">      <span class="attr">word:</span> <span class="literal">true</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">&quot; of sth&quot;</span></span><br><span class="line">      <span class="attr">sup:</span> <span class="string">&quot;1&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">/sb</span></span><br><span class="line">      <span class="attr">sup:</span> <span class="string">&quot;2&quot;</span></span><br><span class="line">  <span class="attr">senses:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">take</span> <span class="string">advantage</span> <span class="string">of</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">text:</span> <span class="string">sth</span></span><br><span class="line">      <span class="attr">pos:</span> <span class="string">IDM.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">利用</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">if</span> <span class="string">you</span> <span class="string">take</span> <span class="string">advantage</span> <span class="string">of</span> <span class="string">sth,</span> <span class="string">you</span> <span class="string">make</span> <span class="string">good</span> <span class="string">use</span> <span class="string">of</span> <span class="string">it</span> <span class="string">while</span> <span class="string">you</span> <span class="string">can</span></span><br><span class="line">      <span class="attr">examples:</span> <span class="string">…</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">title:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">text:</span> <span class="string">take</span> <span class="string">advantage</span> <span class="string">of</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">sb:</span> <span class="literal">true</span></span><br><span class="line">          <span class="attr">text:</span> <span class="string">sb</span></span><br><span class="line">      <span class="attr">pos:</span> <span class="string">IDM.</span></span><br><span class="line">      <span class="attr">cn:</span> <span class="string">占…的便宜；欺骗；捉弄</span></span><br><span class="line">      <span class="attr">en:</span> <span class="string">if</span> <span class="string">sb</span> <span class="string">takes</span> <span class="string">advantage</span> <span class="string">of</span> <span class="string">you,</span> <span class="string">they</span> <span class="string">treat</span> <span class="string">you</span> <span class="string">unfairly</span> <span class="string">for</span> <span class="string">their</span> <span class="string">own</span> <span class="string">benefit</span></span><br><span class="line">      <span class="attr">examples:</span> <span class="string">…</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="YAML-编写注意事项"><a href="#YAML-编写注意事项" class="headerlink" title="YAML 编写注意事项"></a>YAML 编写注意事项</h2><ol>
+<li><p><strong>含特殊字符的 text 请加引号</strong><br>空格、冒号、括号、<code>#</code> 等可能导致 YAML 解析错误，建议写成 <code>&quot; into sb/sth&quot;</code>、<code>&quot;(to &quot;</code>。</p>
 </li>
-<li><p><strong>调制</strong>：将数字数据转换为模拟信号的过程，使其适合在模拟信道（如电话线）传输。基本调制方法有：</p>
-<ul>
-<li><strong>调幅 (ASK)</strong>：通过改变载波的振幅来表示数据。</li>
-<li><strong>调频 (FSK)</strong>：通过改变载波的频率来表示数据。</li>
-<li><strong>调相 (PSK)</strong>：通过改变载波的相位来表示数据。</li>
-<li><strong>正交振幅调制 (QAM)</strong>：结合调幅和调相，可在一个码元上携带更多比特信息。</li>
-</ul>
+<li><p><strong>缩进使用空格，不要用 Tab</strong><br>统一 2 空格缩进，与现有文件保持一致。</p>
 </li>
-</ul>
-<h2 id="四、信道容量与极限"><a href="#四、信道容量与极限" class="headerlink" title="四、信道容量与极限"></a>四、信道容量与极限</h2><blockquote>
-<p>信道传输数据的能力不是无限的，主要受限于两个著名定理：</p>
-</blockquote>
-<h3 id="4-1-奈奎斯特准则-Nyquist"><a href="#4-1-奈奎斯特准则-Nyquist" class="headerlink" title="4.1 奈奎斯特准则 (Nyquist)"></a>4.1 奈奎斯特准则 (Nyquist)</h3><p>在<strong>理想低通、无噪声信道</strong>下，为避免码间串扰，<strong>码元传输速率</strong>的上限值为：<br>$$<br>C &#x3D; 2W \log_2 M (\mathrm{Baud})<br>$$其中，<code>W</code> 是信道带宽(Hz)，<code>M</code> 是码元的离散状态数（进制数）。该准则表明，可以通过提高码元状态数（即让一个码元携带更多比特信息）来提升数据传输速率。</p>
-<h3 id="4-2-香农公式-Shannon"><a href="#4-2-香农公式-Shannon" class="headerlink" title="4.2 香农公式 (Shannon)"></a>4.2 香农公式 (Shannon)</h3><p>在<strong>带宽受限、有高斯白噪声</strong>的信道中，<strong>信息的极限传输速率</strong>（信道容量）为：<br>$$<br>C &#x3D; W \log_2 \left(1 + \frac{S}{N}\right) \text{(bit&#x2F;s)}<br>$$其中，<code>W</code> 为信道带宽(Hz)，<code>S/N</code> 为信噪比（信号平均功率&#x2F;噪声平均功率）。香农公式指出，信道的带宽越大或信噪比越高，信道的极限信息传输速率就越高。</p>
-<h2 id="五、传输媒体"><a href="#五、传输媒体" class="headerlink" title="五、传输媒体"></a>五、传输媒体</h2><p>传输媒体是数据传输的物理通路，分为两大类：</p>
-<h3 id="5-1-导向型传输媒体"><a href="#5-1-导向型传输媒体" class="headerlink" title="5.1 导向型传输媒体"></a>5.1 导向型传输媒体</h3><p>电磁波被引导沿固体媒体传播。</p>
-<ul>
-<li><strong>双绞线</strong>：最常见、最经济，分为屏蔽双绞线(STP)和无屏蔽双绞线(UTP)。</li>
-<li><strong>同轴电缆</strong>：抗干扰能力优于双绞线，用于有线电视等。</li>
-<li><strong>光纤</strong>：利用光脉冲传输，具有通信容量大、传输损耗小、抗电磁干扰强、保密性好等优点，是现代骨干网络的核心。分为多模光纤（近距离）和单模光纤（远距离）。</li>
-</ul>
-<h3 id="5-2-非导向型传输媒体"><a href="#5-2-非导向型传输媒体" class="headerlink" title="5.2 非导向型传输媒体"></a>5.2 非导向型传输媒体</h3><p>即自由空间，用于无线传输。</p>
-<ul>
-<li><strong>无线电波</strong>：穿透能力强，适用于移动通信。</li>
-<li><strong>微波</strong>：直线传播，需中继站接力或通过卫星通信。</li>
-<li><strong>红外线</strong>：短距离通信，如遥控器。</li>
-</ul>
-<h2 id="六、信道复用技术"><a href="#六、信道复用技术" class="headerlink" title="六、信道复用技术"></a>六、信道复用技术</h2><p>为使多个用户共享同一物理信道，提高信道利用率，采用复用技术：</p>
-<ul>
-<li><strong>频分复用 (FDM)</strong>：将总带宽划分为多个不重叠的子频带，每个用户独占一个频带。</li>
-<li><strong>时分复用 (TDM)</strong>：将时间划分为等长的时分复用帧，每个用户占用固定的时隙。</li>
-<li><strong>波分复用 (WDM)</strong>：光的频分复用，在一根光纤中同时传输多个不同波长的光载波信号。</li>
-<li><strong>码分复用 (CDM)</strong>：各用户使用经过特殊挑选的、相互正交的不同码型，可以在同一时间、同一频带上进行通信。</li>
-</ul>
-<h2 id="七、物理层设备"><a href="#七、物理层设备" class="headerlink" title="七、物理层设备"></a>七、物理层设备</h2><ul>
-<li><strong>中继器 (Repeater)</strong>：工作在物理层，主要功能是对信号进行<strong>再生和放大</strong>，以扩展网络的传输距离。</li>
-<li><strong>集线器 (Hub)</strong>：本质是一个<strong>多端口中继器</strong>。它对接收到的信号进行放大，然后广播到所有其他端口。所有设备共享同一带宽，属于冲突域的核心。</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
-<p>物理层作为网络体系的基石，其核心价值在于为上层协议提供了一个<strong>统一、透明、可靠</strong>的比特流传输服务。通过定义精确的接口标准和信号规范，它成功地屏蔽了底层传输媒体的复杂性，使得数据链路层及以上的高层可以专注于路由、寻址、会话控制等逻辑功能，而无需关心数据是通过光纤、铜线还是无线电波进行传输。理解物理层是理解整个网络通信过程的第一步。</p>
-</blockquote>
+<li><p><strong>id 命名建议</strong><br>使用小写英文 + 连字符，如 <code>adapt-oneself-to-sth</code>、<code>bump-into-sb-sth</code>，便于识别且避免重复。</p>
+</li>
+<li><p><strong>修改后需重新生成</strong><br>数据在 Hexo 构建时读取并缓存；修改 yml 后执行 <code>hexo clean &amp;&amp; hexo g</code>（或 <code>hexo s</code>）才能看到更新。</p>
+</li>
+<li><p><strong>文件为空或不存在</strong><br>若指定字母的文件不存在或无有效条目，页面会输出 HTML 注释 <code>&lt;!-- phrases: no data (a) --&gt;</code>，不会报错。</p>
+</li>
+</ol>
+<hr>
+<h2 id="渲染结果结构（供调试参考）"><a href="#渲染结果结构（供调试参考）" class="headerlink" title="渲染结果结构（供调试参考）"></a>渲染结果结构（供调试参考）</h2><p>每条 entry 最终渲染为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;phrase-item&quot;</span> <span class="attr">data-phrase-id</span>=<span class="string">&quot;…&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;hide-block&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">class</span>=<span class="string">&quot;hide-button&quot;</span>&gt;</span>…<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;hide-content&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;hideBlockTitle&quot;</span>&gt;</span>…<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;definition-text&quot;</span>&gt;</span>词性 中文<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;definition-english-text&quot;</span>&gt;</span>英文<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>例句<span class="tag">&lt;<span class="name">strong</span>&gt;</span>高亮<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;chinese-translation-text&quot;</span>&gt;</span>…<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>相关实现：<code>themes/kakyo-hexo-theme-butterfly/scripts/tag/kakyo/phrases.js</code></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Learn English with Video</title>
+    <url>/blog/Learn%20English%20with%20Video/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Nov-22-2025"><a href="#Nov-22-2025" class="headerlink" title="Nov 22, 2025"></a>Nov 22, 2025</h1><h2 id="walkie-talkie"><a href="#walkie-talkie" class="headerlink" title="walkie-talkie"></a>walkie-talkie</h2><p><strong>释义</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>n.</strong> 便携式双向无线电通信设备，通常手持，用于短距离无线通信（如对讲机、步话机）。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>n.</strong> （俚语）指爱说闲话或搬弄是非的人。</li>
+</ol>
+</li>
+</ul>
+<h2 id="Come-in"><a href="#Come-in" class="headerlink" title="Come in"></a>Come in</h2><p><strong>含义</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>进来；进入</strong>：表示从外部移动到内部的动作，常用于邀请或允许他人进入某空间。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>到达；抵达</strong>：指事物（如消息、火车、潮水等）到达或传来。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li><strong>（比赛中）获得名次</strong>：在竞赛中取得特定排名，例如获得第一名、第三名等。</li>
+</ol>
+</li>
+<li><ol start="4">
+<li><strong>流行起来；开始被使用</strong>：指时尚、新产品等开始流行或生效。</li>
+</ol>
+</li>
+<li><ol start="5">
+<li><strong>起作用；有份儿</strong>：表示在某事中发挥作用或参与其中。</li>
+</ol>
+</li>
+<li><ol start="6">
+<li><strong>有收入；定期收到钱款</strong>：指金钱方面的收入，如工资、收益等。</li>
+</ol>
+</li>
+<li><ol start="7">
+<li><strong>请求回应或回答</strong>: 相当于”please respond”或”answer me”。</li>
+</ol>
+</li>
+</ul>
+<p><strong>例句</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>表示”进来”</strong>：”I stepped aside so that she might <strong>come in</strong>.”（我往旁边走一步，以便她能进来。）</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>表示”到达”</strong>：”The winter timetable <strong>comes</strong> into effect <strong>in</strong> November.”（冬季时间表将于十一月生效。）</li>
+</ol>
+</li>
+<li><ol start="3">
+<li><strong>表示”获得名次”</strong>：”Jerry <strong>came in</strong> third in the Marathon.”（杰里在马拉松比赛中获得了第三名。）</li>
+</ol>
+</li>
+<li><ol start="4">
+<li><strong>表示”流行起来”</strong>：”This style of jeans <strong>came in</strong> quickly last year.”（这种款式的牛仔裤去年迅速流行起来。）</li>
+</ol>
+</li>
+<li><ol start="5">
+<li><strong>表示”起作用”</strong>：”This is where the argument <strong>comes in</strong>.”（这就是争论的起因。）</li>
+</ol>
+</li>
+<li><ol start="6">
+<li><strong>表示”有收入”</strong>：”He has a small amount of money <strong>coming in</strong> each month.”（他每个月有一小笔收入。）</li>
+</ol>
+</li>
+<li><ol start="7">
+<li><strong>表示”请求回应”</strong>：”Buzz lightyear to Star Command. <strong>Come in</strong>, Star Command.”（巴斯光年向星际指挥部请求回应。）</li>
+</ol>
+</li>
+</ul>
+<h2 id="Do-you-read-me"><a href="#Do-you-read-me" class="headerlink" title="Do you read me?"></a>Do you read me?</h2><p><strong>含义</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>你能听到我说话吗？</strong>：用于无线电通信中，询问对方是否能清楚地听到自己的声音。相当于”Can you hear me?”或”Are you receiving my message?”。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>你理解我的意思吗？</strong>：用于确认对方是否理解自己所传达的信息或指令。</li>
+</ol>
+</li>
+</ul>
+<p><strong>例句</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>用于无线电通信中</strong>：”<strong>Do you read me</strong>? Over.”（你能听到我说话吗？完毕。）</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>用于确认理解</strong>：”I’m going to explain the plan again, <strong>do you read me</strong>?”（我要再解释一遍计划，你明白我的意思吗？）</li>
+</ol>
+</li>
+</ul>
+<h2 id="groundbreaking"><a href="#groundbreaking" class="headerlink" title="groundbreaking"></a>groundbreaking</h2><p><strong>释义</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>adj.</strong> 开创性的，突破性的；指前所未有的、具有创新性的事物。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>n.</strong> 动工，破土（尤指建筑工程开始的仪式）。</li>
+</ol>
+</li>
+</ul>
+<p><strong>例句</strong>：</p>
+<ul>
+<li><ol>
+<li><strong>adj.</strong> Annette Lareau’s <strong>groundbreaking</strong> research on the topic was published in her book <em>Unequal Childhoods</em>（安妮特·拉罗关于这一主题的开创性研究发表于她的著作《不平等的童年》中）。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>n.</strong> The <strong>groundbreaking</strong> for the new building will commence in the morning（新楼的破土仪式将于上午举行）。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li><strong>adj.</strong> With Toy Story, Pixar’s <strong>groundbreaking</strong> masterpiece that revolutionized flimaking as the first fully computer-animated feature film.（通过《玩具总动员》，皮克斯开创性的杰作，作为第一部完全由计算机动画制作的长片，彻底改变了电影制作。）</li>
+</ol>
+</li>
+</ul>
+<h2 id="blast"><a href="#blast" class="headerlink" title="blast"></a>blast</h2>]]></content>
       <categories>
-        <category>Datacom-Core Tech</category>
+        <category>English</category>
       </categories>
       <tags>
-        <tag>OSI Module</tag>
+        <tag>Learn English with Video</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>新闻纲要 3.21版</title>
-    <url>/blog/%E6%96%B0%E9%97%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="📊-2026年3月中东局势深度分析"><a href="#📊-2026年3月中东局势深度分析" class="headerlink" title="📊 2026年3月中东局势深度分析"></a>📊 2026年3月中东局势深度分析</h1><h2 id="PPT演示大纲"><a href="#PPT演示大纲" class="headerlink" title="PPT演示大纲"></a>PPT演示大纲</h2><hr>
-<h2 id="封面页"><a href="#封面页" class="headerlink" title="封面页"></a>封面页</h2><p><strong>标题</strong>：2026年3月中东局势深度分析<br><strong>副标题</strong>：美以伊”三国杀”白热化，中东滑向全面战争边缘<br><strong>日期</strong>：2026年3月21日<br><strong>视觉建议</strong>：中东地图背景+三方国旗元素</p>
-<hr>
-<h2 id="目录页"><a href="#目录页" class="headerlink" title="目录页"></a>目录页</h2><ol>
-<li>冲突背景与时间线</li>
-<li>三方战略目的分析</li>
-<li>核心冲突焦点</li>
-<li>全球影响评估</li>
-<li>未来展望与风险预判</li>
-<li>总结与建议</li>
-</ol>
-<hr>
-<h2 id="第1页｜冲突背景概述"><a href="#第1页｜冲突背景概述" class="headerlink" title="第1页｜冲突背景概述"></a>第1页｜冲突背景概述</h2><p><strong>标题</strong>：为什么是2026年3月？</p>
-<p><strong>核心要点</strong>：</p>
-<ul>
-<li>伊朗铀浓缩达60%（接近武器级）</li>
-<li>美伊核谈判三轮破裂（2026.1-2.26）</li>
-<li>美军双航母战斗群部署到位</li>
-<li>以色列”预防性打击”传统</li>
-</ul>
-<p><strong>视觉建议</strong>：关键数据信息图（60%浓缩度、3轮谈判、2航母）</p>
-<hr>
-<h2 id="第2页｜冲突时间线（战前铺垫）"><a href="#第2页｜冲突时间线（战前铺垫）" class="headerlink" title="第2页｜冲突时间线（战前铺垫）"></a>第2页｜冲突时间线（战前铺垫）</h2><p><strong>标题</strong>：2025.12 - 2026.2.27 战前铺垫</p>
-<p><strong>时间轴</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>时间</th>
-<th>事件</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2025.12</td>
-<td>IAEA确认伊朗铀浓缩至60%</td>
-</tr>
-<tr>
-<td>2026.1-2.26</td>
-<td>美伊三轮核谈判破裂</td>
-</tr>
-<tr>
-<td>2026.2.26</td>
-<td>美军双航母部署完成</td>
-</tr>
-<tr>
-<td>2026.2.27</td>
-<td>各国大规模撤侨</td>
-</tr>
-</tbody></table>
-<p><strong>视觉建议</strong>：横向时间轴设计</p>
-<hr>
-<h2 id="第3页｜冲突时间线（战争爆发）"><a href="#第3页｜冲突时间线（战争爆发）" class="headerlink" title="第3页｜冲突时间线（战争爆发）"></a>第3页｜冲突时间线（战争爆发）</h2><p><strong>标题</strong>：2026.2.28 D-Day 战争爆发</p>
-<p><strong>关键节点</strong>（北京时间）：</p>
-<ul>
-<li>14:18 以军”狮吼行动”启动</li>
-<li>14:25 美军”史诗怒火”同步参战</li>
-<li>16:00 伊朗”真实承诺-4”反击</li>
-<li>17:20 伊朗打击14处美军基地</li>
-<li>23:00 油价破102美元&#x2F;桶</li>
-</ul>
-<p><strong>视觉建议</strong>：24小时时间轴+爆炸图标标记</p>
-<hr>
-<h2 id="第4页｜冲突时间线（升级与僵持）"><a href="#第4页｜冲突时间线（升级与僵持）" class="headerlink" title="第4页｜冲突时间线（升级与僵持）"></a>第4页｜冲突时间线（升级与僵持）</h2><p><strong>标题</strong>：2026.3.1 - 3.20 冲突升级与僵持</p>
-<p><strong>关键事件</strong>：</p>
-<ul>
-<li>3.1 哈梅内伊确认遇难，霍尔木兹海峡封锁</li>
-<li>3.6 美以袭击伊朗境内1250个目标</li>
-<li>3.10 伊朗公开停火核心条件</li>
-<li>3.14 伊朗无人机命中阿联酋燃料设施</li>
-<li>3.15 冲突进入第16天，无停火迹象</li>
-</ul>
-<p><strong>视觉建议</strong>：日历式时间线+冲突强度曲线图</p>
-<hr>
-<h2 id="第5页｜美国战略目的分析"><a href="#第5页｜美国战略目的分析" class="headerlink" title="第5页｜美国战略目的分析"></a>第5页｜美国战略目的分析</h2><p><strong>标题</strong>：🇺🇸 美国：霸权维护战</p>
-<p><strong>目标层级</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>层级</th>
-<th>目标</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>核心</td>
-<td>阻止伊朗拥核</td>
-</tr>
-<tr>
-<td>战略</td>
-<td>削弱伊朗地区影响力</td>
-</tr>
-<tr>
-<td>政治</td>
-<td>特朗普政府大选前展示强硬</td>
-</tr>
-<tr>
-<td>地缘</td>
-<td>警告俄罗斯不得介入</td>
-</tr>
-</tbody></table>
-<p><strong>深层逻辑</strong>：既想展示决心，又不想陷入泥潭</p>
-<p><strong>视觉建议</strong>：金字塔目标结构图</p>
-<hr>
-<h2 id="第6页｜以色列战略目的分析"><a href="#第6页｜以色列战略目的分析" class="headerlink" title="第6页｜以色列战略目的分析"></a>第6页｜以色列战略目的分析</h2><p><strong>标题</strong>：🇮🇱 以色列：生存焦虑驱动的预防性打击</p>
-<p><strong>目标层级</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>层级</th>
-<th>目标</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>核心</td>
-<td>消除伊朗核设施威胁</td>
-</tr>
-<tr>
-<td>安全</td>
-<td>摧毁伊朗导弹工业及海军</td>
-</tr>
-<tr>
-<td>地区</td>
-<td>削弱伊朗代理势力支持</td>
-</tr>
-<tr>
-<td>历史</td>
-<td>延续”预防性打击”传统</td>
-</tr>
-</tbody></table>
-<p><strong>深层逻辑</strong>：现在打比将来打代价更小</p>
-<p><strong>视觉建议</strong>：盾牌+导弹图标组合</p>
-<hr>
-<h2 id="第7页｜伊朗战略目的分析"><a href="#第7页｜伊朗战略目的分析" class="headerlink" title="第7页｜伊朗战略目的分析"></a>第7页｜伊朗战略目的分析</h2><p><strong>标题</strong>：🇮🇷 伊朗：复仇+威慑的双重博弈</p>
-<p><strong>目标层级</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>层级</th>
-<th>目标</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>核心</td>
-<td>捍卫国家主权，反击侵略</td>
-</tr>
-<tr>
-<td>政治</td>
-<td>新领导层树立权威、凝聚民心</td>
-</tr>
-<tr>
-<td>军事</td>
-<td>展示导弹与无人机打击能力</td>
-</tr>
-<tr>
-<td>谈判</td>
-<td>以战促谈，争取有利地位</td>
-</tr>
-</tbody></table>
-<p><strong>深层逻辑</strong>：政权真空期与复仇情绪叠加</p>
-<p><strong>视觉建议</strong>：天平图标（复仇vs威慑）</p>
-<hr>
-<h2 id="第8页｜三方战略困境对比"><a href="#第8页｜三方战略困境对比" class="headerlink" title="第8页｜三方战略困境对比"></a>第8页｜三方战略困境对比</h2><p><strong>标题</strong>：谁都陷入”战略困境”</p>
-<p><strong>对比表格</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>国家</th>
-<th>困境</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>美国</td>
-<td>打轻了无法达成目标，打重了恐陷入泥潭</td>
-</tr>
-<tr>
-<td>以色列</td>
-<td>不打击威胁迫在眉睫，打击后报复难承受</td>
-</tr>
-<tr>
-<td>伊朗</td>
-<td>不反击政权合法性受损，反击过猛恐招更大打击</td>
-</tr>
-</tbody></table>
-<p><strong>核心问题</strong>：三方都没有清晰的”退出策略”</p>
-<p><strong>视觉建议</strong>：三向箭头循环图，标注”困境”</p>
-<hr>
-<h2 id="第9页｜核心冲突焦点（一）"><a href="#第9页｜核心冲突焦点（一）" class="headerlink" title="第9页｜核心冲突焦点（一）"></a>第9页｜核心冲突焦点（一）</h2><p><strong>标题</strong>：核问题：冲突的根本导火索</p>
-<p><strong>关键数据</strong>：</p>
-<ul>
-<li>伊朗铀浓缩：60%（武器级90%）</li>
-<li>IAEA确认时间：2025年12月</li>
-<li>美方要求：零浓缩、拆核设施、限导弹、撤地区武装</li>
-<li>伊朗态度：拒绝</li>
-</ul>
-<p><strong>视觉建议</strong>：核设施图标+浓缩度进度条</p>
-<hr>
-<h2 id="第10页｜核心冲突焦点（二）"><a href="#第10页｜核心冲突焦点（二）" class="headerlink" title="第10页｜核心冲突焦点（二）"></a>第10页｜核心冲突焦点（二）</h2><p><strong>标题</strong>：霍尔木兹海峡：全球能源”咽喉”</p>
-<p><strong>关键影响</strong>：</p>
-<ul>
-<li>承担全球约20%石油运输量</li>
-<li>伊朗已全面封锁</li>
-<li>国际油价破102美元&#x2F;桶</li>
-<li>全球航运成本暴涨</li>
-</ul>
-<p><strong>风险</strong>：长期关闭将引发”滞胀”风险回归</p>
-<p><strong>视觉建议</strong>：海峡地图+油轮图标+油价曲线</p>
-<hr>
-<h2 id="第11页｜核心冲突焦点（三）"><a href="#第11页｜核心冲突焦点（三）" class="headerlink" title="第11页｜核心冲突焦点（三）"></a>第11页｜核心冲突焦点（三）</h2><p><strong>标题</strong>：代理人战争→正面战争</p>
-<p><strong>历史对比</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>时期</th>
-<th>模式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1980-2025</td>
-<td>代理人战争、影子战争</td>
-</tr>
-<tr>
-<td>2026.2.28起</td>
-<td>正面军事冲突</td>
-</tr>
-</tbody></table>
-<p><strong>历史意义</strong>：中东地缘博弈从暗战彻底走向明战</p>
-<p><strong>视觉建议</strong>：对比图（阴影vs阳光）</p>
-<hr>
-<h2 id="第12页｜全球影响评估（经济）"><a href="#第12页｜全球影响评估（经济）" class="headerlink" title="第12页｜全球影响评估（经济）"></a>第12页｜全球影响评估（经济）</h2><p><strong>标题</strong>：全球经济冲击波</p>
-<p><strong>影响领域</strong>：</p>
-<ul>
-<li>🛢️ 能源：油价飙升，供应链成本上涨</li>
-<li>📉 金融：股债双杀，避险资产波动</li>
-<li>🚢 航运：霍尔木兹海峡关闭，运费暴涨</li>
-<li>💰 通胀：”滞胀”风险回归</li>
-</ul>
-<p><strong>视觉建议</strong>：四象限影响图</p>
-<hr>
-<h2 id="第13页｜全球影响评估（政治）"><a href="#第13页｜全球影响评估（政治）" class="headerlink" title="第13页｜全球影响评估（政治）"></a>第13页｜全球影响评估（政治）</h2><p><strong>标题</strong>：国际政治格局变化</p>
-<p><strong>各方反应</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>势力</th>
-<th>态度</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>美国</td>
-<td>警告俄罗斯不得介入</td>
-</tr>
-<tr>
-<td>上合组织</td>
-<td>呼吁各方保持克制</td>
-</tr>
-<tr>
-<td>联合国</td>
-<td>谴责美以军事行动</td>
-</tr>
-<tr>
-<td>多国领导人</td>
-<td>担忧冲突外溢</td>
-</tr>
-</tbody></table>
-<p><strong>核心问题</strong>：缺乏有效的国际调停机制</p>
-<p><strong>视觉建议</strong>：世界地图+各方立场标记</p>
-<hr>
-<h2 id="第14页｜未来展望（短期）"><a href="#第14页｜未来展望（短期）" class="headerlink" title="第14页｜未来展望（短期）"></a>第14页｜未来展望（短期）</h2><p><strong>标题</strong>：1-2周：高风险窗口期</p>
-<p><strong>可能情景</strong>：</p>
-<ul>
-<li>军事冲突持续升级</li>
-<li>双方伤亡与损失扩大</li>
-<li>油价继续波动</li>
-<li>国际调停压力加大</li>
-</ul>
-<p><strong>概率</strong>：高</p>
-<p><strong>视觉建议</strong>：警示图标+时间窗口标注</p>
-<hr>
-<h2 id="第15页｜未来展望（中长期）"><a href="#第15页｜未来展望（中长期）" class="headerlink" title="第15页｜未来展望（中长期）"></a>第15页｜未来展望（中长期）</h2><p><strong>标题</strong>：1-6个月：三种可能情景</p>
-<p><strong>情景分析</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>时间</th>
-<th>情景</th>
-<th>概率</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1-3个月</td>
-<td>临时停火，核心分歧未解</td>
-<td>中</td>
-</tr>
-<tr>
-<td>3-6个月</td>
-<td>谈判重启，达成部分协议</td>
-<td>中低</td>
-</tr>
-<tr>
-<td>6个月+</td>
-<td>谈判破裂，长期消耗战</td>
-<td>中低</td>
-</tr>
-</tbody></table>
-<p><strong>关键观察点</strong>：伊朗打击能力、美军增兵意向、国际调停进展</p>
-<p><strong>视觉建议</strong>：情景树状图</p>
-<hr>
-<h2 id="第16页｜关键观察指标"><a href="#第16页｜关键观察指标" class="headerlink" title="第16页｜关键观察指标"></a>第16页｜关键观察指标</h2><p><strong>标题</strong>：需要持续关注的4个指标</p>
-<ol>
-<li><strong>伊朗导弹与无人机持续打击能力</strong>是否会被耗尽</li>
-<li><strong>美军是否会增兵</strong>或扩大打击范围</li>
-<li><strong>国际调停能否找到破局点</strong>（阿曼、卡塔尔等中间方）</li>
-<li><strong>伊朗新领导层的稳定性</strong>（穆杰塔巴伤势及权威确立）</li>
-</ol>
-<p><strong>视觉建议</strong>：仪表盘式指标设计</p>
-<hr>
-<h2 id="第17页｜总结"><a href="#第17页｜总结" class="headerlink" title="第17页｜总结"></a>第17页｜总结</h2><p><strong>标题</strong>：核心结论</p>
-<p><strong>三大判断</strong>：</p>
-<ol>
-<li>这是近20年来最严峻的地区安全危机</li>
-<li>三方都基于各自战略逻辑行动，但无清晰”终局思维”</li>
-<li>武力可以摧毁设施，但无法解决信任赤字</li>
-</ol>
-<p><strong>核心警示</strong>：若不能尽快回到谈判桌，中东可能滑向更深的动荡</p>
-<p><strong>视觉建议</strong>：三要点图标+警示框</p>
-<hr>
-<h2 id="第18页｜建议与启示"><a href="#第18页｜建议与启示" class="headerlink" title="第18页｜建议与启示"></a>第18页｜建议与启示</h2><p><strong>标题</strong>：对各方及国际社会的建议</p>
-<p><strong>建议方向</strong>：</p>
-<ul>
-<li>🇺🇸🇮🇱 美以：明确”退出策略”，避免陷入长期消耗</li>
-<li>🇮🇷 伊朗：以战促谈需把握分寸，避免过度升级</li>
-<li>🌍 国际社会：建立有效调停机制，避免冲突外溢</li>
-<li>💼 企业与投资者：做好能源与供应链风险对冲</li>
-</ul>
-<p><strong>视觉建议</strong>：四方建议框图</p>
-<hr>
-<h2 id="封底页"><a href="#封底页" class="headerlink" title="封底页"></a>封底页</h2><p><strong>标题</strong>：谢谢观看</p>
-<p><strong>联系方式</strong>：[可根据需要添加]<br><strong>信息来源</strong>：新华社、央视新闻、网易新闻、今日头条、搜狐网等公开报道<br><strong>日期</strong>：2026年3月21日</p>
-<p><strong>视觉建议</strong>：简洁设计+中东地图轮廓</p>
-<hr>
-<h2 id="📋-PPT制作建议"><a href="#📋-PPT制作建议" class="headerlink" title="📋 PPT制作建议"></a>📋 PPT制作建议</h2><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>建议</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>总页数</strong></td>
-<td>18-20页（含封面封底）</td>
-</tr>
-<tr>
-<td><strong>配色方案</strong></td>
-<td>深蓝+橙色警示色+灰色中性色</td>
-</tr>
-<tr>
-<td><strong>字体</strong></td>
-<td>标题用粗体，正文清晰易读</td>
-</tr>
-<tr>
-<td><strong>动画</strong></td>
-<td>时间线用渐进动画，数据用动态图表</td>
-</tr>
-<tr>
-<td><strong>演讲时长</strong></td>
-<td>约20-25分钟</td>
-</tr>
-</tbody></table>
-<hr>
-<p><em>大纲完成时间：2026年3月21日</em></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>OpenClaw龙虾潮 3.22 v1.0</title>
-    <url>/blog/%E6%96%B0%E9%97%BB2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="OpenClaw深度分析-PPT大纲"><a href="#OpenClaw深度分析-PPT大纲" class="headerlink" title="OpenClaw深度分析 PPT大纲"></a>OpenClaw深度分析 PPT大纲</h1><hr>
-<h2 id="📑-幻灯片结构总览"><a href="#📑-幻灯片结构总览" class="headerlink" title="📑 幻灯片结构总览"></a>📑 幻灯片结构总览</h2><table>
-<thead>
-<tr>
-<th>页码</th>
-<th>章节</th>
-<th>标题</th>
-<th>预计时长</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>封面</td>
-<td>OpenClaw：AI智能体革命</td>
-<td>-</td>
-</tr>
-<tr>
-<td>2</td>
-<td>目录</td>
-<td>内容概览</td>
-<td>1分钟</td>
-</tr>
-<tr>
-<td>3-5</td>
-<td>第一部分</td>
-<td>事件时间线</td>
-<td>3分钟</td>
-</tr>
-<tr>
-<td>6-8</td>
-<td>第二部分</td>
-<td>核心技术突破</td>
-<td>4分钟</td>
-</tr>
-<tr>
-<td>9-11</td>
-<td>第三部分</td>
-<td>产业生态博弈</td>
-<td>4分钟</td>
-</tr>
-<tr>
-<td>12-14</td>
-<td>第四部分</td>
-<td>安全与监管</td>
-<td>4分钟</td>
-</tr>
-<tr>
-<td>15-17</td>
-<td>第五部分</td>
-<td>经济与社会影响</td>
-<td>4分钟</td>
-</tr>
-<tr>
-<td>18-20</td>
-<td>第六部分</td>
-<td>AI工具未来展望</td>
-<td>5分钟</td>
-</tr>
-<tr>
-<td>21</td>
-<td>总结</td>
-<td>关键结论与建议</td>
-<td>2分钟</td>
-</tr>
-<tr>
-<td>22</td>
-<td>结束</td>
-<td>Q&amp;A</td>
-<td>-</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="📊-详细页面内容"><a href="#📊-详细页面内容" class="headerlink" title="📊 详细页面内容"></a>📊 详细页面内容</h2><h3 id="第1页：封面"><a href="#第1页：封面" class="headerlink" title="第1页：封面"></a><strong>第1页：封面</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：OpenClaw：AI从“对话”走向“行动”的革命</span><br><span class="line">副标题：从对话到执行的范式转移</span><br><span class="line">日期：2026年3月</span><br><span class="line">演讲人：[姓名]</span><br><span class="line">背景图：OpenClaw Logo/智能体概念图</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="第2页：目录"><a href="#第2页：目录" class="headerlink" title="第2页：目录"></a><strong>第2页：目录</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一、事件时间线梳理</span><br><span class="line">二、核心技术突破</span><br><span class="line">三、产业生态博弈</span><br><span class="line">四、安全与监管挑战</span><br><span class="line">五、经济与社会影响</span><br><span class="line">六、AI工具未来展望</span><br><span class="line">七、总结与建议</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="第一部分：事件时间线梳理"><a href="#第一部分：事件时间线梳理" class="headerlink" title="第一部分：事件时间线梳理"></a>第一部分：事件时间线梳理</h2><h3 id="第3页：项目起源（2025年底）"><a href="#第3页：项目起源（2025年底）" class="headerlink" title="第3页：项目起源（2025年底）"></a><strong>第3页：项目起源（2025年底）</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：从Clawdbot到OpenClaw</span><br><span class="line"></span><br><span class="line">关键节点：</span><br><span class="line">• 2025年12月：Peter Steinberger更名项目</span><br><span class="line">• 三次更名风波：Clawdbot→Moltbot→OpenClaw</span><br><span class="line">• 定位：个人AI智能体助手</span><br><span class="line"></span><br><span class="line">配图：项目更名时间轴</span><br></pre></td></tr></table></figure>
-
-<h3 id="第4页：正式上线与爆发（2026年1-2月）"><a href="#第4页：正式上线与爆发（2026年1-2月）" class="headerlink" title="第4页：正式上线与爆发（2026年1-2月）"></a><strong>第4页：正式上线与爆发（2026年1-2月）</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：史上增长最快的开源项目</span><br><span class="line"></span><br><span class="line">关键数据：</span><br><span class="line">• 2026年1月：正式上线</span><br><span class="line">• GitHub星标快速增长</span><br><span class="line">• 2月15日：创始人加盟OpenAI</span><br><span class="line">• 2月16日：确认开源项目存续</span><br><span class="line"></span><br><span class="line">配图：GitHub星标增长曲线</span><br></pre></td></tr></table></figure>
-
-<h3 id="第5页：全民”养虾”热潮（2026年3月）"><a href="#第5页：全民”养虾”热潮（2026年3月）" class="headerlink" title="第5页：全民”养虾”热潮（2026年3月）"></a><strong>第5页：全民”养虾”热潮（2026年3月）</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：从极客圈到社会现象</span><br><span class="line"></span><br><span class="line">热点事件：</span><br><span class="line">• 3月3日：开通官方微博，落地中国</span><br><span class="line">• 3月7-10日：全国两会热议</span><br><span class="line">• 3月16-19日：英伟达GTC大会定调</span><br><span class="line">• 3月17日：国家安全部发布安全手册</span><br><span class="line">• 3月27-29日：上海开发者大会黑客松</span><br><span class="line"></span><br><span class="line">配图：热搜话题趋势图</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="第二部分：核心技术突破"><a href="#第二部分：核心技术突破" class="headerlink" title="第二部分：核心技术突破"></a>第二部分：核心技术突破</h2><h3 id="第6页：范式转移对比"><a href="#第6页：范式转移对比" class="headerlink" title="第6页：范式转移对比"></a><strong>第6页：范式转移对比</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：从&quot;对话&quot;到&quot;执行&quot;</span><br><span class="line"></span><br><span class="line">┌─────────────┬─────────────┐</span><br><span class="line">│  传统AI助手  │  OpenClaw   │</span><br><span class="line">├─────────────┼─────────────┤</span><br><span class="line">│  只能给建议  │  直接执行   │</span><br><span class="line">│  云端处理    │  本地优先   │</span><br><span class="line">│  被动响应    │  主动规划   │</span><br><span class="line">│  单一对话    │  多工具调用 │</span><br><span class="line">└─────────────┴─────────────┘</span><br><span class="line"></span><br><span class="line">核心意义：AI进入&quot;推理/行动&quot;时代</span><br></pre></td></tr></table></figure>
-
-<h3 id="第7页：技术架构特点"><a href="#第7页：技术架构特点" class="headerlink" title="第7页：技术架构特点"></a><strong>第7页：技术架构特点</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：本地优先架构</span><br><span class="line"></span><br><span class="line">核心优势：</span><br><span class="line">✓ 数据留设备，隐私保护</span><br><span class="line">✓ 离线可用，降低延迟</span><br><span class="line">✓ 避免厂商锁定</span><br><span class="line">✓ 社区驱动，快速迭代</span><br><span class="line"></span><br><span class="line">技术栈：</span><br><span class="line">• Python + Docker部署</span><br><span class="line">• 支持多模型接入</span><br><span class="line">• 跨平台兼容</span><br></pre></td></tr></table></figure>
-
-<h3 id="第8页：能力边界"><a href="#第8页：能力边界" class="headerlink" title="第8页：能力边界"></a><strong>第8页：能力边界</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：OpenClaw能做什么？</span><br><span class="line"></span><br><span class="line">应用场景：</span><br><span class="line">📁 文件管理：自动整理、分类、备份</span><br><span class="line">🌐 网页操作：信息检索、数据抓取</span><br><span class="line">💻 代码执行：编程、调试、部署</span><br><span class="line">📧 邮件处理：自动回复、分类管理</span><br><span class="line">📊 数据分析：报表生成、可视化</span><br><span class="line"></span><br><span class="line">配图：应用场景示意图</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="第三部分：产业生态博弈"><a href="#第三部分：产业生态博弈" class="headerlink" title="第三部分：产业生态博弈"></a>第三部分：产业生态博弈</h2><h3 id="第9页：创始人加盟OpenAI"><a href="#第9页：创始人加盟OpenAI" class="headerlink" title="第9页：创始人加盟OpenAI"></a><strong>第9页：创始人加盟OpenAI</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：人走茶未凉的战略安排</span><br><span class="line"></span><br><span class="line">合作模式：</span><br><span class="line">• Peter以&quot;战略加盟&quot;形式加入</span><br><span class="line">• OpenClaw保持MIT开源协议</span><br><span class="line">• 独立非营利基金会管理</span><br><span class="line">• OpenAI资助基金会</span><br><span class="line"></span><br><span class="line">战略意义：掌控下一代智能体标准</span><br></pre></td></tr></table></figure>
-
-<h3 id="第10页：巨头入局态势"><a href="#第10页：巨头入局态势" class="headerlink" title="第10页：巨头入局态势"></a><strong>第10页：巨头入局态势</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：各方战略布局</span><br><span class="line"></span><br><span class="line">┌──────────┬────────────────┬──────────────┐</span><br><span class="line">│   公司   │     动作       │   战略意图   │</span><br><span class="line">├──────────┼────────────────┼──────────────┤</span><br><span class="line">│  英伟达  │  推出NemoClaw  │  绑定算力生态│</span><br><span class="line">│  智谱    │  一键安装版    │  抢占用户入口│</span><br><span class="line">│  腾讯/阿里│  兼容版本     │  争夺Token场景│</span><br><span class="line">│  OpenAI  │  创始人+资助   │  掌控标准    │</span><br><span class="line">└──────────┴────────────────┴──────────────┘</span><br></pre></td></tr></table></figure>
-
-<h3 id="第11页：开源vs闭源"><a href="#第11页：开源vs闭源" class="headerlink" title="第11页：开源vs闭源"></a><strong>第11页：开源vs闭源</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：生态竞争格局</span><br><span class="line"></span><br><span class="line">开源优势：</span><br><span class="line">• 社区驱动</span><br><span class="line">• 透明可信</span><br><span class="line">• 快速迭代</span><br><span class="line">• 避免厂商锁定</span><br><span class="line"></span><br><span class="line">闭源优势：</span><br><span class="line">• 商业可持续</span><br><span class="line">• 责任明确</span><br><span class="line">• 服务支持</span><br><span class="line">• 深度整合</span><br><span class="line"></span><br><span class="line">未来格局：开源框架 + 闭源服务</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="第四部分：安全与监管挑战"><a href="#第四部分：安全与监管挑战" class="headerlink" title="第四部分：安全与监管挑战"></a>第四部分：安全与监管挑战</h2><h3 id="第12页：四大安全风险"><a href="#第12页：四大安全风险" class="headerlink" title="第12页：四大安全风险"></a><strong>第12页：四大安全风险</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：国家安全部指出的风险</span><br><span class="line"></span><br><span class="line">⚠️ 权限失控风险</span><br><span class="line">   高权限访问可能导致恶意操作</span><br><span class="line"></span><br><span class="line">⚠️ 隐私泄露风险</span><br><span class="line">   敏感数据可能被攻破</span><br><span class="line"></span><br><span class="line">⚠️ 言论篡改风险</span><br><span class="line">   可能被用于传播虚假信息</span><br><span class="line"></span><br><span class="line">⚠️ 责任归属风险</span><br><span class="line">   开源属性悬置安全责任</span><br><span class="line"></span><br><span class="line">配图：风险警示图标</span><br></pre></td></tr></table></figure>
-
-<h3 id="第13页：监管态度"><a href="#第13页：监管态度" class="headerlink" title="第13页：监管态度"></a><strong>第13页：监管态度</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：各方监管立场</span><br><span class="line"></span><br><span class="line">高文院士：</span><br><span class="line">&quot;极大降低创业门槛，但要注意个人信息风险防范&quot;</span><br><span class="line"></span><br><span class="line">工信部：</span><br><span class="line">警惕AI&quot;养龙虾&quot;安全风险</span><br><span class="line"></span><br><span class="line">国家安全部：</span><br><span class="line">发布安全养殖手册，提示理性辨别、规范使用</span><br><span class="line"></span><br><span class="line">核心原则：创新与安全同步推进</span><br></pre></td></tr></table></figure>
-
-<h3 id="第14页：安全建议"><a href="#第14页：安全建议" class="headerlink" title="第14页：安全建议"></a><strong>第14页：安全建议</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：三层防护体系</span><br><span class="line"></span><br><span class="line">技术层面：</span><br><span class="line">• 沙盒机制</span><br><span class="line">• 权限分级</span><br><span class="line">• 操作审计</span><br><span class="line"></span><br><span class="line">用户层面：</span><br><span class="line">• 审慎授权</span><br><span class="line">• 定期审查</span><br><span class="line">• 安全意识</span><br><span class="line"></span><br><span class="line">监管层面：</span><br><span class="line">• 安全标准</span><br><span class="line">• 责任认定</span><br><span class="line">• 应急响应</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="第五部分：经济与社会影响"><a href="#第五部分：经济与社会影响" class="headerlink" title="第五部分：经济与社会影响"></a>第五部分：经济与社会影响</h2><h3 id="第15页：”龙虾经济”现象"><a href="#第15页：”龙虾经济”现象" class="headerlink" title="第15页：”龙虾经济”现象"></a><strong>第15页：”龙虾经济”现象</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：衍生服务市场爆发</span><br><span class="line"></span><br><span class="line">安装服务：</span><br><span class="line">• 国外：单次高达6000美元</span><br><span class="line">• 国内：200-1000元/次</span><br><span class="line">• 排队时间：30分钟以上</span><br><span class="line"></span><br><span class="line">新岗位：</span><br><span class="line">• OpenClaw开发工程师</span><br><span class="line">• 提示词工程师（进阶版）</span><br><span class="line">• AI智能体培训师</span><br></pre></td></tr></table></figure>
-
-<h3 id="第16页：一人公司（OPC）浪潮"><a href="#第16页：一人公司（OPC）浪潮" class="headerlink" title="第16页：一人公司（OPC）浪潮"></a><strong>第16页：一人公司（OPC）浪潮</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：创业门槛大幅降低</span><br><span class="line"></span><br><span class="line">关键数据：</span><br><span class="line">• 开源仅两个月</span><br><span class="line">• 全球涌现30万+一人公司</span><br><span class="line">• 个人可完成产品全链路闭环</span><br><span class="line"></span><br><span class="line">影响：</span><br><span class="line">✓ 创业成本下降</span><br><span class="line">✓ 创新速度加快</span><br><span class="line">✓ 就业形态多元化</span><br></pre></td></tr></table></figure>
-
-<h3 id="第17页：就业市场冲击"><a href="#第17页：就业市场冲击" class="headerlink" title="第17页：就业市场冲击"></a><strong>第17页：就业市场冲击</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：替代与创造并存</span><br><span class="line"></span><br><span class="line">面临替代风险：</span><br><span class="line">• 初级程序员</span><br><span class="line">• 数据录入员</span><br><span class="line">• 客服人员</span><br><span class="line">• 基础文案工作</span><br><span class="line"></span><br><span class="line">新岗位涌现：</span><br><span class="line">• AI智能体开发</span><br><span class="line">• 人机协作设计</span><br><span class="line">• AI行为审计</span><br><span class="line">• 数字员工管理</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="第六部分：AI工具未来展望"><a href="#第六部分：AI工具未来展望" class="headerlink" title="第六部分：AI工具未来展望"></a>第六部分：AI工具未来展望</h2><h3 id="第18页：普及曲线分析"><a href="#第18页：普及曲线分析" class="headerlink" title="第18页：普及曲线分析"></a><strong>第18页：普及曲线分析</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：当前处于&quot;期望膨胀期&quot;</span><br><span class="line"></span><br><span class="line">┌─────────────┬──────────────┐</span><br><span class="line">│   阶段      │    状态      │</span><br><span class="line">├─────────────┼──────────────┤</span><br><span class="line">│ 技术萌芽期  │   已过       │</span><br><span class="line">│ 期望膨胀期  │   当前 ⭐    │</span><br><span class="line">│ 泡沫破裂期  │   可能到来   │</span><br><span class="line">│ 稳步爬升期  │   未来       │</span><br><span class="line">│ 成熟普及期  │   长期目标   │</span><br><span class="line">└─────────────┴──────────────┘</span><br><span class="line"></span><br><span class="line">风险提示：FOMO心理、安全信任危机</span><br></pre></td></tr></table></figure>
-
-<h3 id="第19页：未来时间表"><a href="#第19页：未来时间表" class="headerlink" title="第19页：未来时间表"></a><strong>第19页：未来时间表</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：2026-2030年发展预测</span><br><span class="line"></span><br><span class="line">2026-2027年：</span><br><span class="line">AI智能体成为个人电脑标准配置</span><br><span class="line"></span><br><span class="line">2028-2030年：</span><br><span class="line">80%常规办公任务可由AI自主完成</span><br><span class="line"></span><br><span class="line">2030年以后：</span><br><span class="line">&quot;一人公司&quot;成为主流创业形态</span><br><span class="line"></span><br><span class="line">配图：发展时间轴</span><br></pre></td></tr></table></figure>
-
-<h3 id="第20页：关键成功因素"><a href="#第20页：关键成功因素" class="headerlink" title="第20页：关键成功因素"></a><strong>第20页：关键成功因素</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：决定未来的四大要素</span><br><span class="line"></span><br><span class="line">🔐 安全性</span><br><span class="line">   建立可信的执行环境</span><br><span class="line"></span><br><span class="line">🎯 易用性</span><br><span class="line">   降低部署和使用门槛</span><br><span class="line"></span><br><span class="line">🔗 互操作性</span><br><span class="line">   跨平台、跨应用无缝集成</span><br><span class="line"></span><br><span class="line">💰 可持续性</span><br><span class="line">   合理商业模式支撑长期发展</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="第七部分：总结与建议"><a href="#第七部分：总结与建议" class="headerlink" title="第七部分：总结与建议"></a>第七部分：总结与建议</h2><h3 id="第21页：关键结论"><a href="#第21页：关键结论" class="headerlink" title="第21页：关键结论"></a><strong>第21页：关键结论</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：四大核心结论</span><br><span class="line"></span><br><span class="line">1️⃣ 技术层面</span><br><span class="line">   AI从&quot;对话&quot;走向&quot;行动&quot;，智能体时代开启</span><br><span class="line"></span><br><span class="line">2️⃣ 产业层面</span><br><span class="line">   开源生态与商业巨头形成新竞合关系</span><br><span class="line"></span><br><span class="line">3️⃣ 社会层面</span><br><span class="line">   生产力革命与安全风险并存</span><br><span class="line"></span><br><span class="line">4️⃣ 个人层面</span><br><span class="line">   学习与AI协作，而非被替代</span><br><span class="line"></span><br><span class="line">核心观点：AI工具的未来在于&quot;增强人类&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="第22页：结束页"><a href="#第22页：结束页" class="headerlink" title="第22页：结束页"></a><strong>第22页：结束页</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：谢谢聆听</span><br><span class="line"></span><br><span class="line">副标题：欢迎提问与交流</span><br><span class="line"></span><br><span class="line">联系方式：[邮箱/微信/网站]</span><br><span class="line">二维码：[个人/项目二维码]</span><br><span class="line"></span><br><span class="line">背景图：未来科技概念图</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="🎨-设计建议"><a href="#🎨-设计建议" class="headerlink" title="🎨 设计建议"></a>🎨 设计建议</h2><table>
-<thead>
-<tr>
-<th>元素</th>
-<th>建议</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>主色调</td>
-<td>科技蓝 + 活力橙</td>
-</tr>
-<tr>
-<td>字体</td>
-<td>标题用粗体，正文用清晰无衬线字体</td>
-</tr>
-<tr>
-<td>图标</td>
-<td>使用扁平化科技风格图标</td>
-</tr>
-<tr>
-<td>动画</td>
-<td>适度使用淡入、擦除动画</td>
-</tr>
-<tr>
-<td>配图</td>
-<td>时间轴用线性图，数据用柱状&#x2F;折线图</td>
-</tr>
-<tr>
-<td>页脚</td>
-<td>统一添加页码和演讲主题</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="⏱️-演讲时间分配建议"><a href="#⏱️-演讲时间分配建议" class="headerlink" title="⏱️ 演讲时间分配建议"></a>⏱️ 演讲时间分配建议</h2><table>
-<thead>
-<tr>
-<th>部分</th>
-<th>时长</th>
-<th>占比</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>时间线</td>
-<td>3分钟</td>
-<td>11%</td>
-</tr>
-<tr>
-<td>技术突破</td>
-<td>4分钟</td>
-<td>15%</td>
-</tr>
-<tr>
-<td>产业生态</td>
-<td>4分钟</td>
-<td>15%</td>
-</tr>
-<tr>
-<td>安全监管</td>
-<td>4分钟</td>
-<td>15%</td>
-</tr>
-<tr>
-<td>经济社会</td>
-<td>4分钟</td>
-<td>15%</td>
-</tr>
-<tr>
-<td>未来展望</td>
-<td>5分钟</td>
-<td>19%</td>
-</tr>
-<tr>
-<td>总结</td>
-<td>2分钟</td>
-<td>7%</td>
-</tr>
-<tr>
-<td>Q&amp;A</td>
-<td>4分钟</td>
-<td>15%</td>
-</tr>
-<tr>
-<td><strong>总计</strong></td>
-<td><strong>30分钟</strong></td>
-<td><strong>100%</strong></td>
-</tr>
-</tbody></table>
-<hr>
-]]></content>
-  </entry>
-  <entry>
-    <title>OpenClaw龙虾潮 3.22 v2.0</title>
-    <url>/blog/%E6%96%B0%E9%97%BB3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="OpenClaw：AI智能体革命（简化版PPT大纲）"><a href="#OpenClaw：AI智能体革命（简化版PPT大纲）" class="headerlink" title="OpenClaw：AI智能体革命（简化版PPT大纲）"></a>OpenClaw：AI智能体革命（简化版PPT大纲）</h1><h2 id="📑-结构总览（共12页，演讲时长15分钟）"><a href="#📑-结构总览（共12页，演讲时长15分钟）" class="headerlink" title="📑 结构总览（共12页，演讲时长15分钟）"></a>📑 结构总览（共12页，演讲时长15分钟）</h2><table>
-<thead>
-<tr>
-<th>页码</th>
-<th>章节</th>
-<th>核心内容</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>封面</td>
-<td>标题+副标题</td>
-</tr>
-<tr>
-<td>2</td>
-<td>目录</td>
-<td>四大模块概览</td>
-</tr>
-<tr>
-<td>3-4</td>
-<td>一、现象级爆发</td>
-<td>时间线+关键数据</td>
-</tr>
-<tr>
-<td>5-6</td>
-<td>二、核心突破</td>
-<td>范式转移+技术架构</td>
-</tr>
-<tr>
-<td>7-8</td>
-<td>三、生态博弈</td>
-<td>巨头入局+安全风险</td>
-</tr>
-<tr>
-<td>9-10</td>
-<td>四、未来展望</td>
-<td>经济影响+发展趋势</td>
-</tr>
-<tr>
-<td>11</td>
-<td>总结</td>
-<td>三大核心结论</td>
-</tr>
-<tr>
-<td>12</td>
-<td>结束</td>
-<td>Q&amp;A</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="📊-详细页面内容"><a href="#📊-详细页面内容" class="headerlink" title="📊 详细页面内容"></a>📊 详细页面内容</h2><h3 id="第1页：封面"><a href="#第1页：封面" class="headerlink" title="第1页：封面"></a>第1页：封面</h3><p><strong>标题：</strong> OpenClaw：AI智能体革命<br><strong>副标题：</strong> 从”对话”到”执行”的范式转移<br><strong>日期：</strong> 2026年3月<br><strong>视觉建议：</strong> 科技感龙虾图标或智能体概念图作为背景</p>
-<h3 id="第2页：目录"><a href="#第2页：目录" class="headerlink" title="第2页：目录"></a>第2页：目录</h3><p><strong>主要内容：</strong></p>
-<ol>
-<li>现象级爆发：时间线与数据</li>
-<li>核心突破：技术范式转移</li>
-<li>生态博弈：机遇与挑战</li>
-<li>未来展望：趋势与建议</li>
-</ol>
-<hr>
-<h2 id="第一部分：现象级爆发"><a href="#第一部分：现象级爆发" class="headerlink" title="第一部分：现象级爆发"></a>第一部分：现象级爆发</h2><h3 id="第3页：关键时间线"><a href="#第3页：关键时间线" class="headerlink" title="第3页：关键时间线"></a>第3页：关键时间线</h3><p><strong>标题：</strong> 两个月引爆全球<br><strong>核心节点：</strong></p>
-<ul>
-<li>2025.11：周末项目诞生（原名Clawdbot）</li>
-<li>2026.01：正式更名OpenClaw上线</li>
-<li>2026.02：创始人加盟OpenAI，确认项目开源存续</li>
-<li>2026.03：全民”养虾”，两会热议，国家安全部发文<br><strong>视觉建议：</strong> 简洁的横向时间轴图表</li>
-</ul>
-<h3 id="第4页：爆发数据"><a href="#第4页：爆发数据" class="headerlink" title="第4页：爆发数据"></a>第4页：爆发数据</h3><p><strong>标题：</strong> 史上增长最快的开源项目<br><strong>关键数据：</strong></p>
-<ul>
-<li>GitHub星标：2个月内突破10万+</li>
-<li>单周访客：超过200万+</li>
-<li>衍生生态：全球涌现30万+ “一人公司”</li>
-<li>服务市场：国外安装费高达$6000&#x2F;次，国内¥200-1000&#x2F;次<br><strong>核心标签：</strong> 现象级、破纪录、全民狂欢</li>
-</ul>
-<hr>
-<h2 id="第二部分：核心突破"><a href="#第二部分：核心突破" class="headerlink" title="第二部分：核心突破"></a>第二部分：核心突破</h2><h3 id="第5页：范式转移"><a href="#第5页：范式转移" class="headerlink" title="第5页：范式转移"></a>第5页：范式转移</h3><p><strong>标题：</strong> 从”顾问”到”员工”<br><strong>对比分析：</strong></p>
-<ul>
-<li>传统AI：给建议、云端处理、被动响应、单轮对话</li>
-<li>OpenClaw：直接执行、本地优先、主动规划、连续任务<br><strong>核心意义：</strong> 标志着AI正式进入”行动时代”<br><strong>视觉建议：</strong> 左右对比表格或图标</li>
-</ul>
-<h3 id="第6页：技术架构"><a href="#第6页：技术架构" class="headerlink" title="第6页：技术架构"></a>第6页：技术架构</h3><p><strong>标题：</strong> 本地优先·隐私至上<br><strong>三大核心优势：</strong></p>
-<ol>
-<li>数据留设备，保障隐私安全</li>
-<li>离线可用，实现低延迟</li>
-<li>社区驱动，支持快速迭代<br><strong>能力边界：</strong> 文件管理、网页操作、代码执行、邮件处理、数据分析、跨应用协作</li>
-</ol>
-<hr>
-<h2 id="第三部分：生态博弈"><a href="#第三部分：生态博弈" class="headerlink" title="第三部分：生态博弈"></a>第三部分：生态博弈</h2><h3 id="第7页：巨头入局"><a href="#第7页：巨头入局" class="headerlink" title="第7页：巨头入局"></a>第7页：巨头入局</h3><p><strong>标题：</strong> 开源vs商业的竞合<br><strong>主要玩家动作：</strong></p>
-<ul>
-<li>OpenAI：创始人加盟 + 基金会资助（掌控标准）</li>
-<li>英伟达：推出NemoClaw（绑定算力生态）</li>
-<li>智谱&#x2F;腾讯&#x2F;阿里：提供一键部署（抢占用户入口）<br><strong>战略格局：</strong> 形成”开源框架 + 闭源服务”的混合模式</li>
-</ul>
-<h3 id="第8页：安全与挑战"><a href="#第8页：安全与挑战" class="headerlink" title="第8页：安全与挑战"></a>第8页：安全与挑战</h3><p><strong>标题：</strong> 四大风险警示<br><strong>主要风险：</strong></p>
-<ol>
-<li>权限失控：高权限可能导致恶意操作</li>
-<li>隐私泄露：敏感数据存在被攻破风险</li>
-<li>言论篡改：自主发声可能传播虚假信息</li>
-<li>责任真空：开源属性导致安全责任难界定<br><strong>监管态度：</strong> 创新与安全必须同步推进</li>
-</ol>
-<hr>
-<h2 id="第四部分：未来展望"><a href="#第四部分：未来展望" class="headerlink" title="第四部分：未来展望"></a>第四部分：未来展望</h2><h3 id="第9页：经济影响"><a href="#第9页：经济影响" class="headerlink" title="第9页：经济影响"></a>第9页：经济影响</h3><p><strong>标题：</strong> 一人公司浪潮<br><strong>核心趋势：</strong></p>
-<ul>
-<li>创业门槛大幅降低，个人可独立完成全链路</li>
-<li>全球已涌现30万+基于OpenClaw的”一人公司”</li>
-<li>新岗位诞生：AI智能体开发、培训师、行为审计师</li>
-<li>就业冲击：初级程序员、客服、数据录入等岗位面临替代<br><strong>结论：</strong> 人机协作正在重构就业市场</li>
-</ul>
-<h3 id="第10页：发展预测"><a href="#第10页：发展预测" class="headerlink" title="第10页：发展预测"></a>第10页：发展预测</h3><p><strong>标题：</strong> 2026-2030路线图<br><strong>阶段预测：</strong></p>
-<ul>
-<li>2026-2027：AI智能体成为个人电脑标准配置</li>
-<li>2028-2030：80%常规办公任务可由AI自主完成</li>
-<li>2030以后：”一人公司”成为主流创业形态<br><strong>成功关键：</strong> 安全性、易用性、互操作性、可持续性</li>
-</ul>
-<hr>
-<h2 id="总结与结束"><a href="#总结与结束" class="headerlink" title="总结与结束"></a>总结与结束</h2><h3 id="第11页：核心结论"><a href="#第11页：核心结论" class="headerlink" title="第11页：核心结论"></a>第11页：核心结论</h3><p><strong>标题：</strong> 三大关键洞察</p>
-<ol>
-<li><strong>技术层面：</strong> AI从”对话”走向”行动”</li>
-<li><strong>产业层面：</strong> 开源生态与巨头形成新竞合关系</li>
-<li><strong>社会层面：</strong> 生产力革命与安全挑战并存<br><strong>核心观点：</strong> AI的目的是增强人类，而非替代人类</li>
-</ol>
-<h3 id="第12页：结束页"><a href="#第12页：结束页" class="headerlink" title="第12页：结束页"></a>第12页：结束页</h3><p><strong>标题：</strong> 谢谢聆听<br><strong>副标题：</strong> 欢迎提问与交流<br><strong>联系方式：</strong> [邮箱&#x2F;微信]<br><strong>视觉元素：</strong> 个人二维码或项目官网链接</p>
-<hr>
-<h2 id="🎨-设计与演讲建议"><a href="#🎨-设计与演讲建议" class="headerlink" title="🎨 设计与演讲建议"></a>🎨 设计与演讲建议</h2><p><strong>设计风格：</strong></p>
-<ul>
-<li>配色：科技蓝为主色调，橙色作为重点点缀</li>
-<li>字体：使用清晰的无衬线字体，标题加粗</li>
-<li>图表：时间轴用线性图，对比内容用表格或图标</li>
-<li>动画：仅使用简单的淡入效果，保持专业简洁</li>
-</ul>
-<p><strong>时间分配（总计15分钟）：</strong></p>
-<ul>
-<li>开场与目录：1分钟</li>
-<li>现象爆发：3分钟</li>
-<li>核心突破：4分钟</li>
-<li>生态博弈：3分钟</li>
-<li>未来展望：3分钟</li>
-<li>总结与问答：2分钟</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>OpenClaw龙虾潮 演讲稿</title>
-    <url>/blog/%E6%96%B0%E9%97%BB%E6%BC%94%E8%AE%B2%E7%A8%BF/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="演讲稿：OpenClaw——AI从“对话”走向“行动”的革命"><a href="#演讲稿：OpenClaw——AI从“对话”走向“行动”的革命" class="headerlink" title="演讲稿：OpenClaw——AI从“对话”走向“行动”的革命"></a>演讲稿：OpenClaw——AI从“对话”走向“行动”的革命</h1><p>各位朋友，大家好！</p>
-<p>2026年的春天，科技圈被一只“小龙虾”彻底点燃。它就是<strong>OpenClaw</strong>，一个在短短两个月内席卷全球、被英伟达CEO黄仁勋称为“AI时代Windows”的开源项目。</p>
-<p>回顾这条惊人的时间线：去年11月，奥地利程序员Peter Steinberger仅在Mac Mini上花了一小时写出原型；今年1月，它正式更名上线，迅速成为GitHub史上增长最快的项目；2月，面对Meta和OpenAI的争相抢人，Peter选择加入OpenAI，但坚持让OpenClaw作为独立开源项目存续；到了3月，从全国两会的代表热议，到英伟达GTC大会的战略发布，再到国家安全部专门印发“安全养殖手册”，OpenClaw已不再只是一个软件，而是一场全社会关注的<strong>技术现象</strong>。</p>
-<p>OpenClaw究竟做对了什么？核心在于它完成了一次<strong>范式转移</strong>。过去的AI，像是一个博学的顾问，只能给你建议，却动不了手；而OpenClaw，是一个真正的“数字员工”。它能直接操作你的电脑，整理文件、编写代码、浏览网页，甚至自主规划复杂任务。更重要的是，它坚持“本地优先”架构，把数据主权还给了用户。这种从“对话”到“执行”的跨越，标志着我们正式进入了<strong>AI智能体（Agent）元年</strong>。</p>
-<p>当然，热潮背后必有冷思考。权限过大带来的安全隐患、责任归属的法律真空、以及可能引发的就业冲击，都是我们必须直面的挑战。正如高文院士所言：“既要拥抱‘养龙虾’的红利，也要系好安全的腰带。”</p>
-<p>最后，我想说：OpenClaw的出现，不是为了替代人类，而是为了<strong>增强人类</strong>。它降低了创新的门槛，让“一人公司”成为可能，让每个人都能拥有自己的超级助手。未来已来，让我们保持理性，拥抱变化，学会与这位新伙伴共舞，共同开启人机协作的新篇章！</p>
-<p>谢谢大家！</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>毛概期末</title>
-    <url>/blog/%E6%AF%9B%E6%A6%82%E6%9C%9F%E6%9C%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><style type = "text/css">
-    article > .markdown-style-modify-box > ul,
-    article > .markdown-style-modify-box > ol,
-    article > .markdown-style-modify-box > ol > li > .hide-block > .hide-content > ul > li > b > code {
-        line-height: 2em;
-        font-size: 18px;
-    }
-
-    article > .markdown-style-modify-box > ol {
-        margin: 0 0 0 20px;
-    }
-
-    .hide-inline > .hide-button {
-        padding: 5px 5px;
-        margin: 0px;
-    }
-    
-    .hide-inline > .hide-content {
-        margin: 0px;
-    }
-
-    .hl-label {
-        padding: 2px 5px 4px 6px;
-        border-radius: 6px;
-    }
-
-    .hover-appear {
-        color: #0000002B;
-        transition: color 0.3s;
-    }
-
-    .hover-appear:hover {
-        color: inherit;
-    }
-
-    .instance-text {
-        text-indent: 2em;
-        display: inline-flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .instance-source {
-        color: #666666;
-        font-style: italic;
-        white-space: normal;
-        word-wrap: break-word;
-        max-width: 100%;
-        margin-left: auto;
-    }
-</style>
-
-<div class = "markdown-style-modify-box">
-
-<h1 id="导论-马克思主义中国化历史进程与理论成果"><a href="#导论-马克思主义中国化历史进程与理论成果" class="headerlink" title="导论 马克思主义中国化历史进程与理论成果"></a>导论 马克思主义中国化历史进程与理论成果</h1><h2 id="马克思主义中国化提出的时间、提出者、会议和文章名称-p2"><a href="#马克思主义中国化提出的时间、提出者、会议和文章名称-p2" class="headerlink" title="马克思主义中国化提出的时间、提出者、会议和文章名称 p2"></a>马克思主义中国化提出的时间、提出者、会议和文章名称 p2</h2><ul>
-<li><span class="hide-inline"><button type="button" class="hide-button" style=""> <b>时间</b></button><span class="hide-content"><b>1938年</b></span></span>，<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>提出者</b></button><span class="hide-content"><b>毛泽东</b></span></span>在党的<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>会议</b></button><span class="hide-content"><b>六届六中全会</b></span></span>上作了<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>文章名称</b></button><span class="hide-content"><b>《论新阶段》</b></span></span>的报告，这标志着“马克思主义的中国化”这一命题的正式提出。</li>
-</ul>
-<hr>
-<h1 id="第一章-毛泽东思想及其历史地位"><a href="#第一章-毛泽东思想及其历史地位" class="headerlink" title="第一章 毛泽东思想及其历史地位"></a>第一章 毛泽东思想及其历史地位</h1><h2 id="毛泽东思想形成发展的历史条件-p16"><a href="#毛泽东思想形成发展的历史条件-p16" class="headerlink" title="毛泽东思想形成发展的历史条件 p16"></a>毛泽东思想形成发展的历史条件 p16</h2><ul>
-<li>中国共产党领导中国人民进行<mark class="hl-label orange"><b>革命和建设</b></mark>的<b>成功实践</b>是毛泽东思想<mark class="hl-label purple"><b>形成和发展</b></mark>的<b>实践基础</b>。</li>
-</ul>
-<h2 id="毛泽东思想的主要内容-p20-25"><a href="#毛泽东思想的主要内容-p20-25" class="headerlink" title="毛泽东思想的主要内容 p20-25"></a>毛泽东思想的主要内容 p20-25</h2><ol>
-<li><details class="toggle" ><summary class="toggle-button" style="">新民主主义革命理论</summary><div class="toggle-content"><ol>
-<li>认为中国资产阶级有两个部分：依附于帝国主义的大资产阶级和既有革命要求又有动摇性的民族资产阶级。</li>
-<li>认为由于帝国主义的侵略，加之中国没有资产阶级民主，因此中国革命只能以长期的武装斗争为主要形式。</li>
-</ol>
-</div></details></li>
-<li>社会主义革命和社会主义建设理论  </li>
-<li>革命军队建设和军事战略的理论</li>
-<li>政策和策略的理论</li>
-<li>思想政治工作和文化工作的理论</li>
-<li>党的建设理论</li>
-</ol>
-<h2 id="毛泽东思想活的灵魂-p26-32"><a href="#毛泽东思想活的灵魂-p26-32" class="headerlink" title="毛泽东思想活的灵魂 p26-32"></a>毛泽东思想活的灵魂 p26-32</h2><ul>
-<li><span class="hide-inline"><button type="button" class="hide-button" style=""> <b>时间</b></button><span class="hide-content"><b>1981年</b></span></span>党的<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>会议</b></button><span class="hide-content"><b>十一届六中全会</b></span></span>通过的<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>文章名称</b></button><span class="hide-content"><b>《中国共产党中央委员会关于建国以来党的若干历史问题的决议》</b></span></span>指出：“毛泽东思想的活的灵魂，是贯串于上述各个组成部分的立场、观点和方法，它们有<u>三个基本方面</u>，即<b>实事求是</b>，<b>群众路线</b>，<b>独立自主</b>。”</li>
-</ul>
-<ol>
-<li><details class="toggle" ><summary class="toggle-button" style="">实事求是</summary><div class="toggle-content"><ul>
-<li><b>实事求是</b>是毛泽东思想的<b>基本点</b>，是毛泽东思想的<b>精髓</b>。</li>
-<li>实事求是，就是<b>一切从实际出发，理论联系实际，坚持在实践中检验真理和发展真理</b>。</li>
-<li>实事求是是中国共产党人<mark class = "hl-label orange"><b>认识世界</b></mark>、<mark class = "hl-label red"><b>改造世界</b></mark>的<b>根本要求</b>，是中国共产党的<b>思想路线</b>。</li>
-<li>“实事”就是客观存在的一切事物，“是”就是客观事物的内部联系，即规律性，“求”就是我们去研究。</li>
-</ul>
-<ol>
-<li>坚持实事求是，就要深入实际了解事物的本来面貌，把握事物内在必然联系按照客观规律办事。</li>
-<li>坚持实事求是，就要清醒认识和正确把握我国基本国情。</li>
-<li>坚持实事求是，就要不断推进实践基础上的理论创新。</li>
-</ol>
-</div></details></li>
-<li><details class="toggle" ><summary class="toggle-button" style="">群众路线</summary><div class="toggle-content"><ul>
-<li>群众路线，就是一切为了群众，一切依靠群众，从群众中来，到群众中去，把党的正确主张变为群众的自觉行动。</li>
-<li>不论过去、现在和将来，群众路线都是我们<mark class = "hl-label yellow"><b>党的生命线</b></mark>和<mark class = "hl-label orange"><b>根本工作路线</b></mark>是我们党永葆青春活力和战斗力的<mark class = "hl-label red"><b>重要传家宝</b></mark>。</li>
-</ul>
-<ol>
-<li>坚持群众路线，就要坚持人民是推动历史发展的根本力量。</li>
-<li>坚持群众路线，就要坚持全心全意为人民服务的根本宗旨。</li>
-<li>坚持群众路线，就要保持党同人民群众的血肉联系。</li>
-</ol>
-</div></details></li>
-<li><details class="toggle" ><summary class="toggle-button" style="">独立自主</summary><div class="toggle-content"><ul>
-<li>独立自主，就是坚持独立思考走自己的路。</li>
-</ul>
-<ol>
-<li>坚持独立自主，就要坚持中国的事情必须由中国人民自己作主张、自己来处理。</li>
-<li>坚持独立自主，就要坚持独立自主的和平外交政策，坚定不移走和平发展道路。</li>
-<li>独立自主是中华民族精神之魂。</li>
-</ol>
-</div></details></li>
-</ol>
-<hr>
-<h1 id="第二章-新民主主义革命理论"><a href="#第二章-新民主主义革命理论" class="headerlink" title="第二章 新民主主义革命理论"></a>第二章 新民主主义革命理论</h1><h2 id="新民主主义革命的总路线-p45-51"><a href="#新民主主义革命的总路线-p45-51" class="headerlink" title="新民主主义革命的总路线 p45-51"></a>新民主主义革命的总路线 p45-51</h2><ol>
-<li><p>新民主主义革命的对象<span class = "hover-appear">（分清敌友，是革命的首要问题。）</span></p>
-<ul>
-<li>总体上说，中国革命的对象是<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>三座大山</b></button><span class="hide-content"><b>帝国主义</b></span></span>、<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>三座大山</b></button><span class="hide-content"><b>封建主义</b></span></span>和<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>三座大山</b></button><span class="hide-content"><b>官僚主义</b></span></span>三座大山。</li>
-<li><mark class="hl-label default"><b>帝国主义</b></mark>是中国革命的首要对象。</li>
-</ul>
- <div class="hide-block"><button type="button" class="hide-button" style=""><b>在不同历史阶段，革命的对象有所不同</b></button><div class="hide-content"><ul>
-<li>在<mark class = "hl-label default"><b>国共合作</b></mark>的大革命时期，革命的主要对象是<b><code>帝国主义</code></b>支持下的<mark class = "hl-label default"><b>北洋军阀</b></mark>。</li>
-<li>在<mark class = "hl-label default"><b>土地革命战争</b></mark>时期，革命的主要对象是<mark class = "hl-label default"><b>国名党新军阀</b></mark>。</li>
-<li>在<mark class = "hl-label default"><b>抗日战争</b></mark>时期，革命的主要对象是<mark class = "hl-label default"><b>日本帝国主义</b></mark>。</li>
-<li>在<mark class = "hl-label default"><b>解放战争</b></mark>时期，革命的主要对象是<b><code>美帝国主义</code></b>扶持下的<mark class = "hl-label default"><b>国民党反动派</b></mark>。</li>
-</ul>
-</div></div>
-</li>
-<li><p>新民主主义革命的动力</p>
-<ul>
-<li>新民主主义革命的动力包括<mark class="hl-label orange"><b>无产阶级</b></mark>、<mark class="hl-label yellow"><b>农民阶级</b></mark>、<mark class="hl-label green"><b>城市小资产阶级</b></mark>和<mark class="hl-label blue"><b>民族资产阶级</b></mark>。</li>
-<li><mark class="hl-label orange"><b>无产阶级</b></mark>是中国革命<b>最基本</b>的动力。</li>
-<li><mark class="hl-label yellow"><b>农民</b></mark>是中国革命的<b>主力军</b>。</li>
-<li><mark class="hl-label green"><b>城市小资产阶级</b></mark>是无产阶级的<b>可靠同盟者</b>。</li>
-<li><mark class="hl-label blue"><b>民族资产阶级</b></mark>也是中国革命的动力之一。</li>
-</ul>
-</li>
-<li><p>新民主主义革命的领导力量</p>
-<ul>
-<li>无产阶级的领导权是中国革命的中心问题，也是新民主主义革命理论的核心问题。</li>
-</ul>
-</li>
-<li><p>新民主主义革命的性质和前途</p>
-<ul>
-<li>新民主主义革命的性质不是无产阶级社会主义革命，而是资产阶级民主主义革命。</li>
-</ul>
- <details class="toggle" ><summary class="toggle-button" style="">毛泽东指出</summary><div class="toggle-content"><p class = "instance-text">“既然中国社会还是一个殖民地、半殖民地、半封建的社会，既然中国革命的敌人主要的还是帝国主义和封建势力，既然中国革命的任务是为了推翻这两个主要敌人的民族革命和民主革命，而推翻这两个敌人的革命，有时还有资产阶级参加，即使大资产阶级背叛革命而成了革命的敌人，革命的锋芒也不是向着一般的资本主义和资本主义的私有财产，而是向着帝国主义和封建主义，既然如此，所以，现阶段中国革命的性质，不是无产阶级社会主义的，而是资产阶级民主主义的。但是，现时中国的资产阶级民主主义的革命，已不是旧式的一般的资产阶级民主主义的革命，这种革命已经过时了，而是新式的特殊的资产阶级民主主义的革命。”<span class = "instance-source">——《毛泽东选集》第二卷</span></p>
-    </div></details></li>
-</ol>
-<h2 id="新民主主义的三大基本纲领-p52-55"><a href="#新民主主义的三大基本纲领-p52-55" class="headerlink" title="新民主主义的三大基本纲领 p52-55"></a>新民主主义的三大基本纲领 p52-55</h2><ol>
-<li>新民主主义的政治纲领<ul>
-<li>推翻帝国主义和封建主义的统治，建立一个无产阶级领导的、以工农联盟为基础的、各革命阶级联合专政的新民主主义的共和国。</li>
-</ul>
-</li>
-<li>新民主主义的经济纲领<ul>
-<li>没收封建地主阶级的的土地归农民所有，没收官僚资产阶级的垄断资本归新民主主义的国家所有，保护民族工商业。</li>
-</ul>
-</li>
-<li>新民主主义的文化纲领<ul>
-<li>无产阶级领导的人民大众反帝反封建的文化，即民族的科学的大众的文化。</li>
-</ul>
-</li>
-</ol>
-<h2 id="新民主主义革命道路-p56-58"><a href="#新民主主义革命道路-p56-58" class="headerlink" title="新民主主义革命道路 p56-58"></a>新民主主义革命道路 p56-58</h2><ul>
-<li>农村包围城市，武装夺取政权。</li>
-</ul>
-<ol>
-<li><details class="toggle" ><summary class="toggle-button" style="">提出</summary><div class="toggle-content"><p><mark class = "hl-label red"><b>1938年11月</b></mark>，<mark class = "hl-label orange"><b>毛泽东</b></mark>在党的<mark class = "hl-label yellow"><b>六届六中全会</b></mark>上明确指出共产党的任务，基本地不是经过长期合法斗争以进入起义和战争也不是先占城市后取乡村而是走相反的道路。
-    </p>
-</div></details></li>
-<li><details class="toggle" ><summary class="toggle-button" style="">形成的必然性</summary><div class="toggle-content"><ul>
-<li>中国革命必须走农村包围城市、武装夺取政权的道路，是由中国所处的时代特点和具体国情决定的。</li>
-</ul>
-</div></details></li>
-<li><details class="toggle" ><summary class="toggle-button" style="">内容及意义</summary><div class="toggle-content"><ul>
-<li>中国革命走农村包围城市、武装夺取政权的道路，根本在于处理好土地革命、武装斗争、农民革命根据地建设三者之间的关系。</li>
-</ul>
-<ol>
-<li>土地革命是中国革命的基本内容。</li>
-<li>武装斗争是中国革命的主要形式，是农村根据地建设和土地革命的强有力保证。</li>
-<li>农村革命根据地是中国革命的战略阵地，是进行武装斗争和开展土地革命的依托。</li>
-</ol>
-</div></details></li>
-</ol>
-<h2 id="新民主主义革命的三大法宝-p59-64"><a href="#新民主主义革命的三大法宝-p59-64" class="headerlink" title="新民主主义革命的三大法宝 p59-64"></a>新民主主义革命的三大法宝 p59-64</h2><ol>
-<li>统一战线<span class = "hover-appear">（无产阶级政党策略思想的重要内容）</span></li>
-<li>武装斗争<span class = "hover-appear">（中国革命的特点和优点之一）</span></li>
-<li>党的建设<span class = "hover-appear">（中国共产党要领导革命取得胜利，必须不断加强党的思想建设、组织建设和作风建设）</span></li>
-</ol>
-<h2 id="新民主主义三大法宝之间的关系-p64"><a href="#新民主主义三大法宝之间的关系-p64" class="headerlink" title="新民主主义三大法宝之间的关系 p64"></a>新民主主义三大法宝之间的关系 p64</h2><ul>
-<li>统一战线和武装斗争是中国革命的两个基本特点，是战胜敌人的两个基本武器。</li>
-<li>统一战线是实行武装斗争的统一战线。</li>
-<li>武装斗争是统一战线的中心支柱。</li>
-<li>党的组织则是掌握统一战线和武装斗争这两个武器以实行对敌冲锋陷阵的英勇战士。</li>
-</ul>
-<hr>
-<h1 id="第三章-社会主义改造理论"><a href="#第三章-社会主义改造理论" class="headerlink" title="第三章 社会主义改造理论"></a>第三章 社会主义改造理论</h1><h2 id="党在过渡时期的总路线-p70"><a href="#党在过渡时期的总路线-p70" class="headerlink" title="党在过渡时期的总路线 p70"></a>党在过渡时期的总路线 p70</h2><ul>
-<li>在一个相当长的时期内，逐步实现国家的社会主义工业化，并逐步实现国家对农业、对手工业和对资本主义工商业的社会主义改造。</li>
-</ul>
-<h2 id="适合中国特点的社会主义改造道路-p76-83"><a href="#适合中国特点的社会主义改造道路-p76-83" class="headerlink" title="适合中国特点的社会主义改造道路 p76-83"></a>适合中国特点的社会主义改造道路 p76-83</h2><ul>
-<li><details class="toggle" ><summary class="toggle-button" style="">一、 农业、手工业的社会主义改造</summary><div class="toggle-content"><ol>
-<li>积极引导农民组织起来，走互助合作道路。</li>
-<li>遵循自愿互利、典型示范和国家帮助的原则，以互助合作的优越性吸引农民走互助合作道路。</li>
-<li>正确分析农村的阶级和阶层状况，制定正确的阶级政策。</li>
-<li>坚持积极领导、稳步前进的方针，采取循序渐进的步骤。</li>
-</ol>
-</div></details>
-</li>
-<li><details class="toggle" ><summary class="toggle-button" style="">二、 资本主义工商业的社会主义改造</summary><div class="toggle-content"><ol>
-<li>用和平赎买的方式改造资本主义工商业。</li>
-<li>采取从低级到高级的国家资本主义的过渡形式。</li>
-<li>把资本主义工商业者改造成为自食其力的社会主义劳动者。</li>
-</ol>
-</div></details></li>
-</ul>
-<hr>
-<h1 id="第四章-社会主义建设道路初步探索的理论成果"><a href="#第四章-社会主义建设道路初步探索的理论成果" class="headerlink" title="第四章 社会主义建设道路初步探索的理论成果"></a>第四章 社会主义建设道路初步探索的理论成果</h1><h2 id="初步探索的三大理论成果-p93-103"><a href="#初步探索的三大理论成果-p93-103" class="headerlink" title="初步探索的三大理论成果 p93-103"></a>初步探索的三大理论成果 p93-103</h2><ol>
-<li>调动一切积极因素为社会主义事业服务</li>
-<li>正确认识和处理社会主义社会矛盾的思想</li>
-<li>走中国工业化道路的思想</li>
-</ol>
-<h2 id="⭐走中国工业化道路-p101-103"><a href="#⭐走中国工业化道路-p101-103" class="headerlink" title="⭐走中国工业化道路 p101-103"></a>⭐走中国工业化道路 p101-103</h2><ul>
-<li>实现工业化是中国近代以来历史发展的必然要求，也是民族独立和国家富强的必要条件。</li>
-<li>以工业为主导，把重工业作为我国经济建设的重点，以逐步建立独立的比较完整的基础工业体系和国防工业体系，是维护国家独立、统一和安全，实现国家富强所必须的。</li>
-</ul>
-<ol>
-<li>走中国工业化道路，必须采取正确的经济建设方针。</li>
-<li>走中国工业化道路，必须调整和完善所有制结构。</li>
-<li>走中国工业化道路，必须积极探索适合我国情况的经济体制和运行机制。</li>
-</ol>
-<hr>
-<h1 id="第六章-邓小平理论"><a href="#第六章-邓小平理论" class="headerlink" title="第六章 邓小平理论"></a>第六章 邓小平理论</h1><h2 id="邓小平理论首要的基本理论-p152、p153"><a href="#邓小平理论首要的基本理论-p152、p153" class="headerlink" title="邓小平理论首要的基本理论 p152、p153"></a>邓小平理论首要的基本理论 p152、p153</h2><ul>
-<li>社会主义的本质，是解放生产力，发展生产力，消灭剥削，消除两极分化，最终达到共同富裕。</li>
-<li>解放思想、实事求是，是邓小平理论的精髓。</li>
-</ul>
-<h2 id="坚持四项基本原则-p160"><a href="#坚持四项基本原则-p160" class="headerlink" title="坚持四项基本原则 p160"></a>坚持四项基本原则 p160</h2><ol>
-<li>坚持社会主义发道路</li>
-<li>坚持人民民主专政</li>
-<li>坚持共产党的领导</li>
-<li>坚持马列主义毛泽东思想</li>
-</ol>
-<h2 id="党在社会主义初级阶段基本路线-p160"><a href="#党在社会主义初级阶段基本路线-p160" class="headerlink" title="党在社会主义初级阶段基本路线 p160"></a>党在社会主义初级阶段基本路线 p160</h2><ul>
-<li>以经济建设为中心，坚持四项基本原则，坚持改革开放。</li>
-</ul>
-<h2 id="⭐社会主义改革开放和社会主义市场经济理论-p167-171"><a href="#⭐社会主义改革开放和社会主义市场经济理论-p167-171" class="headerlink" title="⭐社会主义改革开放和社会主义市场经济理论 p167-171"></a>⭐社会主义改革开放和社会主义市场经济理论 p167-171</h2><ul>
-<li><p>社会主义改革开放理论</p>
-<ol>
-<li>改革是一场深刻的社会变革，是中国的第二次革命，是实现中国现代化的必由之路。</li>
-<li>改革是社会主义发展的直接动力。</li>
-<li>改革是一项崭新的事业，是一个大试验。</li>
-<li>开放也是改革<span class = "hover-appear">（对外开放是建设中国特色社会主义的一项基本国策，和改革一起成为新时期最鲜明的特征。）</span></li>
-<li>实行对外开放是对中国经济发展停滞落后历史教训深刻总结的结果。</li>
-<li>对外开放是对世界所有国家的开放，包括对发达国家的开放；不仅是经济领域的开放，还包括科技、教育、文化等领域的开放。</li>
-</ol>
-</li>
-<li><p>社会主义市场经济理论（内涵）</p>
-<ol>
-<li>计划经济和市场经济不是划分社会制度的标志，计划经济不等于社会主义，市场经济也不等于资本主义。</li>
-<li>计划和市场都是经济手段，对经济活动的调节各有优劣，社会主义实行市场经济是要把两者优势结合起来。</li>
-<li>市场经济作为资源配置手段本身不具有制度性，可以＆不同的社会制度相结合，从而表现出不同的性质。</li>
-</ol>
-</li>
-</ul>
-<hr>
-<h1 id="第七章-“三个代表”重要思想"><a href="#第七章-“三个代表”重要思想" class="headerlink" title="第七章 “三个代表”重要思想"></a>第七章 “三个代表”重要思想</h1><h2 id="“三个代表”重要思想的三个核心观点-p191、p194、p198"><a href="#“三个代表”重要思想的三个核心观点-p191、p194、p198" class="headerlink" title="“三个代表”重要思想的三个核心观点 p191、p194、p198"></a>“三个代表”重要思想的三个核心观点 p191、p194、p198</h2><ol>
-<li>始终代表中国先进生产力的发展要求。</li>
-<li>始终代表中国先进文化的前进方向。</li>
-<li>始终代表中国最广大人民的根本利益。</li>
-</ol>
-<hr>
-<h1 id="第八章-科学发展观"><a href="#第八章-科学发展观" class="headerlink" title="第八章 科学发展观"></a>第八章 科学发展观</h1><h2 id="科学发展观的科学内涵-p228、p232、p235、p237"><a href="#科学发展观的科学内涵-p228、p232、p235、p237" class="headerlink" title="科学发展观的科学内涵 p228、p232、p235、p237"></a>科学发展观的科学内涵 p228、p232、p235、p237</h2><ol>
-<li>推动经济社会发展是科学发展的第一要义。</li>
-<li>以人为本是科学发展观的核心立场。</li>
-<li>全面协调可持续是科学发展观的基本要求。</li>
-<li>统筹兼顾是科学发展观的根本方法。</li>
-</ol>
-<hr>
-</div>]]></content>
   </entry>
   <entry>
     <title>HCIA题库笔记</title>
@@ -4017,5 +2971,1029 @@
       <tags>
         <tag>HCIA</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>OpenClaw龙虾潮 3.22 v1.0</title>
+    <url>/blog/%E6%96%B0%E9%97%BB2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="OpenClaw深度分析-PPT大纲"><a href="#OpenClaw深度分析-PPT大纲" class="headerlink" title="OpenClaw深度分析 PPT大纲"></a>OpenClaw深度分析 PPT大纲</h1><hr>
+<h2 id="📑-幻灯片结构总览"><a href="#📑-幻灯片结构总览" class="headerlink" title="📑 幻灯片结构总览"></a>📑 幻灯片结构总览</h2><table>
+<thead>
+<tr>
+<th>页码</th>
+<th>章节</th>
+<th>标题</th>
+<th>预计时长</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>封面</td>
+<td>OpenClaw：AI智能体革命</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>目录</td>
+<td>内容概览</td>
+<td>1分钟</td>
+</tr>
+<tr>
+<td>3-5</td>
+<td>第一部分</td>
+<td>事件时间线</td>
+<td>3分钟</td>
+</tr>
+<tr>
+<td>6-8</td>
+<td>第二部分</td>
+<td>核心技术突破</td>
+<td>4分钟</td>
+</tr>
+<tr>
+<td>9-11</td>
+<td>第三部分</td>
+<td>产业生态博弈</td>
+<td>4分钟</td>
+</tr>
+<tr>
+<td>12-14</td>
+<td>第四部分</td>
+<td>安全与监管</td>
+<td>4分钟</td>
+</tr>
+<tr>
+<td>15-17</td>
+<td>第五部分</td>
+<td>经济与社会影响</td>
+<td>4分钟</td>
+</tr>
+<tr>
+<td>18-20</td>
+<td>第六部分</td>
+<td>AI工具未来展望</td>
+<td>5分钟</td>
+</tr>
+<tr>
+<td>21</td>
+<td>总结</td>
+<td>关键结论与建议</td>
+<td>2分钟</td>
+</tr>
+<tr>
+<td>22</td>
+<td>结束</td>
+<td>Q&amp;A</td>
+<td>-</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="📊-详细页面内容"><a href="#📊-详细页面内容" class="headerlink" title="📊 详细页面内容"></a>📊 详细页面内容</h2><h3 id="第1页：封面"><a href="#第1页：封面" class="headerlink" title="第1页：封面"></a><strong>第1页：封面</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：OpenClaw：AI从“对话”走向“行动”的革命</span><br><span class="line">副标题：从对话到执行的范式转移</span><br><span class="line">日期：2026年3月</span><br><span class="line">演讲人：[姓名]</span><br><span class="line">背景图：OpenClaw Logo/智能体概念图</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="第2页：目录"><a href="#第2页：目录" class="headerlink" title="第2页：目录"></a><strong>第2页：目录</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一、事件时间线梳理</span><br><span class="line">二、核心技术突破</span><br><span class="line">三、产业生态博弈</span><br><span class="line">四、安全与监管挑战</span><br><span class="line">五、经济与社会影响</span><br><span class="line">六、AI工具未来展望</span><br><span class="line">七、总结与建议</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第一部分：事件时间线梳理"><a href="#第一部分：事件时间线梳理" class="headerlink" title="第一部分：事件时间线梳理"></a>第一部分：事件时间线梳理</h2><h3 id="第3页：项目起源（2025年底）"><a href="#第3页：项目起源（2025年底）" class="headerlink" title="第3页：项目起源（2025年底）"></a><strong>第3页：项目起源（2025年底）</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：从Clawdbot到OpenClaw</span><br><span class="line"></span><br><span class="line">关键节点：</span><br><span class="line">• 2025年12月：Peter Steinberger更名项目</span><br><span class="line">• 三次更名风波：Clawdbot→Moltbot→OpenClaw</span><br><span class="line">• 定位：个人AI智能体助手</span><br><span class="line"></span><br><span class="line">配图：项目更名时间轴</span><br></pre></td></tr></table></figure>
+
+<h3 id="第4页：正式上线与爆发（2026年1-2月）"><a href="#第4页：正式上线与爆发（2026年1-2月）" class="headerlink" title="第4页：正式上线与爆发（2026年1-2月）"></a><strong>第4页：正式上线与爆发（2026年1-2月）</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：史上增长最快的开源项目</span><br><span class="line"></span><br><span class="line">关键数据：</span><br><span class="line">• 2026年1月：正式上线</span><br><span class="line">• GitHub星标快速增长</span><br><span class="line">• 2月15日：创始人加盟OpenAI</span><br><span class="line">• 2月16日：确认开源项目存续</span><br><span class="line"></span><br><span class="line">配图：GitHub星标增长曲线</span><br></pre></td></tr></table></figure>
+
+<h3 id="第5页：全民”养虾”热潮（2026年3月）"><a href="#第5页：全民”养虾”热潮（2026年3月）" class="headerlink" title="第5页：全民”养虾”热潮（2026年3月）"></a><strong>第5页：全民”养虾”热潮（2026年3月）</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：从极客圈到社会现象</span><br><span class="line"></span><br><span class="line">热点事件：</span><br><span class="line">• 3月3日：开通官方微博，落地中国</span><br><span class="line">• 3月7-10日：全国两会热议</span><br><span class="line">• 3月16-19日：英伟达GTC大会定调</span><br><span class="line">• 3月17日：国家安全部发布安全手册</span><br><span class="line">• 3月27-29日：上海开发者大会黑客松</span><br><span class="line"></span><br><span class="line">配图：热搜话题趋势图</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第二部分：核心技术突破"><a href="#第二部分：核心技术突破" class="headerlink" title="第二部分：核心技术突破"></a>第二部分：核心技术突破</h2><h3 id="第6页：范式转移对比"><a href="#第6页：范式转移对比" class="headerlink" title="第6页：范式转移对比"></a><strong>第6页：范式转移对比</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：从&quot;对话&quot;到&quot;执行&quot;</span><br><span class="line"></span><br><span class="line">┌─────────────┬─────────────┐</span><br><span class="line">│  传统AI助手  │  OpenClaw   │</span><br><span class="line">├─────────────┼─────────────┤</span><br><span class="line">│  只能给建议  │  直接执行   │</span><br><span class="line">│  云端处理    │  本地优先   │</span><br><span class="line">│  被动响应    │  主动规划   │</span><br><span class="line">│  单一对话    │  多工具调用 │</span><br><span class="line">└─────────────┴─────────────┘</span><br><span class="line"></span><br><span class="line">核心意义：AI进入&quot;推理/行动&quot;时代</span><br></pre></td></tr></table></figure>
+
+<h3 id="第7页：技术架构特点"><a href="#第7页：技术架构特点" class="headerlink" title="第7页：技术架构特点"></a><strong>第7页：技术架构特点</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：本地优先架构</span><br><span class="line"></span><br><span class="line">核心优势：</span><br><span class="line">✓ 数据留设备，隐私保护</span><br><span class="line">✓ 离线可用，降低延迟</span><br><span class="line">✓ 避免厂商锁定</span><br><span class="line">✓ 社区驱动，快速迭代</span><br><span class="line"></span><br><span class="line">技术栈：</span><br><span class="line">• Python + Docker部署</span><br><span class="line">• 支持多模型接入</span><br><span class="line">• 跨平台兼容</span><br></pre></td></tr></table></figure>
+
+<h3 id="第8页：能力边界"><a href="#第8页：能力边界" class="headerlink" title="第8页：能力边界"></a><strong>第8页：能力边界</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：OpenClaw能做什么？</span><br><span class="line"></span><br><span class="line">应用场景：</span><br><span class="line">📁 文件管理：自动整理、分类、备份</span><br><span class="line">🌐 网页操作：信息检索、数据抓取</span><br><span class="line">💻 代码执行：编程、调试、部署</span><br><span class="line">📧 邮件处理：自动回复、分类管理</span><br><span class="line">📊 数据分析：报表生成、可视化</span><br><span class="line"></span><br><span class="line">配图：应用场景示意图</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第三部分：产业生态博弈"><a href="#第三部分：产业生态博弈" class="headerlink" title="第三部分：产业生态博弈"></a>第三部分：产业生态博弈</h2><h3 id="第9页：创始人加盟OpenAI"><a href="#第9页：创始人加盟OpenAI" class="headerlink" title="第9页：创始人加盟OpenAI"></a><strong>第9页：创始人加盟OpenAI</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：人走茶未凉的战略安排</span><br><span class="line"></span><br><span class="line">合作模式：</span><br><span class="line">• Peter以&quot;战略加盟&quot;形式加入</span><br><span class="line">• OpenClaw保持MIT开源协议</span><br><span class="line">• 独立非营利基金会管理</span><br><span class="line">• OpenAI资助基金会</span><br><span class="line"></span><br><span class="line">战略意义：掌控下一代智能体标准</span><br></pre></td></tr></table></figure>
+
+<h3 id="第10页：巨头入局态势"><a href="#第10页：巨头入局态势" class="headerlink" title="第10页：巨头入局态势"></a><strong>第10页：巨头入局态势</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：各方战略布局</span><br><span class="line"></span><br><span class="line">┌──────────┬────────────────┬──────────────┐</span><br><span class="line">│   公司   │     动作       │   战略意图   │</span><br><span class="line">├──────────┼────────────────┼──────────────┤</span><br><span class="line">│  英伟达  │  推出NemoClaw  │  绑定算力生态│</span><br><span class="line">│  智谱    │  一键安装版    │  抢占用户入口│</span><br><span class="line">│  腾讯/阿里│  兼容版本     │  争夺Token场景│</span><br><span class="line">│  OpenAI  │  创始人+资助   │  掌控标准    │</span><br><span class="line">└──────────┴────────────────┴──────────────┘</span><br></pre></td></tr></table></figure>
+
+<h3 id="第11页：开源vs闭源"><a href="#第11页：开源vs闭源" class="headerlink" title="第11页：开源vs闭源"></a><strong>第11页：开源vs闭源</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：生态竞争格局</span><br><span class="line"></span><br><span class="line">开源优势：</span><br><span class="line">• 社区驱动</span><br><span class="line">• 透明可信</span><br><span class="line">• 快速迭代</span><br><span class="line">• 避免厂商锁定</span><br><span class="line"></span><br><span class="line">闭源优势：</span><br><span class="line">• 商业可持续</span><br><span class="line">• 责任明确</span><br><span class="line">• 服务支持</span><br><span class="line">• 深度整合</span><br><span class="line"></span><br><span class="line">未来格局：开源框架 + 闭源服务</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第四部分：安全与监管挑战"><a href="#第四部分：安全与监管挑战" class="headerlink" title="第四部分：安全与监管挑战"></a>第四部分：安全与监管挑战</h2><h3 id="第12页：四大安全风险"><a href="#第12页：四大安全风险" class="headerlink" title="第12页：四大安全风险"></a><strong>第12页：四大安全风险</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：国家安全部指出的风险</span><br><span class="line"></span><br><span class="line">⚠️ 权限失控风险</span><br><span class="line">   高权限访问可能导致恶意操作</span><br><span class="line"></span><br><span class="line">⚠️ 隐私泄露风险</span><br><span class="line">   敏感数据可能被攻破</span><br><span class="line"></span><br><span class="line">⚠️ 言论篡改风险</span><br><span class="line">   可能被用于传播虚假信息</span><br><span class="line"></span><br><span class="line">⚠️ 责任归属风险</span><br><span class="line">   开源属性悬置安全责任</span><br><span class="line"></span><br><span class="line">配图：风险警示图标</span><br></pre></td></tr></table></figure>
+
+<h3 id="第13页：监管态度"><a href="#第13页：监管态度" class="headerlink" title="第13页：监管态度"></a><strong>第13页：监管态度</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：各方监管立场</span><br><span class="line"></span><br><span class="line">高文院士：</span><br><span class="line">&quot;极大降低创业门槛，但要注意个人信息风险防范&quot;</span><br><span class="line"></span><br><span class="line">工信部：</span><br><span class="line">警惕AI&quot;养龙虾&quot;安全风险</span><br><span class="line"></span><br><span class="line">国家安全部：</span><br><span class="line">发布安全养殖手册，提示理性辨别、规范使用</span><br><span class="line"></span><br><span class="line">核心原则：创新与安全同步推进</span><br></pre></td></tr></table></figure>
+
+<h3 id="第14页：安全建议"><a href="#第14页：安全建议" class="headerlink" title="第14页：安全建议"></a><strong>第14页：安全建议</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：三层防护体系</span><br><span class="line"></span><br><span class="line">技术层面：</span><br><span class="line">• 沙盒机制</span><br><span class="line">• 权限分级</span><br><span class="line">• 操作审计</span><br><span class="line"></span><br><span class="line">用户层面：</span><br><span class="line">• 审慎授权</span><br><span class="line">• 定期审查</span><br><span class="line">• 安全意识</span><br><span class="line"></span><br><span class="line">监管层面：</span><br><span class="line">• 安全标准</span><br><span class="line">• 责任认定</span><br><span class="line">• 应急响应</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第五部分：经济与社会影响"><a href="#第五部分：经济与社会影响" class="headerlink" title="第五部分：经济与社会影响"></a>第五部分：经济与社会影响</h2><h3 id="第15页：”龙虾经济”现象"><a href="#第15页：”龙虾经济”现象" class="headerlink" title="第15页：”龙虾经济”现象"></a><strong>第15页：”龙虾经济”现象</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：衍生服务市场爆发</span><br><span class="line"></span><br><span class="line">安装服务：</span><br><span class="line">• 国外：单次高达6000美元</span><br><span class="line">• 国内：200-1000元/次</span><br><span class="line">• 排队时间：30分钟以上</span><br><span class="line"></span><br><span class="line">新岗位：</span><br><span class="line">• OpenClaw开发工程师</span><br><span class="line">• 提示词工程师（进阶版）</span><br><span class="line">• AI智能体培训师</span><br></pre></td></tr></table></figure>
+
+<h3 id="第16页：一人公司（OPC）浪潮"><a href="#第16页：一人公司（OPC）浪潮" class="headerlink" title="第16页：一人公司（OPC）浪潮"></a><strong>第16页：一人公司（OPC）浪潮</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：创业门槛大幅降低</span><br><span class="line"></span><br><span class="line">关键数据：</span><br><span class="line">• 开源仅两个月</span><br><span class="line">• 全球涌现30万+一人公司</span><br><span class="line">• 个人可完成产品全链路闭环</span><br><span class="line"></span><br><span class="line">影响：</span><br><span class="line">✓ 创业成本下降</span><br><span class="line">✓ 创新速度加快</span><br><span class="line">✓ 就业形态多元化</span><br></pre></td></tr></table></figure>
+
+<h3 id="第17页：就业市场冲击"><a href="#第17页：就业市场冲击" class="headerlink" title="第17页：就业市场冲击"></a><strong>第17页：就业市场冲击</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：替代与创造并存</span><br><span class="line"></span><br><span class="line">面临替代风险：</span><br><span class="line">• 初级程序员</span><br><span class="line">• 数据录入员</span><br><span class="line">• 客服人员</span><br><span class="line">• 基础文案工作</span><br><span class="line"></span><br><span class="line">新岗位涌现：</span><br><span class="line">• AI智能体开发</span><br><span class="line">• 人机协作设计</span><br><span class="line">• AI行为审计</span><br><span class="line">• 数字员工管理</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第六部分：AI工具未来展望"><a href="#第六部分：AI工具未来展望" class="headerlink" title="第六部分：AI工具未来展望"></a>第六部分：AI工具未来展望</h2><h3 id="第18页：普及曲线分析"><a href="#第18页：普及曲线分析" class="headerlink" title="第18页：普及曲线分析"></a><strong>第18页：普及曲线分析</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：当前处于&quot;期望膨胀期&quot;</span><br><span class="line"></span><br><span class="line">┌─────────────┬──────────────┐</span><br><span class="line">│   阶段      │    状态      │</span><br><span class="line">├─────────────┼──────────────┤</span><br><span class="line">│ 技术萌芽期  │   已过       │</span><br><span class="line">│ 期望膨胀期  │   当前 ⭐    │</span><br><span class="line">│ 泡沫破裂期  │   可能到来   │</span><br><span class="line">│ 稳步爬升期  │   未来       │</span><br><span class="line">│ 成熟普及期  │   长期目标   │</span><br><span class="line">└─────────────┴──────────────┘</span><br><span class="line"></span><br><span class="line">风险提示：FOMO心理、安全信任危机</span><br></pre></td></tr></table></figure>
+
+<h3 id="第19页：未来时间表"><a href="#第19页：未来时间表" class="headerlink" title="第19页：未来时间表"></a><strong>第19页：未来时间表</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：2026-2030年发展预测</span><br><span class="line"></span><br><span class="line">2026-2027年：</span><br><span class="line">AI智能体成为个人电脑标准配置</span><br><span class="line"></span><br><span class="line">2028-2030年：</span><br><span class="line">80%常规办公任务可由AI自主完成</span><br><span class="line"></span><br><span class="line">2030年以后：</span><br><span class="line">&quot;一人公司&quot;成为主流创业形态</span><br><span class="line"></span><br><span class="line">配图：发展时间轴</span><br></pre></td></tr></table></figure>
+
+<h3 id="第20页：关键成功因素"><a href="#第20页：关键成功因素" class="headerlink" title="第20页：关键成功因素"></a><strong>第20页：关键成功因素</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：决定未来的四大要素</span><br><span class="line"></span><br><span class="line">🔐 安全性</span><br><span class="line">   建立可信的执行环境</span><br><span class="line"></span><br><span class="line">🎯 易用性</span><br><span class="line">   降低部署和使用门槛</span><br><span class="line"></span><br><span class="line">🔗 互操作性</span><br><span class="line">   跨平台、跨应用无缝集成</span><br><span class="line"></span><br><span class="line">💰 可持续性</span><br><span class="line">   合理商业模式支撑长期发展</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第七部分：总结与建议"><a href="#第七部分：总结与建议" class="headerlink" title="第七部分：总结与建议"></a>第七部分：总结与建议</h2><h3 id="第21页：关键结论"><a href="#第21页：关键结论" class="headerlink" title="第21页：关键结论"></a><strong>第21页：关键结论</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：四大核心结论</span><br><span class="line"></span><br><span class="line">1️⃣ 技术层面</span><br><span class="line">   AI从&quot;对话&quot;走向&quot;行动&quot;，智能体时代开启</span><br><span class="line"></span><br><span class="line">2️⃣ 产业层面</span><br><span class="line">   开源生态与商业巨头形成新竞合关系</span><br><span class="line"></span><br><span class="line">3️⃣ 社会层面</span><br><span class="line">   生产力革命与安全风险并存</span><br><span class="line"></span><br><span class="line">4️⃣ 个人层面</span><br><span class="line">   学习与AI协作，而非被替代</span><br><span class="line"></span><br><span class="line">核心观点：AI工具的未来在于&quot;增强人类&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="第22页：结束页"><a href="#第22页：结束页" class="headerlink" title="第22页：结束页"></a><strong>第22页：结束页</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标题：谢谢聆听</span><br><span class="line"></span><br><span class="line">副标题：欢迎提问与交流</span><br><span class="line"></span><br><span class="line">联系方式：[邮箱/微信/网站]</span><br><span class="line">二维码：[个人/项目二维码]</span><br><span class="line"></span><br><span class="line">背景图：未来科技概念图</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="🎨-设计建议"><a href="#🎨-设计建议" class="headerlink" title="🎨 设计建议"></a>🎨 设计建议</h2><table>
+<thead>
+<tr>
+<th>元素</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主色调</td>
+<td>科技蓝 + 活力橙</td>
+</tr>
+<tr>
+<td>字体</td>
+<td>标题用粗体，正文用清晰无衬线字体</td>
+</tr>
+<tr>
+<td>图标</td>
+<td>使用扁平化科技风格图标</td>
+</tr>
+<tr>
+<td>动画</td>
+<td>适度使用淡入、擦除动画</td>
+</tr>
+<tr>
+<td>配图</td>
+<td>时间轴用线性图，数据用柱状&#x2F;折线图</td>
+</tr>
+<tr>
+<td>页脚</td>
+<td>统一添加页码和演讲主题</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="⏱️-演讲时间分配建议"><a href="#⏱️-演讲时间分配建议" class="headerlink" title="⏱️ 演讲时间分配建议"></a>⏱️ 演讲时间分配建议</h2><table>
+<thead>
+<tr>
+<th>部分</th>
+<th>时长</th>
+<th>占比</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>时间线</td>
+<td>3分钟</td>
+<td>11%</td>
+</tr>
+<tr>
+<td>技术突破</td>
+<td>4分钟</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>产业生态</td>
+<td>4分钟</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>安全监管</td>
+<td>4分钟</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>经济社会</td>
+<td>4分钟</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>未来展望</td>
+<td>5分钟</td>
+<td>19%</td>
+</tr>
+<tr>
+<td>总结</td>
+<td>2分钟</td>
+<td>7%</td>
+</tr>
+<tr>
+<td>Q&amp;A</td>
+<td>4分钟</td>
+<td>15%</td>
+</tr>
+<tr>
+<td><strong>总计</strong></td>
+<td><strong>30分钟</strong></td>
+<td><strong>100%</strong></td>
+</tr>
+</tbody></table>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>OpenClaw龙虾潮 3.22 v2.0</title>
+    <url>/blog/%E6%96%B0%E9%97%BB3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="OpenClaw：AI智能体革命（简化版PPT大纲）"><a href="#OpenClaw：AI智能体革命（简化版PPT大纲）" class="headerlink" title="OpenClaw：AI智能体革命（简化版PPT大纲）"></a>OpenClaw：AI智能体革命（简化版PPT大纲）</h1><h2 id="📑-结构总览（共12页，演讲时长15分钟）"><a href="#📑-结构总览（共12页，演讲时长15分钟）" class="headerlink" title="📑 结构总览（共12页，演讲时长15分钟）"></a>📑 结构总览（共12页，演讲时长15分钟）</h2><table>
+<thead>
+<tr>
+<th>页码</th>
+<th>章节</th>
+<th>核心内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>封面</td>
+<td>标题+副标题</td>
+</tr>
+<tr>
+<td>2</td>
+<td>目录</td>
+<td>四大模块概览</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>一、现象级爆发</td>
+<td>时间线+关键数据</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>二、核心突破</td>
+<td>范式转移+技术架构</td>
+</tr>
+<tr>
+<td>7-8</td>
+<td>三、生态博弈</td>
+<td>巨头入局+安全风险</td>
+</tr>
+<tr>
+<td>9-10</td>
+<td>四、未来展望</td>
+<td>经济影响+发展趋势</td>
+</tr>
+<tr>
+<td>11</td>
+<td>总结</td>
+<td>三大核心结论</td>
+</tr>
+<tr>
+<td>12</td>
+<td>结束</td>
+<td>Q&amp;A</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="📊-详细页面内容"><a href="#📊-详细页面内容" class="headerlink" title="📊 详细页面内容"></a>📊 详细页面内容</h2><h3 id="第1页：封面"><a href="#第1页：封面" class="headerlink" title="第1页：封面"></a>第1页：封面</h3><p><strong>标题：</strong> OpenClaw：AI智能体革命<br><strong>副标题：</strong> 从”对话”到”执行”的范式转移<br><strong>日期：</strong> 2026年3月<br><strong>视觉建议：</strong> 科技感龙虾图标或智能体概念图作为背景</p>
+<h3 id="第2页：目录"><a href="#第2页：目录" class="headerlink" title="第2页：目录"></a>第2页：目录</h3><p><strong>主要内容：</strong></p>
+<ol>
+<li>现象级爆发：时间线与数据</li>
+<li>核心突破：技术范式转移</li>
+<li>生态博弈：机遇与挑战</li>
+<li>未来展望：趋势与建议</li>
+</ol>
+<hr>
+<h2 id="第一部分：现象级爆发"><a href="#第一部分：现象级爆发" class="headerlink" title="第一部分：现象级爆发"></a>第一部分：现象级爆发</h2><h3 id="第3页：关键时间线"><a href="#第3页：关键时间线" class="headerlink" title="第3页：关键时间线"></a>第3页：关键时间线</h3><p><strong>标题：</strong> 两个月引爆全球<br><strong>核心节点：</strong></p>
+<ul>
+<li>2025.11：周末项目诞生（原名Clawdbot）</li>
+<li>2026.01：正式更名OpenClaw上线</li>
+<li>2026.02：创始人加盟OpenAI，确认项目开源存续</li>
+<li>2026.03：全民”养虾”，两会热议，国家安全部发文<br><strong>视觉建议：</strong> 简洁的横向时间轴图表</li>
+</ul>
+<h3 id="第4页：爆发数据"><a href="#第4页：爆发数据" class="headerlink" title="第4页：爆发数据"></a>第4页：爆发数据</h3><p><strong>标题：</strong> 史上增长最快的开源项目<br><strong>关键数据：</strong></p>
+<ul>
+<li>GitHub星标：2个月内突破10万+</li>
+<li>单周访客：超过200万+</li>
+<li>衍生生态：全球涌现30万+ “一人公司”</li>
+<li>服务市场：国外安装费高达$6000&#x2F;次，国内¥200-1000&#x2F;次<br><strong>核心标签：</strong> 现象级、破纪录、全民狂欢</li>
+</ul>
+<hr>
+<h2 id="第二部分：核心突破"><a href="#第二部分：核心突破" class="headerlink" title="第二部分：核心突破"></a>第二部分：核心突破</h2><h3 id="第5页：范式转移"><a href="#第5页：范式转移" class="headerlink" title="第5页：范式转移"></a>第5页：范式转移</h3><p><strong>标题：</strong> 从”顾问”到”员工”<br><strong>对比分析：</strong></p>
+<ul>
+<li>传统AI：给建议、云端处理、被动响应、单轮对话</li>
+<li>OpenClaw：直接执行、本地优先、主动规划、连续任务<br><strong>核心意义：</strong> 标志着AI正式进入”行动时代”<br><strong>视觉建议：</strong> 左右对比表格或图标</li>
+</ul>
+<h3 id="第6页：技术架构"><a href="#第6页：技术架构" class="headerlink" title="第6页：技术架构"></a>第6页：技术架构</h3><p><strong>标题：</strong> 本地优先·隐私至上<br><strong>三大核心优势：</strong></p>
+<ol>
+<li>数据留设备，保障隐私安全</li>
+<li>离线可用，实现低延迟</li>
+<li>社区驱动，支持快速迭代<br><strong>能力边界：</strong> 文件管理、网页操作、代码执行、邮件处理、数据分析、跨应用协作</li>
+</ol>
+<hr>
+<h2 id="第三部分：生态博弈"><a href="#第三部分：生态博弈" class="headerlink" title="第三部分：生态博弈"></a>第三部分：生态博弈</h2><h3 id="第7页：巨头入局"><a href="#第7页：巨头入局" class="headerlink" title="第7页：巨头入局"></a>第7页：巨头入局</h3><p><strong>标题：</strong> 开源vs商业的竞合<br><strong>主要玩家动作：</strong></p>
+<ul>
+<li>OpenAI：创始人加盟 + 基金会资助（掌控标准）</li>
+<li>英伟达：推出NemoClaw（绑定算力生态）</li>
+<li>智谱&#x2F;腾讯&#x2F;阿里：提供一键部署（抢占用户入口）<br><strong>战略格局：</strong> 形成”开源框架 + 闭源服务”的混合模式</li>
+</ul>
+<h3 id="第8页：安全与挑战"><a href="#第8页：安全与挑战" class="headerlink" title="第8页：安全与挑战"></a>第8页：安全与挑战</h3><p><strong>标题：</strong> 四大风险警示<br><strong>主要风险：</strong></p>
+<ol>
+<li>权限失控：高权限可能导致恶意操作</li>
+<li>隐私泄露：敏感数据存在被攻破风险</li>
+<li>言论篡改：自主发声可能传播虚假信息</li>
+<li>责任真空：开源属性导致安全责任难界定<br><strong>监管态度：</strong> 创新与安全必须同步推进</li>
+</ol>
+<hr>
+<h2 id="第四部分：未来展望"><a href="#第四部分：未来展望" class="headerlink" title="第四部分：未来展望"></a>第四部分：未来展望</h2><h3 id="第9页：经济影响"><a href="#第9页：经济影响" class="headerlink" title="第9页：经济影响"></a>第9页：经济影响</h3><p><strong>标题：</strong> 一人公司浪潮<br><strong>核心趋势：</strong></p>
+<ul>
+<li>创业门槛大幅降低，个人可独立完成全链路</li>
+<li>全球已涌现30万+基于OpenClaw的”一人公司”</li>
+<li>新岗位诞生：AI智能体开发、培训师、行为审计师</li>
+<li>就业冲击：初级程序员、客服、数据录入等岗位面临替代<br><strong>结论：</strong> 人机协作正在重构就业市场</li>
+</ul>
+<h3 id="第10页：发展预测"><a href="#第10页：发展预测" class="headerlink" title="第10页：发展预测"></a>第10页：发展预测</h3><p><strong>标题：</strong> 2026-2030路线图<br><strong>阶段预测：</strong></p>
+<ul>
+<li>2026-2027：AI智能体成为个人电脑标准配置</li>
+<li>2028-2030：80%常规办公任务可由AI自主完成</li>
+<li>2030以后：”一人公司”成为主流创业形态<br><strong>成功关键：</strong> 安全性、易用性、互操作性、可持续性</li>
+</ul>
+<hr>
+<h2 id="总结与结束"><a href="#总结与结束" class="headerlink" title="总结与结束"></a>总结与结束</h2><h3 id="第11页：核心结论"><a href="#第11页：核心结论" class="headerlink" title="第11页：核心结论"></a>第11页：核心结论</h3><p><strong>标题：</strong> 三大关键洞察</p>
+<ol>
+<li><strong>技术层面：</strong> AI从”对话”走向”行动”</li>
+<li><strong>产业层面：</strong> 开源生态与巨头形成新竞合关系</li>
+<li><strong>社会层面：</strong> 生产力革命与安全挑战并存<br><strong>核心观点：</strong> AI的目的是增强人类，而非替代人类</li>
+</ol>
+<h3 id="第12页：结束页"><a href="#第12页：结束页" class="headerlink" title="第12页：结束页"></a>第12页：结束页</h3><p><strong>标题：</strong> 谢谢聆听<br><strong>副标题：</strong> 欢迎提问与交流<br><strong>联系方式：</strong> [邮箱&#x2F;微信]<br><strong>视觉元素：</strong> 个人二维码或项目官网链接</p>
+<hr>
+<h2 id="🎨-设计与演讲建议"><a href="#🎨-设计与演讲建议" class="headerlink" title="🎨 设计与演讲建议"></a>🎨 设计与演讲建议</h2><p><strong>设计风格：</strong></p>
+<ul>
+<li>配色：科技蓝为主色调，橙色作为重点点缀</li>
+<li>字体：使用清晰的无衬线字体，标题加粗</li>
+<li>图表：时间轴用线性图，对比内容用表格或图标</li>
+<li>动画：仅使用简单的淡入效果，保持专业简洁</li>
+</ul>
+<p><strong>时间分配（总计15分钟）：</strong></p>
+<ul>
+<li>开场与目录：1分钟</li>
+<li>现象爆发：3分钟</li>
+<li>核心突破：4分钟</li>
+<li>生态博弈：3分钟</li>
+<li>未来展望：3分钟</li>
+<li>总结与问答：2分钟</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>新闻纲要 3.21版</title>
+    <url>/blog/%E6%96%B0%E9%97%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="📊-2026年3月中东局势深度分析"><a href="#📊-2026年3月中东局势深度分析" class="headerlink" title="📊 2026年3月中东局势深度分析"></a>📊 2026年3月中东局势深度分析</h1><h2 id="PPT演示大纲"><a href="#PPT演示大纲" class="headerlink" title="PPT演示大纲"></a>PPT演示大纲</h2><hr>
+<h2 id="封面页"><a href="#封面页" class="headerlink" title="封面页"></a>封面页</h2><p><strong>标题</strong>：2026年3月中东局势深度分析<br><strong>副标题</strong>：美以伊”三国杀”白热化，中东滑向全面战争边缘<br><strong>日期</strong>：2026年3月21日<br><strong>视觉建议</strong>：中东地图背景+三方国旗元素</p>
+<hr>
+<h2 id="目录页"><a href="#目录页" class="headerlink" title="目录页"></a>目录页</h2><ol>
+<li>冲突背景与时间线</li>
+<li>三方战略目的分析</li>
+<li>核心冲突焦点</li>
+<li>全球影响评估</li>
+<li>未来展望与风险预判</li>
+<li>总结与建议</li>
+</ol>
+<hr>
+<h2 id="第1页｜冲突背景概述"><a href="#第1页｜冲突背景概述" class="headerlink" title="第1页｜冲突背景概述"></a>第1页｜冲突背景概述</h2><p><strong>标题</strong>：为什么是2026年3月？</p>
+<p><strong>核心要点</strong>：</p>
+<ul>
+<li>伊朗铀浓缩达60%（接近武器级）</li>
+<li>美伊核谈判三轮破裂（2026.1-2.26）</li>
+<li>美军双航母战斗群部署到位</li>
+<li>以色列”预防性打击”传统</li>
+</ul>
+<p><strong>视觉建议</strong>：关键数据信息图（60%浓缩度、3轮谈判、2航母）</p>
+<hr>
+<h2 id="第2页｜冲突时间线（战前铺垫）"><a href="#第2页｜冲突时间线（战前铺垫）" class="headerlink" title="第2页｜冲突时间线（战前铺垫）"></a>第2页｜冲突时间线（战前铺垫）</h2><p><strong>标题</strong>：2025.12 - 2026.2.27 战前铺垫</p>
+<p><strong>时间轴</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2025.12</td>
+<td>IAEA确认伊朗铀浓缩至60%</td>
+</tr>
+<tr>
+<td>2026.1-2.26</td>
+<td>美伊三轮核谈判破裂</td>
+</tr>
+<tr>
+<td>2026.2.26</td>
+<td>美军双航母部署完成</td>
+</tr>
+<tr>
+<td>2026.2.27</td>
+<td>各国大规模撤侨</td>
+</tr>
+</tbody></table>
+<p><strong>视觉建议</strong>：横向时间轴设计</p>
+<hr>
+<h2 id="第3页｜冲突时间线（战争爆发）"><a href="#第3页｜冲突时间线（战争爆发）" class="headerlink" title="第3页｜冲突时间线（战争爆发）"></a>第3页｜冲突时间线（战争爆发）</h2><p><strong>标题</strong>：2026.2.28 D-Day 战争爆发</p>
+<p><strong>关键节点</strong>（北京时间）：</p>
+<ul>
+<li>14:18 以军”狮吼行动”启动</li>
+<li>14:25 美军”史诗怒火”同步参战</li>
+<li>16:00 伊朗”真实承诺-4”反击</li>
+<li>17:20 伊朗打击14处美军基地</li>
+<li>23:00 油价破102美元&#x2F;桶</li>
+</ul>
+<p><strong>视觉建议</strong>：24小时时间轴+爆炸图标标记</p>
+<hr>
+<h2 id="第4页｜冲突时间线（升级与僵持）"><a href="#第4页｜冲突时间线（升级与僵持）" class="headerlink" title="第4页｜冲突时间线（升级与僵持）"></a>第4页｜冲突时间线（升级与僵持）</h2><p><strong>标题</strong>：2026.3.1 - 3.20 冲突升级与僵持</p>
+<p><strong>关键事件</strong>：</p>
+<ul>
+<li>3.1 哈梅内伊确认遇难，霍尔木兹海峡封锁</li>
+<li>3.6 美以袭击伊朗境内1250个目标</li>
+<li>3.10 伊朗公开停火核心条件</li>
+<li>3.14 伊朗无人机命中阿联酋燃料设施</li>
+<li>3.15 冲突进入第16天，无停火迹象</li>
+</ul>
+<p><strong>视觉建议</strong>：日历式时间线+冲突强度曲线图</p>
+<hr>
+<h2 id="第5页｜美国战略目的分析"><a href="#第5页｜美国战略目的分析" class="headerlink" title="第5页｜美国战略目的分析"></a>第5页｜美国战略目的分析</h2><p><strong>标题</strong>：🇺🇸 美国：霸权维护战</p>
+<p><strong>目标层级</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>核心</td>
+<td>阻止伊朗拥核</td>
+</tr>
+<tr>
+<td>战略</td>
+<td>削弱伊朗地区影响力</td>
+</tr>
+<tr>
+<td>政治</td>
+<td>特朗普政府大选前展示强硬</td>
+</tr>
+<tr>
+<td>地缘</td>
+<td>警告俄罗斯不得介入</td>
+</tr>
+</tbody></table>
+<p><strong>深层逻辑</strong>：既想展示决心，又不想陷入泥潭</p>
+<p><strong>视觉建议</strong>：金字塔目标结构图</p>
+<hr>
+<h2 id="第6页｜以色列战略目的分析"><a href="#第6页｜以色列战略目的分析" class="headerlink" title="第6页｜以色列战略目的分析"></a>第6页｜以色列战略目的分析</h2><p><strong>标题</strong>：🇮🇱 以色列：生存焦虑驱动的预防性打击</p>
+<p><strong>目标层级</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>核心</td>
+<td>消除伊朗核设施威胁</td>
+</tr>
+<tr>
+<td>安全</td>
+<td>摧毁伊朗导弹工业及海军</td>
+</tr>
+<tr>
+<td>地区</td>
+<td>削弱伊朗代理势力支持</td>
+</tr>
+<tr>
+<td>历史</td>
+<td>延续”预防性打击”传统</td>
+</tr>
+</tbody></table>
+<p><strong>深层逻辑</strong>：现在打比将来打代价更小</p>
+<p><strong>视觉建议</strong>：盾牌+导弹图标组合</p>
+<hr>
+<h2 id="第7页｜伊朗战略目的分析"><a href="#第7页｜伊朗战略目的分析" class="headerlink" title="第7页｜伊朗战略目的分析"></a>第7页｜伊朗战略目的分析</h2><p><strong>标题</strong>：🇮🇷 伊朗：复仇+威慑的双重博弈</p>
+<p><strong>目标层级</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>核心</td>
+<td>捍卫国家主权，反击侵略</td>
+</tr>
+<tr>
+<td>政治</td>
+<td>新领导层树立权威、凝聚民心</td>
+</tr>
+<tr>
+<td>军事</td>
+<td>展示导弹与无人机打击能力</td>
+</tr>
+<tr>
+<td>谈判</td>
+<td>以战促谈，争取有利地位</td>
+</tr>
+</tbody></table>
+<p><strong>深层逻辑</strong>：政权真空期与复仇情绪叠加</p>
+<p><strong>视觉建议</strong>：天平图标（复仇vs威慑）</p>
+<hr>
+<h2 id="第8页｜三方战略困境对比"><a href="#第8页｜三方战略困境对比" class="headerlink" title="第8页｜三方战略困境对比"></a>第8页｜三方战略困境对比</h2><p><strong>标题</strong>：谁都陷入”战略困境”</p>
+<p><strong>对比表格</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>国家</th>
+<th>困境</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>美国</td>
+<td>打轻了无法达成目标，打重了恐陷入泥潭</td>
+</tr>
+<tr>
+<td>以色列</td>
+<td>不打击威胁迫在眉睫，打击后报复难承受</td>
+</tr>
+<tr>
+<td>伊朗</td>
+<td>不反击政权合法性受损，反击过猛恐招更大打击</td>
+</tr>
+</tbody></table>
+<p><strong>核心问题</strong>：三方都没有清晰的”退出策略”</p>
+<p><strong>视觉建议</strong>：三向箭头循环图，标注”困境”</p>
+<hr>
+<h2 id="第9页｜核心冲突焦点（一）"><a href="#第9页｜核心冲突焦点（一）" class="headerlink" title="第9页｜核心冲突焦点（一）"></a>第9页｜核心冲突焦点（一）</h2><p><strong>标题</strong>：核问题：冲突的根本导火索</p>
+<p><strong>关键数据</strong>：</p>
+<ul>
+<li>伊朗铀浓缩：60%（武器级90%）</li>
+<li>IAEA确认时间：2025年12月</li>
+<li>美方要求：零浓缩、拆核设施、限导弹、撤地区武装</li>
+<li>伊朗态度：拒绝</li>
+</ul>
+<p><strong>视觉建议</strong>：核设施图标+浓缩度进度条</p>
+<hr>
+<h2 id="第10页｜核心冲突焦点（二）"><a href="#第10页｜核心冲突焦点（二）" class="headerlink" title="第10页｜核心冲突焦点（二）"></a>第10页｜核心冲突焦点（二）</h2><p><strong>标题</strong>：霍尔木兹海峡：全球能源”咽喉”</p>
+<p><strong>关键影响</strong>：</p>
+<ul>
+<li>承担全球约20%石油运输量</li>
+<li>伊朗已全面封锁</li>
+<li>国际油价破102美元&#x2F;桶</li>
+<li>全球航运成本暴涨</li>
+</ul>
+<p><strong>风险</strong>：长期关闭将引发”滞胀”风险回归</p>
+<p><strong>视觉建议</strong>：海峡地图+油轮图标+油价曲线</p>
+<hr>
+<h2 id="第11页｜核心冲突焦点（三）"><a href="#第11页｜核心冲突焦点（三）" class="headerlink" title="第11页｜核心冲突焦点（三）"></a>第11页｜核心冲突焦点（三）</h2><p><strong>标题</strong>：代理人战争→正面战争</p>
+<p><strong>历史对比</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>时期</th>
+<th>模式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1980-2025</td>
+<td>代理人战争、影子战争</td>
+</tr>
+<tr>
+<td>2026.2.28起</td>
+<td>正面军事冲突</td>
+</tr>
+</tbody></table>
+<p><strong>历史意义</strong>：中东地缘博弈从暗战彻底走向明战</p>
+<p><strong>视觉建议</strong>：对比图（阴影vs阳光）</p>
+<hr>
+<h2 id="第12页｜全球影响评估（经济）"><a href="#第12页｜全球影响评估（经济）" class="headerlink" title="第12页｜全球影响评估（经济）"></a>第12页｜全球影响评估（经济）</h2><p><strong>标题</strong>：全球经济冲击波</p>
+<p><strong>影响领域</strong>：</p>
+<ul>
+<li>🛢️ 能源：油价飙升，供应链成本上涨</li>
+<li>📉 金融：股债双杀，避险资产波动</li>
+<li>🚢 航运：霍尔木兹海峡关闭，运费暴涨</li>
+<li>💰 通胀：”滞胀”风险回归</li>
+</ul>
+<p><strong>视觉建议</strong>：四象限影响图</p>
+<hr>
+<h2 id="第13页｜全球影响评估（政治）"><a href="#第13页｜全球影响评估（政治）" class="headerlink" title="第13页｜全球影响评估（政治）"></a>第13页｜全球影响评估（政治）</h2><p><strong>标题</strong>：国际政治格局变化</p>
+<p><strong>各方反应</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>势力</th>
+<th>态度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>美国</td>
+<td>警告俄罗斯不得介入</td>
+</tr>
+<tr>
+<td>上合组织</td>
+<td>呼吁各方保持克制</td>
+</tr>
+<tr>
+<td>联合国</td>
+<td>谴责美以军事行动</td>
+</tr>
+<tr>
+<td>多国领导人</td>
+<td>担忧冲突外溢</td>
+</tr>
+</tbody></table>
+<p><strong>核心问题</strong>：缺乏有效的国际调停机制</p>
+<p><strong>视觉建议</strong>：世界地图+各方立场标记</p>
+<hr>
+<h2 id="第14页｜未来展望（短期）"><a href="#第14页｜未来展望（短期）" class="headerlink" title="第14页｜未来展望（短期）"></a>第14页｜未来展望（短期）</h2><p><strong>标题</strong>：1-2周：高风险窗口期</p>
+<p><strong>可能情景</strong>：</p>
+<ul>
+<li>军事冲突持续升级</li>
+<li>双方伤亡与损失扩大</li>
+<li>油价继续波动</li>
+<li>国际调停压力加大</li>
+</ul>
+<p><strong>概率</strong>：高</p>
+<p><strong>视觉建议</strong>：警示图标+时间窗口标注</p>
+<hr>
+<h2 id="第15页｜未来展望（中长期）"><a href="#第15页｜未来展望（中长期）" class="headerlink" title="第15页｜未来展望（中长期）"></a>第15页｜未来展望（中长期）</h2><p><strong>标题</strong>：1-6个月：三种可能情景</p>
+<p><strong>情景分析</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>情景</th>
+<th>概率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1-3个月</td>
+<td>临时停火，核心分歧未解</td>
+<td>中</td>
+</tr>
+<tr>
+<td>3-6个月</td>
+<td>谈判重启，达成部分协议</td>
+<td>中低</td>
+</tr>
+<tr>
+<td>6个月+</td>
+<td>谈判破裂，长期消耗战</td>
+<td>中低</td>
+</tr>
+</tbody></table>
+<p><strong>关键观察点</strong>：伊朗打击能力、美军增兵意向、国际调停进展</p>
+<p><strong>视觉建议</strong>：情景树状图</p>
+<hr>
+<h2 id="第16页｜关键观察指标"><a href="#第16页｜关键观察指标" class="headerlink" title="第16页｜关键观察指标"></a>第16页｜关键观察指标</h2><p><strong>标题</strong>：需要持续关注的4个指标</p>
+<ol>
+<li><strong>伊朗导弹与无人机持续打击能力</strong>是否会被耗尽</li>
+<li><strong>美军是否会增兵</strong>或扩大打击范围</li>
+<li><strong>国际调停能否找到破局点</strong>（阿曼、卡塔尔等中间方）</li>
+<li><strong>伊朗新领导层的稳定性</strong>（穆杰塔巴伤势及权威确立）</li>
+</ol>
+<p><strong>视觉建议</strong>：仪表盘式指标设计</p>
+<hr>
+<h2 id="第17页｜总结"><a href="#第17页｜总结" class="headerlink" title="第17页｜总结"></a>第17页｜总结</h2><p><strong>标题</strong>：核心结论</p>
+<p><strong>三大判断</strong>：</p>
+<ol>
+<li>这是近20年来最严峻的地区安全危机</li>
+<li>三方都基于各自战略逻辑行动，但无清晰”终局思维”</li>
+<li>武力可以摧毁设施，但无法解决信任赤字</li>
+</ol>
+<p><strong>核心警示</strong>：若不能尽快回到谈判桌，中东可能滑向更深的动荡</p>
+<p><strong>视觉建议</strong>：三要点图标+警示框</p>
+<hr>
+<h2 id="第18页｜建议与启示"><a href="#第18页｜建议与启示" class="headerlink" title="第18页｜建议与启示"></a>第18页｜建议与启示</h2><p><strong>标题</strong>：对各方及国际社会的建议</p>
+<p><strong>建议方向</strong>：</p>
+<ul>
+<li>🇺🇸🇮🇱 美以：明确”退出策略”，避免陷入长期消耗</li>
+<li>🇮🇷 伊朗：以战促谈需把握分寸，避免过度升级</li>
+<li>🌍 国际社会：建立有效调停机制，避免冲突外溢</li>
+<li>💼 企业与投资者：做好能源与供应链风险对冲</li>
+</ul>
+<p><strong>视觉建议</strong>：四方建议框图</p>
+<hr>
+<h2 id="封底页"><a href="#封底页" class="headerlink" title="封底页"></a>封底页</h2><p><strong>标题</strong>：谢谢观看</p>
+<p><strong>联系方式</strong>：[可根据需要添加]<br><strong>信息来源</strong>：新华社、央视新闻、网易新闻、今日头条、搜狐网等公开报道<br><strong>日期</strong>：2026年3月21日</p>
+<p><strong>视觉建议</strong>：简洁设计+中东地图轮廓</p>
+<hr>
+<h2 id="📋-PPT制作建议"><a href="#📋-PPT制作建议" class="headerlink" title="📋 PPT制作建议"></a>📋 PPT制作建议</h2><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>总页数</strong></td>
+<td>18-20页（含封面封底）</td>
+</tr>
+<tr>
+<td><strong>配色方案</strong></td>
+<td>深蓝+橙色警示色+灰色中性色</td>
+</tr>
+<tr>
+<td><strong>字体</strong></td>
+<td>标题用粗体，正文清晰易读</td>
+</tr>
+<tr>
+<td><strong>动画</strong></td>
+<td>时间线用渐进动画，数据用动态图表</td>
+</tr>
+<tr>
+<td><strong>演讲时长</strong></td>
+<td>约20-25分钟</td>
+</tr>
+</tbody></table>
+<hr>
+<p><em>大纲完成时间：2026年3月21日</em></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>OpenClaw龙虾潮 演讲稿</title>
+    <url>/blog/%E6%96%B0%E9%97%BB%E6%BC%94%E8%AE%B2%E7%A8%BF/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="演讲稿：OpenClaw——AI从“对话”走向“行动”的革命"><a href="#演讲稿：OpenClaw——AI从“对话”走向“行动”的革命" class="headerlink" title="演讲稿：OpenClaw——AI从“对话”走向“行动”的革命"></a>演讲稿：OpenClaw——AI从“对话”走向“行动”的革命</h1><p>各位朋友，大家好！</p>
+<p>2026年的春天，科技圈被一只“小龙虾”彻底点燃。它就是<strong>OpenClaw</strong>，一个在短短两个月内席卷全球、被英伟达CEO黄仁勋称为“AI时代Windows”的开源项目。</p>
+<p>回顾这条惊人的时间线：去年11月，奥地利程序员Peter Steinberger仅在Mac Mini上花了一小时写出原型；今年1月，它正式更名上线，迅速成为GitHub史上增长最快的项目；2月，面对Meta和OpenAI的争相抢人，Peter选择加入OpenAI，但坚持让OpenClaw作为独立开源项目存续；到了3月，从全国两会的代表热议，到英伟达GTC大会的战略发布，再到国家安全部专门印发“安全养殖手册”，OpenClaw已不再只是一个软件，而是一场全社会关注的<strong>技术现象</strong>。</p>
+<p>OpenClaw究竟做对了什么？核心在于它完成了一次<strong>范式转移</strong>。过去的AI，像是一个博学的顾问，只能给你建议，却动不了手；而OpenClaw，是一个真正的“数字员工”。它能直接操作你的电脑，整理文件、编写代码、浏览网页，甚至自主规划复杂任务。更重要的是，它坚持“本地优先”架构，把数据主权还给了用户。这种从“对话”到“执行”的跨越，标志着我们正式进入了<strong>AI智能体（Agent）元年</strong>。</p>
+<p>当然，热潮背后必有冷思考。权限过大带来的安全隐患、责任归属的法律真空、以及可能引发的就业冲击，都是我们必须直面的挑战。正如高文院士所言：“既要拥抱‘养龙虾’的红利，也要系好安全的腰带。”</p>
+<p>最后，我想说：OpenClaw的出现，不是为了替代人类，而是为了<strong>增强人类</strong>。它降低了创新的门槛，让“一人公司”成为可能，让每个人都能拥有自己的超级助手。未来已来，让我们保持理性，拥抱变化，学会与这位新伙伴共舞，共同开启人机协作的新篇章！</p>
+<p>谢谢大家！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>毛概期末</title>
+    <url>/blog/%E6%AF%9B%E6%A6%82%E6%9C%9F%E6%9C%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><style type = "text/css">
+    article > .markdown-style-modify-box > ul,
+    article > .markdown-style-modify-box > ol,
+    article > .markdown-style-modify-box > ol > li > .hide-block > .hide-content > ul > li > b > code {
+        line-height: 2em;
+        font-size: 18px;
+    }
+
+    article > .markdown-style-modify-box > ol {
+        margin: 0 0 0 20px;
+    }
+
+    .hide-inline > .hide-button {
+        padding: 5px 5px;
+        margin: 0px;
+    }
+    
+    .hide-inline > .hide-content {
+        margin: 0px;
+    }
+
+    .hl-label {
+        padding: 2px 5px 4px 6px;
+        border-radius: 6px;
+    }
+
+    .hover-appear {
+        color: #0000002B;
+        transition: color 0.3s;
+    }
+
+    .hover-appear:hover {
+        color: inherit;
+    }
+
+    .instance-text {
+        text-indent: 2em;
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .instance-source {
+        color: #666666;
+        font-style: italic;
+        white-space: normal;
+        word-wrap: break-word;
+        max-width: 100%;
+        margin-left: auto;
+    }
+</style>
+
+<div class = "markdown-style-modify-box">
+
+<h1 id="导论-马克思主义中国化历史进程与理论成果"><a href="#导论-马克思主义中国化历史进程与理论成果" class="headerlink" title="导论 马克思主义中国化历史进程与理论成果"></a>导论 马克思主义中国化历史进程与理论成果</h1><h2 id="马克思主义中国化提出的时间、提出者、会议和文章名称-p2"><a href="#马克思主义中国化提出的时间、提出者、会议和文章名称-p2" class="headerlink" title="马克思主义中国化提出的时间、提出者、会议和文章名称 p2"></a>马克思主义中国化提出的时间、提出者、会议和文章名称 p2</h2><ul>
+<li><span class="hide-inline"><button type="button" class="hide-button" style=""> <b>时间</b></button><span class="hide-content"><b>1938年</b></span></span>，<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>提出者</b></button><span class="hide-content"><b>毛泽东</b></span></span>在党的<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>会议</b></button><span class="hide-content"><b>六届六中全会</b></span></span>上作了<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>文章名称</b></button><span class="hide-content"><b>《论新阶段》</b></span></span>的报告，这标志着“马克思主义的中国化”这一命题的正式提出。</li>
+</ul>
+<hr>
+<h1 id="第一章-毛泽东思想及其历史地位"><a href="#第一章-毛泽东思想及其历史地位" class="headerlink" title="第一章 毛泽东思想及其历史地位"></a>第一章 毛泽东思想及其历史地位</h1><h2 id="毛泽东思想形成发展的历史条件-p16"><a href="#毛泽东思想形成发展的历史条件-p16" class="headerlink" title="毛泽东思想形成发展的历史条件 p16"></a>毛泽东思想形成发展的历史条件 p16</h2><ul>
+<li>中国共产党领导中国人民进行<mark class="hl-label orange"><b>革命和建设</b></mark>的<b>成功实践</b>是毛泽东思想<mark class="hl-label purple"><b>形成和发展</b></mark>的<b>实践基础</b>。</li>
+</ul>
+<h2 id="毛泽东思想的主要内容-p20-25"><a href="#毛泽东思想的主要内容-p20-25" class="headerlink" title="毛泽东思想的主要内容 p20-25"></a>毛泽东思想的主要内容 p20-25</h2><ol>
+<li><details class="toggle" ><summary class="toggle-button" style="">新民主主义革命理论</summary><div class="toggle-content"><ol>
+<li>认为中国资产阶级有两个部分：依附于帝国主义的大资产阶级和既有革命要求又有动摇性的民族资产阶级。</li>
+<li>认为由于帝国主义的侵略，加之中国没有资产阶级民主，因此中国革命只能以长期的武装斗争为主要形式。</li>
+</ol>
+</div></details></li>
+<li>社会主义革命和社会主义建设理论  </li>
+<li>革命军队建设和军事战略的理论</li>
+<li>政策和策略的理论</li>
+<li>思想政治工作和文化工作的理论</li>
+<li>党的建设理论</li>
+</ol>
+<h2 id="毛泽东思想活的灵魂-p26-32"><a href="#毛泽东思想活的灵魂-p26-32" class="headerlink" title="毛泽东思想活的灵魂 p26-32"></a>毛泽东思想活的灵魂 p26-32</h2><ul>
+<li><span class="hide-inline"><button type="button" class="hide-button" style=""> <b>时间</b></button><span class="hide-content"><b>1981年</b></span></span>党的<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>会议</b></button><span class="hide-content"><b>十一届六中全会</b></span></span>通过的<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>文章名称</b></button><span class="hide-content"><b>《中国共产党中央委员会关于建国以来党的若干历史问题的决议》</b></span></span>指出：“毛泽东思想的活的灵魂，是贯串于上述各个组成部分的立场、观点和方法，它们有<u>三个基本方面</u>，即<b>实事求是</b>，<b>群众路线</b>，<b>独立自主</b>。”</li>
+</ul>
+<ol>
+<li><details class="toggle" ><summary class="toggle-button" style="">实事求是</summary><div class="toggle-content"><ul>
+<li><b>实事求是</b>是毛泽东思想的<b>基本点</b>，是毛泽东思想的<b>精髓</b>。</li>
+<li>实事求是，就是<b>一切从实际出发，理论联系实际，坚持在实践中检验真理和发展真理</b>。</li>
+<li>实事求是是中国共产党人<mark class = "hl-label orange"><b>认识世界</b></mark>、<mark class = "hl-label red"><b>改造世界</b></mark>的<b>根本要求</b>，是中国共产党的<b>思想路线</b>。</li>
+<li>“实事”就是客观存在的一切事物，“是”就是客观事物的内部联系，即规律性，“求”就是我们去研究。</li>
+</ul>
+<ol>
+<li>坚持实事求是，就要深入实际了解事物的本来面貌，把握事物内在必然联系按照客观规律办事。</li>
+<li>坚持实事求是，就要清醒认识和正确把握我国基本国情。</li>
+<li>坚持实事求是，就要不断推进实践基础上的理论创新。</li>
+</ol>
+</div></details></li>
+<li><details class="toggle" ><summary class="toggle-button" style="">群众路线</summary><div class="toggle-content"><ul>
+<li>群众路线，就是一切为了群众，一切依靠群众，从群众中来，到群众中去，把党的正确主张变为群众的自觉行动。</li>
+<li>不论过去、现在和将来，群众路线都是我们<mark class = "hl-label yellow"><b>党的生命线</b></mark>和<mark class = "hl-label orange"><b>根本工作路线</b></mark>是我们党永葆青春活力和战斗力的<mark class = "hl-label red"><b>重要传家宝</b></mark>。</li>
+</ul>
+<ol>
+<li>坚持群众路线，就要坚持人民是推动历史发展的根本力量。</li>
+<li>坚持群众路线，就要坚持全心全意为人民服务的根本宗旨。</li>
+<li>坚持群众路线，就要保持党同人民群众的血肉联系。</li>
+</ol>
+</div></details></li>
+<li><details class="toggle" ><summary class="toggle-button" style="">独立自主</summary><div class="toggle-content"><ul>
+<li>独立自主，就是坚持独立思考走自己的路。</li>
+</ul>
+<ol>
+<li>坚持独立自主，就要坚持中国的事情必须由中国人民自己作主张、自己来处理。</li>
+<li>坚持独立自主，就要坚持独立自主的和平外交政策，坚定不移走和平发展道路。</li>
+<li>独立自主是中华民族精神之魂。</li>
+</ol>
+</div></details></li>
+</ol>
+<hr>
+<h1 id="第二章-新民主主义革命理论"><a href="#第二章-新民主主义革命理论" class="headerlink" title="第二章 新民主主义革命理论"></a>第二章 新民主主义革命理论</h1><h2 id="新民主主义革命的总路线-p45-51"><a href="#新民主主义革命的总路线-p45-51" class="headerlink" title="新民主主义革命的总路线 p45-51"></a>新民主主义革命的总路线 p45-51</h2><ol>
+<li><p>新民主主义革命的对象<span class = "hover-appear">（分清敌友，是革命的首要问题。）</span></p>
+<ul>
+<li>总体上说，中国革命的对象是<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>三座大山</b></button><span class="hide-content"><b>帝国主义</b></span></span>、<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>三座大山</b></button><span class="hide-content"><b>封建主义</b></span></span>和<span class="hide-inline"><button type="button" class="hide-button" style=""> <b>三座大山</b></button><span class="hide-content"><b>官僚主义</b></span></span>三座大山。</li>
+<li><mark class="hl-label default"><b>帝国主义</b></mark>是中国革命的首要对象。</li>
+</ul>
+ <div class="hide-block"><button type="button" class="hide-button" style=""><b>在不同历史阶段，革命的对象有所不同</b></button><div class="hide-content"><ul>
+<li>在<mark class = "hl-label default"><b>国共合作</b></mark>的大革命时期，革命的主要对象是<b><code>帝国主义</code></b>支持下的<mark class = "hl-label default"><b>北洋军阀</b></mark>。</li>
+<li>在<mark class = "hl-label default"><b>土地革命战争</b></mark>时期，革命的主要对象是<mark class = "hl-label default"><b>国名党新军阀</b></mark>。</li>
+<li>在<mark class = "hl-label default"><b>抗日战争</b></mark>时期，革命的主要对象是<mark class = "hl-label default"><b>日本帝国主义</b></mark>。</li>
+<li>在<mark class = "hl-label default"><b>解放战争</b></mark>时期，革命的主要对象是<b><code>美帝国主义</code></b>扶持下的<mark class = "hl-label default"><b>国民党反动派</b></mark>。</li>
+</ul>
+</div></div>
+</li>
+<li><p>新民主主义革命的动力</p>
+<ul>
+<li>新民主主义革命的动力包括<mark class="hl-label orange"><b>无产阶级</b></mark>、<mark class="hl-label yellow"><b>农民阶级</b></mark>、<mark class="hl-label green"><b>城市小资产阶级</b></mark>和<mark class="hl-label blue"><b>民族资产阶级</b></mark>。</li>
+<li><mark class="hl-label orange"><b>无产阶级</b></mark>是中国革命<b>最基本</b>的动力。</li>
+<li><mark class="hl-label yellow"><b>农民</b></mark>是中国革命的<b>主力军</b>。</li>
+<li><mark class="hl-label green"><b>城市小资产阶级</b></mark>是无产阶级的<b>可靠同盟者</b>。</li>
+<li><mark class="hl-label blue"><b>民族资产阶级</b></mark>也是中国革命的动力之一。</li>
+</ul>
+</li>
+<li><p>新民主主义革命的领导力量</p>
+<ul>
+<li>无产阶级的领导权是中国革命的中心问题，也是新民主主义革命理论的核心问题。</li>
+</ul>
+</li>
+<li><p>新民主主义革命的性质和前途</p>
+<ul>
+<li>新民主主义革命的性质不是无产阶级社会主义革命，而是资产阶级民主主义革命。</li>
+</ul>
+ <details class="toggle" ><summary class="toggle-button" style="">毛泽东指出</summary><div class="toggle-content"><p class = "instance-text">“既然中国社会还是一个殖民地、半殖民地、半封建的社会，既然中国革命的敌人主要的还是帝国主义和封建势力，既然中国革命的任务是为了推翻这两个主要敌人的民族革命和民主革命，而推翻这两个敌人的革命，有时还有资产阶级参加，即使大资产阶级背叛革命而成了革命的敌人，革命的锋芒也不是向着一般的资本主义和资本主义的私有财产，而是向着帝国主义和封建主义，既然如此，所以，现阶段中国革命的性质，不是无产阶级社会主义的，而是资产阶级民主主义的。但是，现时中国的资产阶级民主主义的革命，已不是旧式的一般的资产阶级民主主义的革命，这种革命已经过时了，而是新式的特殊的资产阶级民主主义的革命。”<span class = "instance-source">——《毛泽东选集》第二卷</span></p>
+    </div></details></li>
+</ol>
+<h2 id="新民主主义的三大基本纲领-p52-55"><a href="#新民主主义的三大基本纲领-p52-55" class="headerlink" title="新民主主义的三大基本纲领 p52-55"></a>新民主主义的三大基本纲领 p52-55</h2><ol>
+<li>新民主主义的政治纲领<ul>
+<li>推翻帝国主义和封建主义的统治，建立一个无产阶级领导的、以工农联盟为基础的、各革命阶级联合专政的新民主主义的共和国。</li>
+</ul>
+</li>
+<li>新民主主义的经济纲领<ul>
+<li>没收封建地主阶级的的土地归农民所有，没收官僚资产阶级的垄断资本归新民主主义的国家所有，保护民族工商业。</li>
+</ul>
+</li>
+<li>新民主主义的文化纲领<ul>
+<li>无产阶级领导的人民大众反帝反封建的文化，即民族的科学的大众的文化。</li>
+</ul>
+</li>
+</ol>
+<h2 id="新民主主义革命道路-p56-58"><a href="#新民主主义革命道路-p56-58" class="headerlink" title="新民主主义革命道路 p56-58"></a>新民主主义革命道路 p56-58</h2><ul>
+<li>农村包围城市，武装夺取政权。</li>
+</ul>
+<ol>
+<li><details class="toggle" ><summary class="toggle-button" style="">提出</summary><div class="toggle-content"><p><mark class = "hl-label red"><b>1938年11月</b></mark>，<mark class = "hl-label orange"><b>毛泽东</b></mark>在党的<mark class = "hl-label yellow"><b>六届六中全会</b></mark>上明确指出共产党的任务，基本地不是经过长期合法斗争以进入起义和战争也不是先占城市后取乡村而是走相反的道路。
+    </p>
+</div></details></li>
+<li><details class="toggle" ><summary class="toggle-button" style="">形成的必然性</summary><div class="toggle-content"><ul>
+<li>中国革命必须走农村包围城市、武装夺取政权的道路，是由中国所处的时代特点和具体国情决定的。</li>
+</ul>
+</div></details></li>
+<li><details class="toggle" ><summary class="toggle-button" style="">内容及意义</summary><div class="toggle-content"><ul>
+<li>中国革命走农村包围城市、武装夺取政权的道路，根本在于处理好土地革命、武装斗争、农民革命根据地建设三者之间的关系。</li>
+</ul>
+<ol>
+<li>土地革命是中国革命的基本内容。</li>
+<li>武装斗争是中国革命的主要形式，是农村根据地建设和土地革命的强有力保证。</li>
+<li>农村革命根据地是中国革命的战略阵地，是进行武装斗争和开展土地革命的依托。</li>
+</ol>
+</div></details></li>
+</ol>
+<h2 id="新民主主义革命的三大法宝-p59-64"><a href="#新民主主义革命的三大法宝-p59-64" class="headerlink" title="新民主主义革命的三大法宝 p59-64"></a>新民主主义革命的三大法宝 p59-64</h2><ol>
+<li>统一战线<span class = "hover-appear">（无产阶级政党策略思想的重要内容）</span></li>
+<li>武装斗争<span class = "hover-appear">（中国革命的特点和优点之一）</span></li>
+<li>党的建设<span class = "hover-appear">（中国共产党要领导革命取得胜利，必须不断加强党的思想建设、组织建设和作风建设）</span></li>
+</ol>
+<h2 id="新民主主义三大法宝之间的关系-p64"><a href="#新民主主义三大法宝之间的关系-p64" class="headerlink" title="新民主主义三大法宝之间的关系 p64"></a>新民主主义三大法宝之间的关系 p64</h2><ul>
+<li>统一战线和武装斗争是中国革命的两个基本特点，是战胜敌人的两个基本武器。</li>
+<li>统一战线是实行武装斗争的统一战线。</li>
+<li>武装斗争是统一战线的中心支柱。</li>
+<li>党的组织则是掌握统一战线和武装斗争这两个武器以实行对敌冲锋陷阵的英勇战士。</li>
+</ul>
+<hr>
+<h1 id="第三章-社会主义改造理论"><a href="#第三章-社会主义改造理论" class="headerlink" title="第三章 社会主义改造理论"></a>第三章 社会主义改造理论</h1><h2 id="党在过渡时期的总路线-p70"><a href="#党在过渡时期的总路线-p70" class="headerlink" title="党在过渡时期的总路线 p70"></a>党在过渡时期的总路线 p70</h2><ul>
+<li>在一个相当长的时期内，逐步实现国家的社会主义工业化，并逐步实现国家对农业、对手工业和对资本主义工商业的社会主义改造。</li>
+</ul>
+<h2 id="适合中国特点的社会主义改造道路-p76-83"><a href="#适合中国特点的社会主义改造道路-p76-83" class="headerlink" title="适合中国特点的社会主义改造道路 p76-83"></a>适合中国特点的社会主义改造道路 p76-83</h2><ul>
+<li><details class="toggle" ><summary class="toggle-button" style="">一、 农业、手工业的社会主义改造</summary><div class="toggle-content"><ol>
+<li>积极引导农民组织起来，走互助合作道路。</li>
+<li>遵循自愿互利、典型示范和国家帮助的原则，以互助合作的优越性吸引农民走互助合作道路。</li>
+<li>正确分析农村的阶级和阶层状况，制定正确的阶级政策。</li>
+<li>坚持积极领导、稳步前进的方针，采取循序渐进的步骤。</li>
+</ol>
+</div></details>
+</li>
+<li><details class="toggle" ><summary class="toggle-button" style="">二、 资本主义工商业的社会主义改造</summary><div class="toggle-content"><ol>
+<li>用和平赎买的方式改造资本主义工商业。</li>
+<li>采取从低级到高级的国家资本主义的过渡形式。</li>
+<li>把资本主义工商业者改造成为自食其力的社会主义劳动者。</li>
+</ol>
+</div></details></li>
+</ul>
+<hr>
+<h1 id="第四章-社会主义建设道路初步探索的理论成果"><a href="#第四章-社会主义建设道路初步探索的理论成果" class="headerlink" title="第四章 社会主义建设道路初步探索的理论成果"></a>第四章 社会主义建设道路初步探索的理论成果</h1><h2 id="初步探索的三大理论成果-p93-103"><a href="#初步探索的三大理论成果-p93-103" class="headerlink" title="初步探索的三大理论成果 p93-103"></a>初步探索的三大理论成果 p93-103</h2><ol>
+<li>调动一切积极因素为社会主义事业服务</li>
+<li>正确认识和处理社会主义社会矛盾的思想</li>
+<li>走中国工业化道路的思想</li>
+</ol>
+<h2 id="⭐走中国工业化道路-p101-103"><a href="#⭐走中国工业化道路-p101-103" class="headerlink" title="⭐走中国工业化道路 p101-103"></a>⭐走中国工业化道路 p101-103</h2><ul>
+<li>实现工业化是中国近代以来历史发展的必然要求，也是民族独立和国家富强的必要条件。</li>
+<li>以工业为主导，把重工业作为我国经济建设的重点，以逐步建立独立的比较完整的基础工业体系和国防工业体系，是维护国家独立、统一和安全，实现国家富强所必须的。</li>
+</ul>
+<ol>
+<li>走中国工业化道路，必须采取正确的经济建设方针。</li>
+<li>走中国工业化道路，必须调整和完善所有制结构。</li>
+<li>走中国工业化道路，必须积极探索适合我国情况的经济体制和运行机制。</li>
+</ol>
+<hr>
+<h1 id="第六章-邓小平理论"><a href="#第六章-邓小平理论" class="headerlink" title="第六章 邓小平理论"></a>第六章 邓小平理论</h1><h2 id="邓小平理论首要的基本理论-p152、p153"><a href="#邓小平理论首要的基本理论-p152、p153" class="headerlink" title="邓小平理论首要的基本理论 p152、p153"></a>邓小平理论首要的基本理论 p152、p153</h2><ul>
+<li>社会主义的本质，是解放生产力，发展生产力，消灭剥削，消除两极分化，最终达到共同富裕。</li>
+<li>解放思想、实事求是，是邓小平理论的精髓。</li>
+</ul>
+<h2 id="坚持四项基本原则-p160"><a href="#坚持四项基本原则-p160" class="headerlink" title="坚持四项基本原则 p160"></a>坚持四项基本原则 p160</h2><ol>
+<li>坚持社会主义发道路</li>
+<li>坚持人民民主专政</li>
+<li>坚持共产党的领导</li>
+<li>坚持马列主义毛泽东思想</li>
+</ol>
+<h2 id="党在社会主义初级阶段基本路线-p160"><a href="#党在社会主义初级阶段基本路线-p160" class="headerlink" title="党在社会主义初级阶段基本路线 p160"></a>党在社会主义初级阶段基本路线 p160</h2><ul>
+<li>以经济建设为中心，坚持四项基本原则，坚持改革开放。</li>
+</ul>
+<h2 id="⭐社会主义改革开放和社会主义市场经济理论-p167-171"><a href="#⭐社会主义改革开放和社会主义市场经济理论-p167-171" class="headerlink" title="⭐社会主义改革开放和社会主义市场经济理论 p167-171"></a>⭐社会主义改革开放和社会主义市场经济理论 p167-171</h2><ul>
+<li><p>社会主义改革开放理论</p>
+<ol>
+<li>改革是一场深刻的社会变革，是中国的第二次革命，是实现中国现代化的必由之路。</li>
+<li>改革是社会主义发展的直接动力。</li>
+<li>改革是一项崭新的事业，是一个大试验。</li>
+<li>开放也是改革<span class = "hover-appear">（对外开放是建设中国特色社会主义的一项基本国策，和改革一起成为新时期最鲜明的特征。）</span></li>
+<li>实行对外开放是对中国经济发展停滞落后历史教训深刻总结的结果。</li>
+<li>对外开放是对世界所有国家的开放，包括对发达国家的开放；不仅是经济领域的开放，还包括科技、教育、文化等领域的开放。</li>
+</ol>
+</li>
+<li><p>社会主义市场经济理论（内涵）</p>
+<ol>
+<li>计划经济和市场经济不是划分社会制度的标志，计划经济不等于社会主义，市场经济也不等于资本主义。</li>
+<li>计划和市场都是经济手段，对经济活动的调节各有优劣，社会主义实行市场经济是要把两者优势结合起来。</li>
+<li>市场经济作为资源配置手段本身不具有制度性，可以＆不同的社会制度相结合，从而表现出不同的性质。</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h1 id="第七章-“三个代表”重要思想"><a href="#第七章-“三个代表”重要思想" class="headerlink" title="第七章 “三个代表”重要思想"></a>第七章 “三个代表”重要思想</h1><h2 id="“三个代表”重要思想的三个核心观点-p191、p194、p198"><a href="#“三个代表”重要思想的三个核心观点-p191、p194、p198" class="headerlink" title="“三个代表”重要思想的三个核心观点 p191、p194、p198"></a>“三个代表”重要思想的三个核心观点 p191、p194、p198</h2><ol>
+<li>始终代表中国先进生产力的发展要求。</li>
+<li>始终代表中国先进文化的前进方向。</li>
+<li>始终代表中国最广大人民的根本利益。</li>
+</ol>
+<hr>
+<h1 id="第八章-科学发展观"><a href="#第八章-科学发展观" class="headerlink" title="第八章 科学发展观"></a>第八章 科学发展观</h1><h2 id="科学发展观的科学内涵-p228、p232、p235、p237"><a href="#科学发展观的科学内涵-p228、p232、p235、p237" class="headerlink" title="科学发展观的科学内涵 p228、p232、p235、p237"></a>科学发展观的科学内涵 p228、p232、p235、p237</h2><ol>
+<li>推动经济社会发展是科学发展的第一要义。</li>
+<li>以人为本是科学发展观的核心立场。</li>
+<li>全面协调可持续是科学发展观的基本要求。</li>
+<li>统筹兼顾是科学发展观的根本方法。</li>
+</ol>
+<hr>
+</div>]]></content>
   </entry>
 </search>
