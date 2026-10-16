@@ -80,10 +80,11 @@
 .post-content .button-container .hide-button:hover::before {
   transform: translateX(120%);
 }
-.post-content .button-container .hide-button > * {
+.post-content .button-container .hide-button .phrase-btn-text {
   position: relative;
   z-index: 1;
   font-size: 20px;
+  font-weight: 400;
 }
 .post-content .button-container .hide-block.expanded > .hide-button {
   border-radius: 14px 14px 4px 14px;
