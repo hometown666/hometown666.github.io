@@ -1,17 +1,1 @@
-.wl-panel {
-  background: none !important;
-}
-.wl-panel:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: var(--waline-border);
-  border-radius: 0.75em;
-  background: var(--waline-bg-color);
-  opacity: 0.3;
-  z-index: -1;
-}
+.wl-panel{background:0 0!important}.wl-panel:before{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:var(--waline-border);border-radius:.75em;background:var(--waline-bg-color);opacity:.3;z-index:-1}
