@@ -68,8 +68,8 @@
   
   <entry>
     <title>控制端：外出设备接入指南</title>
-    <link href="https://hometown666.github.io/blog/remote_controling/"/>
-    <id>https://hometown666.github.io/blog/remote_controling/</id>
+    <link href="https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E6%8E%A7%E5%88%B6%E7%AB%AF/"/>
+    <id>https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E6%8E%A7%E5%88%B6%E7%AB%AF/</id>
     <published>2026-07-11T16:32:00.000Z</published>
     <updated>2026-09-18T04:03:02.859Z</updated>
     
@@ -93,8 +93,8 @@
   
   <entry>
     <title>被控端：家里 Win11 配置指南</title>
-    <link href="https://hometown666.github.io/blog/remote_controled/"/>
-    <id>https://hometown666.github.io/blog/remote_controled/</id>
+    <link href="https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E8%A2%AB%E6%8E%A7%E7%AB%AF/"/>
+    <id>https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E8%A2%AB%E6%8E%A7%E7%AB%AF/</id>
     <published>2026-07-11T16:31:00.000Z</published>
     <updated>2026-09-18T04:03:02.866Z</updated>
     
@@ -118,8 +118,8 @@
   
   <entry>
     <title>远程控制总览</title>
-    <link href="https://hometown666.github.io/blog/remote_control/"/>
-    <id>https://hometown666.github.io/blog/remote_control/</id>
+    <link href="https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E6%80%BB%E8%A7%88/"/>
+    <id>https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E6%80%BB%E8%A7%88/</id>
     <published>2026-07-11T16:30:00.000Z</published>
     <updated>2026-09-18T04:03:02.859Z</updated>
     
@@ -294,7 +294,7 @@
     <link href="https://hometown666.github.io/blog/OSI%E8%AF%A6%E8%A7%A3/"/>
     <id>https://hometown666.github.io/blog/OSI%E8%AF%A6%E8%A7%A3/</id>
     <published>2025-11-17T15:22:00.000Z</published>
-    <updated>2025-11-26T17:13:05.245Z</updated>
+    <updated>2026-10-16T19:14:50.410Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="物理层"><a class="headerlink" href="#物理层"></a>物理层</h1><h2 id="计算机网络物理层详解"><a class="headerlink" href="#计算机网络物理层详解"></a>计算机网络物理层详解</h2><blockquote><p>物理层是计算机网络体系结构（如OSI模型和TCP/IP模型）中的最底层，是整个网络通信的物理基础。它关注的是如何在连接各种计算机的传输媒体上透明地传输原始的比特流（0和1）。</p></blockquote><h2 id="一、物理层的基本概念与核心作用"><a class="headerlink" href="#一、物理层的基本概念与核心作用"></a>一、物理层的基本概念与核心作用</h2><h3 id="1-1-基本概念"><a class="headerlink" href="#1-1-基本概念"></a>1.1 基本概念</h3><blockquote><p>物理层并<strong>不是指具体的传输媒体</strong>（如网线），而是指在传输媒体之上，为数据链路层提供<strong>比特流传输服务</strong>的层级。它规定了为建立、维持和拆除物理链路所需的机械、电气、功能和规程特性。简单来说，物理层确保数据链路层交付下来的比特序列，能够通过各种物理媒介（如双绞线、光纤、无线电波）准确地传送到接收端。</p></blockquote><h3 id="1-2-核心作用"><a class="headerlink" href="#1-2-核心作用"></a>1.2 核心作用</h3><p>物理层的核心作用是实现<strong>比特流的透明传输</strong>。其具体任务可归纳为以下几点：</p><ul><li><strong>屏蔽差异</strong>：物理层要尽可能地屏蔽掉不同物理设备、传输媒体和通信手段的差异，使数据链路层感觉不到这些差异，从而只需关注本层的协议和服务。</li><li><strong>提供比特传输能力</strong>：为数据链路层在一条物理的传输媒体上提供传送和接收比特流的能力，并解决物理连接的建立、维持和释放问题。</li><li><strong>定义接口标准</strong>：规定与传输媒体接口的机械、电气、功能和规程四大特性，确保不同厂商的设备能够互联互通。</li></ul><h2 id="二、物理层接口的四大特性"><a class="headerlink" href="#二、物理层接口的四大特性"></a>二、物理层接口的四大特性</h2><p>物理层协议通过定义接口的四个特性来完成其主要任务：</p><table><thead><tr><th style="text-align:left">特性</th><th style="text-align:left">说明</th><th style="text-align:left">通俗比喻</th></tr></thead><tbody><tr><td style="text-align:left"><strong>机械特性</strong></td><td style="text-align:left">定义接口连接器的形状、尺寸、引脚数目和排列顺序、固定和锁定装置等。</td><td style="text-align:left">类似于各种电源插头的形状和尺寸都有严格规定，确保插头能插入对应的插座。</td></tr><tr><td style="text-align:left"><strong>电气特性</strong></td><td style="text-align:left">规定线路上信号的电压范围、阻抗匹配、传输速率和传输距离的限制。</td><td style="text-align:left">例如，规定多少伏特的电压代表二进制0，多少伏特代表1。</td></tr><tr><td style="text-align:left"><strong>功能特性</strong></td><td style="text-align:left">指明接口电缆上每条信号线的功能或用途。</td><td style="text-align:left">如哪些是数据线、控制线、定时线或地线。</td></tr><tr><td style="text-align:left"><strong>规程特性</strong></td><td style="text-align:left">定义比特流传输过程中各种事件发生的先后顺序。</td><td style="text-align:left">即物理连接的建立、维持、交换信息和拆除的流程。</td></tr></tbody></table><h2 id="三、数据通信基础"><a class="headerlink" href="#三、数据通信基础"></a>三、数据通信基础</h2><h3 id="3-1-数据通信模型"><a class="headerlink" href="#3-1-数据通信模型"></a>3.1 数据通信模型</h3><p>一个典型的数据通信系统包含三个部分：</p><ul><li><strong>源系统</strong>：包括信源（产生数据的设备）和发送器（如调制解调器，将数字比特流转换为可在信道上传输的信号）。</li><li><strong>传输系统</strong>：即传输媒介构成的信道网络。</li><li><strong>目的系统</strong>：包括接收器（将接收到的信号转换回数字比特流）和信宿（接收数据的最终设备）。</li></ul><h3 id="3-2-通信方式"><a class="headerlink" href="#3-2-通信方式"></a>3.2 通信方式</h3><p>根据信息交互方向，通信可分为三种基本方式：</p><ul><li><strong>单工通信</strong>：数据只能单向传输，如广播、电视。</li><li><strong>半双工通信</strong>：数据可以双向传输，但不能同时进行，如对讲机。</li><li><strong>全双工通信</strong>：数据可以双向同时传输，如电话通话。</li></ul><h3 id="3-3-信号与信道"><a class="headerlink" href="#3-3-信号与信道"></a>3.3 信号与信道</h3><ul><li><strong>信号</strong>：是数据的电或电磁的表现形式，分为<strong>模拟信号</strong>（连续变化）和<strong>数字信号</strong>（离散取值）。</li><li><strong>信道</strong>：指传送信号的通道，通常代表一个方向的传输媒介。信道本身不表示具体的物理设备。</li></ul><h3 id="3-4-编码与调制"><a class="headerlink" href="#3-4-编码与调制"></a>3.4 编码与调制</h3><p>由于信源产生的原始信号（基带信号）不一定适合在信道上直接传输，需要进行转换。</p><ul><li><p><strong>编码</strong>：将数字数据转换为数字信号的过程，使其适合在数字信道传输。常见编码方式包括：</p><ul><li><strong>不归零制 (NRZ)</strong>：正电平为1，负电平为0。缺点是无法自同步。</li><li><strong>曼彻斯特编码 (Manchester)</strong>：每位中间有一次电平跳变。跳变既表示时钟，又表示数据。广泛应用于以太网。</li><li><strong>差分曼彻斯特编码</strong>：每位中间的跳变仅提供时钟定时；每位开始时有无跳变表示数据。抗干扰性更强。</li></ul></li><li><p><strong>调制</strong>：将数字数据转换为模拟信号的过程，使其适合在模拟信道（如电话线）传输。基本调制方法有：</p><ul><li><strong>调幅 (ASK)</strong>：通过改变载波的振幅来表示数据。</li><li><strong>调频 (FSK)</strong>：通过改变载波的频率来表示数据。</li><li><strong>调相 (PSK)</strong>：通过改变载波的相位来表示数据。</li><li><strong>正交振幅调制 (QAM)</strong>：结合调幅和调相，可在一个码元上携带更多比特信息。</li></ul></li></ul><h2 id="四、信道容量与极限"><a class="headerlink" href="#四、信道容量与极限"></a>四、信道容量与极限</h2><blockquote><p>信道传输数据的能力不是无限的，主要受限于两个著名定理：</p></blockquote><h3 id="4-1-奈奎斯特准则-Nyquist"><a class="headerlink" href="#4-1-奈奎斯特准则-Nyquist"></a>4.1 奈奎斯特准则 (Nyquist)</h3><p>在<strong>理想低通、无噪声信道</strong>下，为避免码间串扰，<strong>码元传输速率</strong>的上限值为：$$C = 2W \log_2 M (\mathrm{Baud})$$其中，<code>W</code> 是信道带宽(Hz)，<code>M</code> 是码元的离散状态数（进制数）。该准则表明，可以通过提高码元状态数（即让一个码元携带更多比特信息）来提升数据传输速率。</p><h3 id="4-2-香农公式-Shannon"><a class="headerlink" href="#4-2-香农公式-Shannon"></a>4.2 香农公式 (Shannon)</h3><p>在<strong>带宽受限、有高斯白噪声</strong>的信道中，<strong>信息的极限传输速率</strong>（信道容量）为：$$C = W \log_2 \left(1 + \frac{S}{N}\right) \text{(bit/s)}$$其中，<code>W</code> 为信道带宽(Hz)，<code>S/N</code> 为信噪比（信号平均功率/噪声平均功率）。香农公式指出，信道的带宽越大或信噪比越高，信道的极限信息传输速率就越高。</p><h2 id="五、传输媒体"><a class="headerlink" href="#五、传输媒体"></a>五、传输媒体</h2><p>传输媒体是数据传输的物理通路，分为两大类：</p><h3 id="5-1-导向型传输媒体"><a class="headerlink" href="#5-1-导向型传输媒体"></a>5.1 导向型传输媒体</h3><p>电磁波被引导沿固体媒体传播。</p><ul><li><strong>双绞线</strong>：最常见、最经济，分为屏蔽双绞线(STP)和无屏蔽双绞线(UTP)。</li><li><strong>同轴电缆</strong>：抗干扰能力优于双绞线，用于有线电视等。</li><li><strong>光纤</strong>：利用光脉冲传输，具有通信容量大、传输损耗小、抗电磁干扰强、保密性好等优点，是现代骨干网络的核心。分为多模光纤（近距离）和单模光纤（远距离）。</li></ul><h3 id="5-2-非导向型传输媒体"><a class="headerlink" href="#5-2-非导向型传输媒体"></a>5.2 非导向型传输媒体</h3><p>即自由空间，用于无线传输。</p><ul><li><strong>无线电波</strong>：穿透能力强，适用于移动通信。</li><li><strong>微波</strong>：直线传播，需中继站接力或通过卫星通信。</li><li><strong>红外线</strong>：短距离通信，如遥控器。</li></ul><h2 id="六、信道复用技术"><a class="headerlink" href="#六、信道复用技术"></a>六、信道复用技术</h2><p>为使多个用户共享同一物理信道，提高信道利用率，采用复用技术：</p><ul><li><strong>频分复用 (FDM)</strong>：将总带宽划分为多个不重叠的子频带，每个用户独占一个频带。</li><li><strong>时分复用 (TDM)</strong>：将时间划分为等长的时分复用帧，每个用户占用固定的时隙。</li><li><strong>波分复用 (WDM)</strong>：光的频分复用，在一根光纤中同时传输多个不同波长的光载波信号。</li><li><strong>码分复用 (CDM)</strong>：各用户使用经过特殊挑选的、相互正交的不同码型，可以在同一时间、同一频带上进行通信。</li></ul><h2 id="七、物理层设备"><a class="headerlink" href="#七、物理层设备"></a>七、物理层设备</h2><ul><li><strong>中继器 (Repeater)</strong>：工作在物理层，主要功能是对信号进行<strong>再生和放大</strong>，以扩展网络的传输距离。</li><li><strong>集线器 (Hub)</strong>：本质是一个<strong>多端口中继器</strong>。它对接收到的信号进行放大，然后广播到所有其他端口。所有设备共享同一带宽，属于冲突域的核心。</li></ul><h2 id="总结"><a class="headerlink" href="#总结"></a>总结</h2><blockquote><p>物理层作为网络体系的基石，其核心价值在于为上层协议提供了一个<strong>统一、透明、可靠</strong>的比特流传输服务。通过定义精确的接口标准和信号规范，它成功地屏蔽了底层传输媒体的复杂性，使得数据链路层及以上的高层可以专注于路由、寻址、会话控制等逻辑功能，而无需关心数据是通过光纤、铜线还是无线电波进行传输。理解物理层是理解整个网络通信过程的第一步。</p></blockquote>]]></content>
     
