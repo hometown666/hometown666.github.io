@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E6%80%BB%E8%A7%88/</loc>
+    <loc>https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E6%8E%A7%E5%88%B6%E7%AB%AF/</loc>
     
     <lastmod>2026-09-18</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E6%8E%A7%E5%88%B6%E7%AB%AF/</loc>
+    <loc>https://hometown666.github.io/blog/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E6%80%BB%E8%A7%88/</loc>
     
     <lastmod>2026-09-18</lastmod>
     
@@ -225,14 +225,14 @@
   </url>
   
   <url>
-    <loc>https://hometown666.github.io/tags/HCIA/</loc>
+    <loc>https://hometown666.github.io/tags/Phrases/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hometown666.github.io/tags/OSI-Module/</loc>
+    <loc>https://hometown666.github.io/tags/HCIA/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -246,7 +246,21 @@
   </url>
   
   <url>
-    <loc>https://hometown666.github.io/tags/Phrases/</loc>
+    <loc>https://hometown666.github.io/tags/Arduino/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hometown666.github.io/tags/DIY/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hometown666.github.io/tags/OSI-Module/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -268,41 +282,6 @@
   
   <url>
     <loc>https://hometown666.github.io/tags/AutoHotkey/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hometown666.github.io/tags/Arduino/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hometown666.github.io/tags/DIY/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hometown666.github.io/tags/TxtTunnel/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hometown666.github.io/tags/Cursor/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hometown666.github.io/tags/AHK/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -343,6 +322,27 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://hometown666.github.io/tags/TxtTunnel/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hometown666.github.io/tags/Cursor/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hometown666.github.io/tags/AHK/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -353,14 +353,14 @@
   </url>
   
   <url>
-    <loc>https://hometown666.github.io/categories/Datacom-Core-Tech/</loc>
+    <loc>https://hometown666.github.io/categories/English/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hometown666.github.io/categories/English/</loc>
+    <loc>https://hometown666.github.io/categories/Datacom-Core-Tech/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
